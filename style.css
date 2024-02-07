@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/* Directives (obligatoire et facultative)
+Theme Name: Theme Minji
+
+Author: Minji Ardanuy-Jetté
+Author URI: https://wordpress.org/
+Description:  Thème de base ddeveloppé dans le cours 4w4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: theme-minji
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/*
+https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
+*/
+:root {
+  --couleur-arriere-entete: #aaa;
+  --couleur-arriere-accueil: #0f0;
+  --couleur-arriere-evenement: #045;
+  --couleur-arriere-galerie: #f6fe00d9;
+  --couleur-arriere-footer: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.global {
+  min-height: 100vh;
+}
+
+.global > section,
+.global > header,
+.global > footer {
+  flex: 0 1 1100px;
+  border: 1px solid #aaa;
+}
+
+#entete {
+  background-color: var(--couleur-arriere-entete);
+}
+
+#accueil {
+  background-color: var(--couleur-arriere-accueil);
+}
+
+#evenement {
+  background-color: var(--couleur-arriere-evenement);
+}
+
+#galerie {
+  background-color: var(--couleur-arriere-galerie);
+}
+
+#footer {
+  background-color: var(--couleur-arriere-footer);
+}
+
+h1 {
+  font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+}/*# sourceMappingURL=style.css.map */
