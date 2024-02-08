@@ -17,13 +17,21 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 */
 :root {
   --couleur-arriere-entete: #ffa7a7;
-  --couleur-arriere-accueil: #c638e5;
-  --couleur-arriere-evenement: #037490;
+  --couleur-arriere-accueil: #e267fd;
+  --couleur-arriere-evenement: #049ec5;
   --couleur-arriere-galerie: #ff9129;
   --couleur-arriere-footer: #ff0000;
   /*Niveau de transparence des h*/
   --transparence-h1: 0.5;
+  --transparence-h2: 0.4;
+  --transparence-h2-evnt: 0.8;
+  --transparence-h2-galerie: 0.8;
+  --transparence-h2-footer: 0.5;
+  /*Niveau de transparence des sections*/
   --transparence-section: 0.1;
+  /*Largeur centrale*/
+  --centre-largeur: 1rem;
+  --centre-hauteur: 3rem;
 }
 
 * {
@@ -47,7 +55,7 @@ body {
 .global > header,
 .global > footer {
   flex: 0 1 900px;
-  padding: 3rem 1rem;
+  padding: var(--centre-hauteur) var(--centre-largeur);
   background-color: rgba(255, 255, 255, var(--transparence-section));
 }
 
@@ -80,6 +88,7 @@ h1 {
   font-size: clamp(1.5rem, -2.656rem + 12.5vw, 4.375rem);
   font-weight: 600;
   font-style: normal;
+  font-family: "Protest Riot", sans-serif;
   color: rgba(239, 2, 2, var(--transparence-h1));
 }
 
@@ -87,5 +96,43 @@ h2 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
   font-weight: 500;
   font-style: normal;
-  color: rgba(15, 15, 15, 0.4);
+  color: rgba(118, 2, 144, var(--transparence-h2));
+  font-family: "Protest Riot", sans-serif;
+}
+
+h3 {
+  font-size: clamp(0.875rem, -1.938rem + 9vw, 3.125rem);
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4 {
+  font-size: clamp(0.75rem, -1.438rem + 7vw, 2.5rem);
+  font-weight: 300;
+  font-style: normal;
+}
+
+h5 {
+  font-size: clamp(0.625rem, -0.938rem + 5vw, 1.875rem);
+  font-weight: 200;
+  font-style: normal;
+}
+
+h6 {
+  font-size: clamp(0.5rem, -0.438rem + 3vw, 1.25rem);
+  font-weight: 100;
+  font-style: normal;
+}
+
+/*Différentes couleurs du h2 par section*/
+#evenement h2 {
+  color: rgba(0, 74, 93, var(--transparence-h2-evnt));
+}
+
+#galerie h2 {
+  color: rgba(163, 80, 2, var(--transparence-h2-galerie));
+}
+
+#footer h2 {
+  color: rgba(100, 17, 17, var(--transparence-h2-footer));
 }/*# sourceMappingURL=style.css.map */

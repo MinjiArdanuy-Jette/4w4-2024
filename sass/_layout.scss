@@ -19,7 +19,7 @@ body {
 .global > footer {
   flex: 0 1 900px;
   // border: 1px solid #aaa;
-  padding: 3rem 1rem;
+  padding: var(--centre-hauteur) var(--centre-largeur);
   // background-color: rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, var(--transparence-section));
 }
