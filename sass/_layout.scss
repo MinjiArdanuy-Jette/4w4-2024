@@ -2,20 +2,22 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   display: flex;
   flex-direction: column;
+  font-family: "Prompt", sans-serif;
 }
 
 .global {
-  min-height: 100vh;
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
 }
 
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 1100px;
+  flex: 0 1 900px;
   border: 1px solid #aaa;
 }
 
@@ -26,7 +28,6 @@ body {
 #accueil {
   background-color: var(--couleur-arriere-accueil);
 }
-
 #evenement {
   background-color: var(--couleur-arriere-evenement);
 }
@@ -37,4 +38,4 @@ body {
 
 #footer {
   background-color: var(--couleur-arriere-footer);
-}/*# sourceMappingURL=layout.css.map */
+}
