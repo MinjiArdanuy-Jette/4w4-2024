@@ -16,11 +16,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
 https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 */
 :root {
-  --couleur-arriere-entete: #aaa;
-  --couleur-arriere-accueil: #0f0;
-  --couleur-arriere-evenement: #045;
-  --couleur-arriere-galerie: #f6fe00d9;
-  --couleur-arriere-footer: red;
+  --couleur-arriere-entete: #ffa7a7;
+  --couleur-arriere-accueil: #c638e5;
+  --couleur-arriere-evenement: #037490;
+  --couleur-arriere-galerie: #ff9129;
+  --couleur-arriere-footer: #ff0000;
+  /*Niveau de transparence des h*/
+  --transparence-h1: 0.5;
+  --transparence-section: 0.1;
 }
 
 * {
@@ -44,7 +47,13 @@ body {
 .global > header,
 .global > footer {
   flex: 0 1 900px;
-  border: 1px solid #aaa;
+  padding: 3rem 1rem;
+  background-color: rgba(255, 255, 255, var(--transparence-section));
+}
+
+#entete,
+#footer {
+  min-height: 20vh;
 }
 
 #entete {
@@ -68,13 +77,15 @@ body {
 }
 
 h1 {
-  font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
+  font-size: clamp(1.5rem, -2.656rem + 12.5vw, 4.375rem);
   font-weight: 600;
   font-style: normal;
+  color: rgba(239, 2, 2, var(--transparence-h1));
 }
 
 h2 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
   font-weight: 500;
   font-style: normal;
+  color: rgba(15, 15, 15, 0.4);
 }/*# sourceMappingURL=style.css.map */

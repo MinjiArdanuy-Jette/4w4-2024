@@ -1,7 +1,11 @@
-:root{
-  --couleur-arriere-entete: #aaa;
-  --couleur-arriere-accueil: #0f0;
-  --couleur-arriere-evenement : #045;
-  --couleur-arriere-galerie : #f6fe00d9;
-  --couleur-arriere-footer : red;
+:root {
+  --couleur-arriere-entete: #ffa7a7;
+  --couleur-arriere-accueil: #c638e5;
+  --couleur-arriere-evenement: #037490;
+  --couleur-arriere-galerie: #ff9129;
+  --couleur-arriere-footer: #ff0000;
+
+  /*Niveau de transparence des h*/
+  --transparence-h1: 0.5;
+  --transparence-section: 0.1;
 }
