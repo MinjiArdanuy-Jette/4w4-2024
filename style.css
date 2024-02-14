@@ -36,16 +36,16 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --centre-hauteur: 3rem;
   /*méthode avec fonction hsl*/
   /* Calcul des teintes */
-  --u1: 180;
-  --u2: calc(var(--u1) + 180);
-  --u3: calc(var(--u2) - 30);
-  --u4: calc(var(--u2) + 30);
+  --u1: 205; /*couleur initiale*/
+  --u2: calc(var(--u1) + 180); /*couleur complémentaire*/
+  --u3: calc(var(--u2) - 30); /*couleur analogue gauche*/
+  --u4: calc(var(--u2) + 30); /*couleur analogue droite*/
   /*La saturation*/
-  --s-arriere: 100%;
-  --s-avant: 50%;
+  --s-arriere: 85%;
+  --s-avant: 84%;
   /*La luminosité*/
-  --l-arriere: 30%;
-  --l-avant: 20%;
+  --l-arriere: 40%;
+  --l-avant: 54%;
   /*Couleur d'arrière-plan background-color*/
   --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
   --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere));
