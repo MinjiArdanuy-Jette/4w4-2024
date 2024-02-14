@@ -1,11 +1,21 @@
-# Labo #1
+# Labo #2
 
-## Introduction à Sass et révision de HTML/CSS
+## Utilisation de la fonction hsl()
 
-- Un dossier Sass qui contient :
-  - un sous dossier base
-    - \_h.scss
-    - \_liens.scss
-  - style.css
-- Création d'un paragraphe d'une pagination avec flexbox
-- Utilisation de polices google-font
+## Intégration d'effet vague et diagonale
+
+### Références utiles
+
+- référence hsl
+
+- https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl
+- https://css-tricks.com/creating-color-themes-with-custom-properties-hsl-and-a-little-calc/
+- https://css-tricks.com/hsl-hsla-is-great-for-programmatic-color-control/
+
+## Ce que vous devez faire
+
+### Utiliser la fonction hsl
+
+### Intégrer les vagues
+
+### Intégrer une diagonale
