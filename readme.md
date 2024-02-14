@@ -12,6 +12,9 @@
 - https://css-tricks.com/creating-color-themes-with-custom-properties-hsl-and-a-little-calc/
 - https://css-tricks.com/hsl-hsla-is-great-for-programmatic-color-control/
 
+- Ajout de vagues
+- https://www.shapedivider.app/
+
 ## Ce que vous devez faire
 
 ### Utiliser la fonction hsl

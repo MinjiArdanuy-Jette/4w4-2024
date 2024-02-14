@@ -97,6 +97,7 @@ body {
 #entete {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
+  position: relative;
 }
 
 #accueil {
@@ -112,6 +113,7 @@ body {
 #galerie {
   background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-galerie);
+  position: relative;
 }
 
 #footer {
@@ -168,4 +170,25 @@ h6 {
 
 #footer h2 {
   color: rgba(100, 17, 17, var(--transparence-h2-footer));
+}
+
+.vague {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.vague svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 74px;
+}
+
+.vague .shape-fill {
+  fill: var(--couleur-arriere-accueil);
 }/*# sourceMappingURL=style.css.map */
