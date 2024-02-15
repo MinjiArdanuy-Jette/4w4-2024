@@ -36,7 +36,7 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --centre-hauteur: 3rem;
   /*méthode avec fonction hsl*/
   /* Calcul des teintes */
-  --u1: 205; /*couleur initiale*/
+  --u1: 250;
   --u2: calc(var(--u1) + 180); /*couleur complémentaire*/
   --u3: calc(var(--u2) - 30); /*couleur analogue gauche*/
   --u4: calc(var(--u2) + 30); /*couleur analogue droite*/
@@ -47,21 +47,18 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --l-arriere: 40%;
   --l-avant: 54%;
   /*Couleur d'arrière-plan background-color*/
-  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-evenement: hsl(
-    var(--u3),
-    var(--s-arriere),
-    var(--l-arriere)
-  );
-  --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
   /*Couleur avant-plan*/
-  --couleur-entete: hsl(var(--u1), var(--s-avant), var(--l-avant));
-  --couleur-accueil: hsl(var(--u2), var(--s-avant), var(--l-avant));
-  --couleur-evenement: hsl(var(--u3), var(--s-avant), var(--l-avant));
-  --couleur-galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
-  --couleur-footer: hsl(var(--u1), var(--s-avant), var(--l-avant));
+  --couleur-arriere-entete: hsl(var(--u1), 100%, 70%);
+  --couleur-arriere-accueil: hsl(var(--u1), 100%, 75%);
+  --couleur-arriere-footer: hsl(var(--u1), 100%, 70%);
+  --couleur-avant-entete: hsl(var(--u1), 100%, 30%);
+  --couleur-avant-accueil: hsl(var(--u1), 100%, 25%);
+  --couleur-avant-evenement: hsl(var(--u1), 100%, 20%);
+  --couleur-avant-galerie: hsl(var(--u1), 100%, 15%);
+  --couleur-avant-footer: hsl(var(--u1), 100%, 15%);
+  /*Pour que la diagonle soit entièrement visible */
+  --couleur-arriere-evenement: var(--couleur-arriere-accueil);
+  --couleur-arriere-galerie: var(--couleur-arriere-accueil);
 }
 
 * {
@@ -89,6 +86,10 @@ body {
   background-color: rgba(255, 255, 255, var(--transparence-section));
 }
 
+.global > header {
+  flex-direction: 0 1 1000;
+}
+
 #entete,
 #footer {
   min-height: 20vh;
@@ -108,12 +109,39 @@ body {
 #evenement {
   background-color: var(--couleur-arriere-evenement);
   color: var(--couleur-evenement);
+  z-index: 1;
+}
+
+#evenement blockquote {
+  width: 50%;
+  height: 250px;
+  padding: 1.2rem;
+  background-color: hsl(var(--u1), 100%, 15%);
+  color: white;
+  font-size: 1.2rem;
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-galerie);
   position: relative;
+}
+
+#galerie button {
+  pointer-events: pointer;
+  position: absolute;
+  margin-top: 20px;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: hsl(250, 100%, 64.77%);
+  font-size: 1.2rem;
+  color: white;
+  border: 2.5px solid black;
+}
+
+#galerie button:hover {
+  color: hsl(250, 92%, 52%);
+  background-color: hsl(60, 100%, 51%);
 }
 
 #footer {
@@ -124,14 +152,18 @@ body {
 h1 {
   font-size: clamp(1.5rem, -2.656rem + 12.5vw, 4.375rem);
   font-weight: 600;
+  letter-spacing: -3px;
   font-style: normal;
   font-family: "Protest Riot", sans-serif;
+  text-shadow: 25px 30px hsl(250, 97.63%, 61.67%);
+  color: var(--couleur-avant-entete);
 }
 
 h2 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
   font-weight: 500;
   font-style: normal;
+  text-shadow: 5px 5px hsl(250, 97.63%, 61.67%);
   font-family: "Protest Riot", sans-serif;
 }
 
@@ -191,4 +223,17 @@ h6 {
 
 .vague .shape-fill {
   fill: var(--couleur-arriere-accueil);
+}
+
+.diagonale {
+  position: relative;
+}
+
+.diagonale::after {
+  position: absolute;
+  content: "";
+  inset: 0; /*équivalent de left, bottom, right top = 0*/
+  background-color: hsl(250, 100%, 64.77%);
+  z-index: -1;
+  transform: skewY(-5deg);
 }/*# sourceMappingURL=style.css.map */

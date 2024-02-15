@@ -1,0 +1,16 @@
+.diagonale {
+  position: relative;
+}
+
+.diagonale::after {
+  position: absolute;
+  content: "";
+  // left: 0;
+  // right: 0;
+  // top: 0;
+  // bottom: 0;
+  inset: 0; /*équivalent de left, bottom, right top = 0*/
+  background-color: hsl(250deg 100% 64.77%);
+  z-index: -1;
+  transform: skewY(-5deg);
+}
