@@ -16,11 +16,49 @@ Use it to make something cool, have fun, and share what you've learned with othe
 https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 */
 :root {
-  --couleur-arriere-entete: #aaa;
-  --couleur-arriere-accueil: #0f0;
-  --couleur-arriere-evenement: #045;
-  --couleur-arriere-galerie: #f6fe00d9;
-  --couleur-arriere-footer: red;
+  /*
+  --couleur-arriere-entete: #ffa7a7;
+  --couleur-arriere-accueil: #e267fd;
+  --couleur-arriere-evenement: #049ec5;
+  --couleur-arriere-galerie: #ff9129;
+  --couleur-arriere-footer: #ff0000;/*
+
+  /*Niveau de transparence des h
+  --transparence-h1: 0.5;
+  --transparence-h2: 0.4;
+  --transparence-h2-evnt: 0.8;
+  --transparence-h2-galerie: 0.8;
+  --transparence-h2-footer: 0.5; */
+  /*Niveau de transparence des sections
+  --transparence-section: 0.1;*/
+  /*Largeur centrale*/
+  --centre-largeur: 1rem;
+  --centre-hauteur: 3rem;
+  /*méthode avec fonction hsl*/
+  /* Calcul des teintes */
+  --u1: 250;
+  --u2: calc(var(--u1) + 180); /*couleur complémentaire*/
+  --u3: calc(var(--u2) - 30); /*couleur analogue gauche*/
+  --u4: calc(var(--u2) + 30); /*couleur analogue droite*/
+  /*La saturation*/
+  --s-arriere: 85%;
+  --s-avant: 84%;
+  /*La luminosité*/
+  --l-arriere: 40%;
+  --l-avant: 54%;
+  /*Couleur d'arrière-plan background-color*/
+  /*Couleur avant-plan*/
+  --couleur-arriere-entete: hsl(var(--u1), 100%, 70%);
+  --couleur-arriere-accueil: hsl(var(--u1), 100%, 75%);
+  --couleur-arriere-footer: hsl(var(--u1), 100%, 70%);
+  --couleur-avant-entete: hsl(var(--u1), 100%, 30%);
+  --couleur-avant-accueil: hsl(var(--u1), 100%, 25%);
+  --couleur-avant-evenement: hsl(var(--u1), 100%, 20%);
+  --couleur-avant-galerie: hsl(var(--u1), 100%, 15%);
+  --couleur-avant-footer: hsl(var(--u1), 100%, 15%);
+  /*Pour que la diagonle soit entièrement visible */
+  --couleur-arriere-evenement: var(--couleur-arriere-accueil);
+  --couleur-arriere-galerie: var(--couleur-arriere-accueil);
 }
 
 * {
@@ -44,37 +82,159 @@ body {
 .global > header,
 .global > footer {
   flex: 0 1 900px;
-  border: 1px solid #aaa;
+  padding: var(--centre-hauteur) var(--centre-largeur);
+  background-color: rgba(255, 255, 255, var(--transparence-section));
+}
+
+.global > header {
+  flex-direction: 0 1 1000;
+}
+
+#entete,
+#footer {
+  min-height: 20vh;
 }
 
 #entete {
   background-color: var(--couleur-arriere-entete);
+  color: var(--couleur-entete);
+  position: relative;
+  justify-content: start;
 }
 
 #accueil {
   background-color: var(--couleur-arriere-accueil);
+  color: var(--couleur-accueil);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
+  color: var(--couleur-evenement);
+  z-index: 1;
+}
+
+#evenement blockquote {
+  width: 50%;
+  height: 250px;
+  padding: 1.2rem;
+  background-color: hsl(var(--u1), 100%, 15%);
+  color: white;
+  font-size: 1.2rem;
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
+  color: var(--couleur-galerie);
+  position: relative;
+}
+
+#galerie button {
+  pointer-events: pointer;
+  position: absolute;
+  margin-top: 20px;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: hsl(250, 100%, 64.77%);
+  font-size: 1.2rem;
+  color: white;
+  border: 2.5px solid black;
+}
+
+#galerie button:hover {
+  color: hsl(250, 92%, 52%);
+  background-color: hsl(60, 100%, 51%);
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
+  color: var(--couleur-footer);
 }
 
 h1 {
-  font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
+  font-size: clamp(1.5rem, -2.656rem + 12.5vw, 4.375rem);
   font-weight: 600;
+  letter-spacing: -3px;
   font-style: normal;
+  font-family: "Protest Riot", sans-serif;
+  text-shadow: 20px 12px hsl(250, 97.63%, 61.67%);
+  color: var(--couleur-avant-entete);
 }
 
 h2 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
   font-weight: 500;
   font-style: normal;
+  text-shadow: 5px 5px hsl(250, 97.63%, 61.67%);
+  font-family: "Protest Riot", sans-serif;
+}
+
+h3 {
+  font-size: clamp(0.875rem, -1.938rem + 9vw, 3.125rem);
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4 {
+  font-size: clamp(0.75rem, -1.438rem + 7vw, 2.5rem);
+  font-weight: 300;
+  font-style: normal;
+}
+
+h5 {
+  font-size: clamp(0.625rem, -0.938rem + 5vw, 1.875rem);
+  font-weight: 200;
+  font-style: normal;
+}
+
+h6 {
+  font-size: clamp(0.5rem, -0.438rem + 3vw, 1.25rem);
+  font-weight: 100;
+  font-style: normal;
+}
+
+/*Différentes couleurs du h2 par section*/
+#evenement h2 {
+  color: rgba(0, 74, 93, var(--transparence-h2-evnt));
+}
+
+#galerie h2 {
+  color: rgba(163, 80, 2, var(--transparence-h2-galerie));
+}
+
+#footer h2 {
+  color: rgba(100, 17, 17, var(--transparence-h2-footer));
+}
+
+.vague {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.vague svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 74px;
+}
+
+.vague .shape-fill {
+  fill: var(--couleur-arriere-accueil);
+}
+
+.diagonale {
+  position: relative;
+}
+
+.diagonale::after {
+  position: absolute;
+  content: "";
+  inset: 0; /*équivalent de left, bottom, right top = 0*/
+  background-color: hsl(250, 100%, 64.77%);
+  z-index: -1;
+  transform: skewY(-5deg);
 }/*# sourceMappingURL=style.css.map */

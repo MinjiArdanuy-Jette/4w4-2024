@@ -18,24 +18,71 @@ body {
 .global > header,
 .global > footer {
   flex: 0 1 900px;
-  border: 1px solid #aaa;
+  // border: 1px solid #aaa;
+  padding: var(--centre-hauteur) var(--centre-largeur);
+  // background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, var(--transparence-section));
+}
+
+.global > header {
+  flex-direction: 0 1 1000;
+}
+
+#entete,
+#footer {
+  min-height: 20vh;
 }
 
 #entete {
   background-color: var(--couleur-arriere-entete);
+  color: var(--couleur-entete);
+  position: relative;
+  justify-content: start;
 }
 
 #accueil {
   background-color: var(--couleur-arriere-accueil);
+  color: var(--couleur-accueil);
 }
 #evenement {
   background-color: var(--couleur-arriere-evenement);
+  color: var(--couleur-evenement);
+  z-index: 1;
+}
+
+#evenement blockquote {
+  width: 50%;
+  height: 250px;
+  padding: 1.2rem;
+  background-color: hsl(var(--u1), 100%, 15%);
+  color: white;
+  font-size: 1.2rem;
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
+  color: var(--couleur-galerie);
+  position: relative;
+}
+
+#galerie button {
+  pointer-events: pointer;
+  position: absolute;
+  margin-top: 20px;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: hsl(250deg 100% 64.77%);
+  font-size: 1.2rem;
+  color: white;
+  border: 2.5px solid black;
+}
+
+#galerie button:hover {
+  color: hsl(250, 92%, 52%);
+  background-color: hsl(60, 100%, 51%);
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
+  color: var(--couleur-footer);
 }

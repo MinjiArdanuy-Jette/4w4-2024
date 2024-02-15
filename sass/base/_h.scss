@@ -1,11 +1,54 @@
 h1 {
-  font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
+  font-size: clamp(1.5rem, -2.656rem + 12.5vw, 4.375rem);
   font-weight: 600;
+  letter-spacing: -3px;
   font-style: normal;
+  font-family: "Protest Riot", sans-serif;
+  text-shadow: 20px 12px hsl(250deg 97.63% 61.67%);
+  color: var(--couleur-avant-entete);
 }
 
 h2 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
   font-weight: 500;
   font-style: normal;
+  text-shadow: 5px 5px hsl(250deg 97.63% 61.67%);
+  font-family: "Protest Riot", sans-serif;
+}
+
+h3 {
+  font-size: clamp(0.875rem, -1.938rem + 9vw, 3.125rem);
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4 {
+  font-size: clamp(0.75rem, -1.438rem + 7vw, 2.5rem);
+  font-weight: 300;
+  font-style: normal;
+}
+
+h5 {
+  font-size: clamp(0.625rem, -0.938rem + 5vw, 1.875rem);
+  font-weight: 200;
+  font-style: normal;
+}
+
+h6 {
+  font-size: clamp(0.5rem, -0.438rem + 3vw, 1.25rem);
+  font-weight: 100;
+  font-style: normal;
+}
+
+/*Différentes couleurs du h2 par section*/
+#evenement h2 {
+  color: rgba(#004a5d, var(--transparence-h2-evnt));
+}
+
+#galerie h2 {
+  color: rgba(#a35002, var(--transparence-h2-galerie));
+}
+
+#footer h2 {
+  color: rgba(#641111, var(--transparence-h2-footer));
 }
