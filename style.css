@@ -99,6 +99,7 @@ body {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
   position: relative;
+  justify-content: start;
 }
 
 #accueil {
@@ -155,7 +156,7 @@ h1 {
   letter-spacing: -3px;
   font-style: normal;
   font-family: "Protest Riot", sans-serif;
-  text-shadow: 25px 30px hsl(250, 97.63%, 61.67%);
+  text-shadow: 20px 12px hsl(250, 97.63%, 61.67%);
   color: var(--couleur-avant-entete);
 }
 
