@@ -24,6 +24,9 @@
   --l-arriere: 40%;
   --l-avant: 54%;
 
+  /*Couleur jaune*/
+  --j1: 60;
+
   --couleur-arriere-entete: hsl(var(--u1), 100%, 70%);
   --couleur-arriere-accueil: hsl(var(--u1), 100%, 75%);
   // --couleur-arriere-evenement: hsl(var(--u1), 100%, 80%);
@@ -41,4 +44,9 @@
   --couleur-arriere-galerie: var(--couleur-arriere-accueil);
 
   --couleur-arriere-diagonale: hsl(var(--u2) 100%, 20%);
+
+  /*Les couleurs des liens*/
+  --couleur-lien: hsl(var(--j1), 100%, 70%);
+  --couleur-lien-hover: hsla(273, 100%, 81%, 0.949);
+  --couleur-lien-visited: hsl(var(--j1), 40%, 70%);
 }

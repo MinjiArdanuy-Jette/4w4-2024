@@ -1,5 +1,19 @@
 .entete_header {
-  background-image: url("images/wordpress-theme.png");
+  background-image: url("images/react.png");
   background-repeat: no-repeat;
-  background-position: 95% 40%;
+  background-position: 100% 40%;
+  background-size: 30%;
+}
+
+@media screen and (max-width: 750px) {
+  #entete {
+    min-height: 50vh;
+  }
+  .entete_header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-position: 50% 50%;
+  }
 }

@@ -65,22 +65,6 @@ body {
   position: relative;
 }
 
-#galerie button {
-  pointer-events: pointer;
-  position: absolute;
-  margin-top: 20px;
-  text-decoration: none;
-  padding: 1rem;
-  background-color: hsl(250deg 100% 64.77%);
-  font-size: 1.2rem;
-  color: white;
-  border: 2.5px solid black;
-}
-
-#galerie button:hover {
-  background-color: hsl(60, 100%, 51%);
-}
-
 #footer {
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-footer);

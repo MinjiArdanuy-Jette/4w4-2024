@@ -1,0 +1,12 @@
+/*Formaation seulement en scss sous-groupe de variable*/
+a {
+  color: var(--couleur-lien);
+
+  &:hover {
+    color: var(--couleur-lien-hover);
+  }
+
+  &:visited {
+    color: var(--couleur-lien-visited);
+  }
+}
