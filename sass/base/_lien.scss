@@ -6,7 +6,8 @@ a {
     color: var(--couleur-lien-hover);
   }
 
-  &:visited {
+  &:visited,
+  &:focus {
     color: var(--couleur-lien-visited);
   }
 }

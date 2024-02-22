@@ -67,6 +67,9 @@ body {
   color: white;
   font-size: clamp(1rem, 0.583rem + 1.333vw, 1.5rem);
 }
+#evenement span {
+  margin-top: 50px;
+}
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
