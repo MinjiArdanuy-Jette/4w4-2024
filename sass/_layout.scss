@@ -39,6 +39,15 @@ body {
   justify-content: start;
   min-height: 90vh;
 }
+/*Placement des icônes réseaux sociaux*/
+.social {
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  right: 0;
+  margin-top: 15px;
+  margin-right: 15px;
+}
 
 #accueil {
   background-color: var(--couleur-arriere-accueil);
@@ -56,7 +65,7 @@ body {
   padding: 1.2rem;
   background-color: hsl(var(--u1), 100%, 15%);
   color: white;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 0.583rem + 1.333vw, 1.5rem);
 }
 
 #galerie {
