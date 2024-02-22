@@ -18,7 +18,9 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 
 @import "variables";
 @import "layout";
+@import "entete";
 @import "base/h";
+@import "base/bouton";
 
 @import "effets/vague";
 @import "effets/diagonale";

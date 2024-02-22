@@ -17,21 +17,8 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 */
 :root {
   /*
-  --couleur-arriere-entete: #ffa7a7;
-  --couleur-arriere-accueil: #e267fd;
-  --couleur-arriere-evenement: #049ec5;
-  --couleur-arriere-galerie: #ff9129;
-  --couleur-arriere-footer: #ff0000;/*
 
-  /*Niveau de transparence des h
-  --transparence-h1: 0.5;
-  --transparence-h2: 0.4;
-  --transparence-h2-evnt: 0.8;
-  --transparence-h2-galerie: 0.8;
-  --transparence-h2-footer: 0.5; */
-  /*Niveau de transparence des sections
-  --transparence-section: 0.1;*/
-  /*Largeur centrale*/
+  /*Largeur centrale à enlever !!!!*/
   --centre-largeur: 1rem;
   --centre-hauteur: 3rem;
   /*méthode avec fonction hsl*/
@@ -46,8 +33,6 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   /*La luminosité*/
   --l-arriere: 40%;
   --l-avant: 54%;
-  /*Couleur d'arrière-plan background-color*/
-  /*Couleur avant-plan*/
   --couleur-arriere-entete: hsl(var(--u1), 100%, 70%);
   --couleur-arriere-accueil: hsl(var(--u1), 100%, 75%);
   --couleur-arriere-footer: hsl(var(--u1), 100%, 70%);
@@ -59,6 +44,7 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   /*Pour que la diagonle soit entièrement visible */
   --couleur-arriere-evenement: var(--couleur-arriere-accueil);
   --couleur-arriere-galerie: var(--couleur-arriere-accueil);
+  --couleur-arriere-diagonale: hsl(var(--u2) 100%, 20%);
 }
 
 * {
@@ -81,13 +67,13 @@ body {
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 900px;
+  flex: 0 1 1100px;
   padding: var(--centre-hauteur) var(--centre-largeur);
-  background-color: rgba(255, 255, 255, var(--transparence-section));
 }
 
 .global > header {
   flex-direction: 0 1 1000;
+  flex: 1;
 }
 
 #entete,
@@ -100,6 +86,7 @@ body {
   color: var(--couleur-entete);
   position: relative;
   justify-content: start;
+  min-height: 90vh;
 }
 
 #accueil {
@@ -141,13 +128,18 @@ body {
 }
 
 #galerie button:hover {
-  color: hsl(250, 92%, 52%);
   background-color: hsl(60, 100%, 51%);
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-footer);
+}
+
+.entete_header {
+  background-image: url("images/wordpress-theme.png");
+  background-repeat: no-repeat;
+  background-position: 95% 40%;
 }
 
 h1 {
@@ -169,7 +161,7 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(0.875rem, -1.938rem + 9vw, 3.125rem);
+  font-size: clamp(1rem, 0.479rem + 1.667vw, 1.625rem);
   font-weight: 400;
   font-style: normal;
 }
@@ -192,17 +184,21 @@ h6 {
   font-style: normal;
 }
 
-/*Différentes couleurs du h2 par section*/
-#evenement h2 {
-  color: rgba(0, 74, 93, var(--transparence-h2-evnt));
+span {
+  display: block;
 }
 
-#galerie h2 {
-  color: rgba(163, 80, 2, var(--transparence-h2-galerie));
+button {
+  font-size: clamp(1.125rem, 0.5rem + 2vw, 1.875rem);
+  padding: 12px 24px;
+  background-image: linear-gradient(120deg, #9735e6, #51036d);
+  margin-top: 35px;
 }
 
-#footer h2 {
-  color: rgba(100, 17, 17, var(--transparence-h2-footer));
+button:hover {
+  background-image: linear-gradient(120deg, #f8ff90, #eeff00);
+  pointer-events: pointer;
+  color: hsl(250, 92%, 52%);
 }
 
 .vague {

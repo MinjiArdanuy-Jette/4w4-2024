@@ -1,22 +1,7 @@
 :root {
   /*
-  --couleur-arriere-entete: #ffa7a7;
-  --couleur-arriere-accueil: #e267fd;
-  --couleur-arriere-evenement: #049ec5;
-  --couleur-arriere-galerie: #ff9129;
-  --couleur-arriere-footer: #ff0000;/*
 
-  /*Niveau de transparence des h
-  --transparence-h1: 0.5;
-  --transparence-h2: 0.4;
-  --transparence-h2-evnt: 0.8;
-  --transparence-h2-galerie: 0.8;
-  --transparence-h2-footer: 0.5; */
-
-  /*Niveau de transparence des sections
-  --transparence-section: 0.1;*/
-
-  /*Largeur centrale*/
+  /*Largeur centrale à enlever !!!!*/
   --centre-largeur: 1rem;
   --centre-hauteur: 3rem;
 
@@ -39,24 +24,6 @@
   --l-arriere: 40%;
   --l-avant: 54%;
 
-  /*Couleur d'arrière-plan background-color*/
-  // --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
-  // --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere));
-  // --couleur-arriere-evenement: hsl(
-  //   var(--u3),
-  //   var(--s-arriere),
-  //   var(--l-arriere)
-  // );
-  // --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
-  // --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
-
-  /*Couleur avant-plan*/
-  // --couleur-entete: hsl(var(--u1), var(--s-avant), var(--l-avant));
-  // --couleur-accueil: hsl(var(--u2), var(--s-avant), var(--l-avant));
-  // --couleur-evenement: hsl(var(--u3), var(--s-avant), var(--l-avant));
-  // --couleur-galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
-  // --couleur-footer: hsl(var(--u1), var(--s-avant), var(--l-avant));
-
   --couleur-arriere-entete: hsl(var(--u1), 100%, 70%);
   --couleur-arriere-accueil: hsl(var(--u1), 100%, 75%);
   // --couleur-arriere-evenement: hsl(var(--u1), 100%, 80%);
@@ -72,4 +39,6 @@
   /*Pour que la diagonle soit entièrement visible */
   --couleur-arriere-evenement: var(--couleur-arriere-accueil);
   --couleur-arriere-galerie: var(--couleur-arriere-accueil);
+
+  --couleur-arriere-diagonale: hsl(var(--u2) 100%, 20%);
 }
