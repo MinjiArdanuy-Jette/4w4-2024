@@ -45,6 +45,15 @@
 
   --couleur-arriere-diagonale: hsl(var(--u2) 100%, 20%);
 
+  /*Couleur de l'ombre*/
+  --couleur-ombre-h1: 20px 12px hsl(250deg 97.63% 61.67%);
+  --couleur-ombre-h2: 5px 5px hsl(250deg 97.63% 61.67%);
+
+  /*Couleur de bouton*/
+  --deg-gradient: 150deg;
+  --couleur-gradient-1: hsl(273, 78%, 55%);
+  --couleur-gradient-2: hsl(284, 95%, 22%);
+
   /*Les couleurs des liens*/
   --couleur-lien: hsl(var(--j1), 100%, 70%);
   --couleur-lien-hover: hsla(273, 100%, 81%, 0.949);

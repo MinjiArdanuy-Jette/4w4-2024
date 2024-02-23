@@ -4,15 +4,15 @@ h1 {
   letter-spacing: -3px;
   font-style: normal;
   font-family: "Protest Riot", sans-serif;
-  text-shadow: 20px 12px hsl(250deg 97.63% 61.67%);
+  text-shadow: var(--couleur-ombre-h1);
   color: var(--couleur-avant-entete);
 }
 
 h2 {
-  font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+  font-size: clamp(1.5rem, 1.188rem + 1vw, 1.875rem);
   font-weight: 500;
   font-style: normal;
-  text-shadow: 5px 5px hsl(250deg 97.63% 61.67%);
+  text-shadow: var(--couleur-ombre-h2);
   font-family: "Protest Riot", sans-serif;
 }
 
