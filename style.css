@@ -140,6 +140,7 @@ body {
   background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-galerie);
   position: relative;
+  min-height: 90vh;
 }
 
 #footer {
@@ -151,7 +152,29 @@ body {
   background-image: url("images/react.png");
   background-repeat: no-repeat;
   background-position: 100% 40%;
-  background-size: 30%;
+  background-size: 25%;
+}
+
+@media screen and (max-width: 750px) {
+  #entete {
+    min-height: 50vh;
+  }
+  .entete_header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-position: 50% 50%;
+  }
+  #evenement blockquote {
+    width: 85%;
+  }
+}
+.entete_header {
+  background-image: url("images/react.png");
+  background-repeat: no-repeat;
+  background-position: 100% 40%;
+  background-size: 25%;
 }
 
 @media screen and (max-width: 750px) {
