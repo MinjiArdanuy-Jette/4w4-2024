@@ -10,10 +10,11 @@ img {
 }
 
 img:hover {
-  animation: changer-couleur 3s ease-in-out alternate-reverse infinite;
+  animation: illuminer-image 3s ease-in-out alternate-reverse infinite,
+    agrandir-image 3s ease-out alternate-reverse infinite;
 }
 
-@keyframes changer-couleur {
+@keyframes illuminer-image {
   from {
     filter: hue-rotate(265deg);
   }
@@ -25,5 +26,19 @@ img:hover {
 
   to {
     filter: hue-rotate(265deg);
+  }
+}
+
+@keyframes agrandir-image {
+  from {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  to {
+    transform: scale(1);
   }
 }
