@@ -8,3 +8,22 @@ img {
   width: 50%;
   filter: hue-rotate(265deg);
 }
+
+img:hover {
+  animation: changer-couleur 3s ease-in-out alternate-reverse infinite;
+}
+
+@keyframes changer-couleur {
+  from {
+    filter: hue-rotate(265deg);
+  }
+
+  50% {
+    filter: drop-shadow(16px 16px 20px hsl(var(--j1), 96%, 51%))
+      hue-rotate(265deg);
+  }
+
+  to {
+    filter: hue-rotate(265deg);
+  }
+}
