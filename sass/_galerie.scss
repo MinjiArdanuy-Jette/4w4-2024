@@ -11,7 +11,7 @@ img {
 
 img:hover {
   animation: illuminer-image 3s ease-in-out alternate-reverse infinite,
-    agrandir-image 3s ease-out alternate-reverse infinite;
+    agrandir-image 3s ease-in-out alternate-reverse infinite;
 }
 
 @keyframes illuminer-image {

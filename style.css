@@ -58,6 +58,8 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --couleur-lien: hsl(var(--j1), 100%, 70%);
   --couleur-lien-hover: hsla(273, 100%, 81%, 0.949);
   --couleur-lien-visited: hsl(var(--j1), 40%, 70%);
+  /*Couleur d'arrière-plan blockquote*/
+  --couleur-arriere-blockquote: hsl(var(--u1), 100%, 15%);
 }
 
 * {
@@ -124,13 +126,15 @@ body {
   padding-top: 3rem;
 }
 
+#accueil blockquote,
 #evenement blockquote {
-  width: 50%;
+  width: 70%;
   height: 250px;
   padding: 1.2rem;
-  background-color: hsl(var(--u1), 100%, 15%);
+  background-color: var(--couleur-arriere-blockquote);
   color: white;
   font-size: clamp(1rem, 0.583rem + 1.333vw, 1.5rem);
+  border-radius: 7% 10%;
 }
 
 #evenement span {
@@ -194,7 +198,7 @@ img {
 }
 
 img:hover {
-  animation: illuminer-image 3s ease-in-out alternate-reverse infinite, agrandir-image 3s ease-out alternate-reverse infinite;
+  animation: illuminer-image 3s ease-in-out alternate-reverse infinite, agrandir-image 3s ease-in-out alternate-reverse infinite;
 }
 
 @keyframes illuminer-image {
@@ -269,6 +273,10 @@ h6 {
 
 span {
   display: block;
+}
+
+p {
+  font-style: italic;
 }
 
 /*Formaation seulement en scss sous-groupe de variable*/
