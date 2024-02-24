@@ -1,28 +1,29 @@
-# Labo #2
+# Exercice 1
 
-## Github Page
+## Ma Github Page
 
 - https://minjiardanuy-jette.github.io/4w4-2024/
 
-## Utilisation de la fonction hsl()
+## Continuer la version du Laboratoire #2
 
-## Intégration d'effet vague et diagonale
+## Amélioration du dossier Sass
 
-### Références utiles
+## Ajout dans style.scss des nouveaux fichiers .scss
 
-- référence hsl
+### Utilisations de différentes techniques pour élaborer une palette de couleur
 
-- https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl
-- https://css-tricks.com/creating-color-themes-with-custom-properties-hsl-and-a-little-calc/
-- https://css-tricks.com/hsl-hsla-is-great-for-programmatic-color-control/
+- monochrome (une seule teinte et on fait varier la saturation et la luminosité
+- complémentaire (deux teintes à 180deg )
+- triade (trois teintes =/- 120%)
 
-- Ajout de vagues
-- https://www.shapedivider.app/
+## Utilisation de la règle 60-30-10
 
-## Ce que vous devez faire
+## Améliorer l'entête en ajoutant une image en background qui s'enligne horizontalement avec les titres de l'entête
 
-### Utiliser la fonction hsl
+## Création d'un bouton utilisant les variables, la propriété background-image, linear-gradient. le bouton réagit aux événements :hover et :active
 
-### Intégrer les vagues
+## Création de liens réagissant aux événements :hover : visited :focus
 
-### Intégrer une diagonale
+## Amélioration générale de la pagination
+
+## Ajout de nouveaux éléments HTML
