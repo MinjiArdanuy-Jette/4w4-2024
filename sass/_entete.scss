@@ -20,4 +20,16 @@
   #evenement blockquote {
     width: 85%;
   }
+
+  #galerie {
+    min-height: 110vh;
+  }
+  #galerie .expo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .expo img {
+    width: 30%;
+  }
 }

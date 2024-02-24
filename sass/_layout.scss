@@ -57,6 +57,7 @@ body {
   background-color: var(--couleur-arriere-evenement);
   color: var(--couleur-evenement);
   z-index: 1;
+  padding-top: 3rem;
 }
 
 #evenement blockquote {
@@ -76,6 +77,7 @@ body {
   color: var(--couleur-galerie);
   position: relative;
   min-height: 90vh;
+  padding-top: 3rem;
 }
 
 #footer {

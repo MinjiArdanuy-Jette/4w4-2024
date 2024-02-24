@@ -15,6 +15,11 @@ h2 {
   text-shadow: var(--couleur-ombre-h2);
   font-family: "Protest Riot", sans-serif;
 }
+/*la classe premier-h2 a été créé pour permettre la grosseur de tous les h2 sans
+celui de l'entête (le :first-of-type ne marche pas)*/
+h2:not(.premier-h2)::first-letter {
+  font-size: 5rem;
+}
 
 h3 {
   font-size: clamp(1rem, 0.479rem + 1.667vw, 1.625rem);
