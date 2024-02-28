@@ -3,7 +3,7 @@ Theme Name: Theme Minji (indispensable)
 
 Author: Minji Ardanuy-Jetté
 Author URI: https://wordpress.org/
-Description:  Thème de base ddeveloppé dans le cours 4w4
+Description:  Thème de base developpé dans le cours 4w4
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -26,3 +26,5 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 
 @import "effets/vague";
 @import "effets/diagonale";
+
+@import "composant/cours";

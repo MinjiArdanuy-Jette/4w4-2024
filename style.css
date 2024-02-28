@@ -4,7 +4,7 @@ Theme Name: Theme Minji (indispensable)
 
 Author: Minji Ardanuy-Jetté
 Author URI: https://wordpress.org/
-Description:  Thème de base ddeveloppé dans le cours 4w4
+Description:  Thème de base developpé dans le cours 4w4
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -342,4 +342,19 @@ button:active {
   background-color: hsl(250, 100%, 64.77%);
   z-index: -1;
   transform: skewY(-5deg);
+}
+
+.cours {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 20%;
+  border: 1px solid #aaa;
 }/*# sourceMappingURL=style.css.map */
