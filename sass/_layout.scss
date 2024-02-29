@@ -78,11 +78,12 @@ body {
   background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-galerie);
   position: relative;
-  min-height: 90vh;
+  min-height: 110vh;
   padding-top: 3rem;
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-footer);
+  min-height: 10vh;
 }
