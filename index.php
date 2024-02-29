@@ -53,31 +53,17 @@
   <div id="accueil" class="global">
     <section>
       <h2>Accueil</h2>
-      <div class="cours">
-        <?php
-        /*if (have_posts()) {
-          while (have_posts()) {
-            the_post();
-            the_title("<h3>", "</h3>");
-            echo wp_trim_words(get_the_content(), 30);
-          }
-        }
-         ?>
-        */
-        if (have_posts()):
-          while (have_posts()):
-            the_post(); ?>
-            <div class="carte">
-              <h3>
-                <?php the_title(); ?>
-              </h3>
-              <p>
-                <?php echo wp_trim_words(get_the_content(), 20); ?>
-              </p>
-            </div>
-          <?php endwhile; ?>
-        <?php endif; ?>
+      <p>
+        Lorem ipsum dolor sit amet. <a href="#">Sans souci</a>Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Autem eveniet libero nemo
+        hic tempora
+      </p>
+      <div class="expo">
+        <img src="images/github.png" alt="github" />
+        <img src="images/github.png" alt="github" />
+        <img src="images/github.png" alt="github" />
       </div>
+      <button>Plusieurs oeuvres sont disponibles ici</button>
     </section>
   </div>
   <div id="evenement" class="global diagonale">
@@ -95,17 +81,48 @@
   <div id="galerie" class="global">
     <section>
       <h2>Galerie</h2>
-      <p>
-        Lorem ipsum dolor sit amet. <a href="#">Sans souci</a>Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Autem eveniet libero nemo
-        hic tempora
-      </p>
-      <div class="expo">
-        <img src="images/github.png" alt="github" />
-        <img src="images/github.png" alt="github" />
-        <img src="images/github.png" alt="github" />
+      <div class="cours">
+        <?php
+        /*if (have_posts()) {
+          while (have_posts()) {
+            the_post();
+            the_title("<h3>", "</h3>");
+            echo wp_trim_words(get_the_content(), 30);
+          }
+        }
+         ?>
+        */
+        if (have_posts()):
+          while (have_posts()):
+            the_post();
+
+            /*Variables*/
+            /*Variable du titre complet du cours*/
+            $titreComplet = get_the_title();
+            /*Variable du sigle du cours ex: 582-1M1*/
+            $sigle = substr($titreComplet, 0, 7);
+            /*Variable de la durée du cours ex: (75h)*/
+            $duree = substr($titreComplet, -6);
+            /*Variable du titre sans le sigle*/
+            $titre = substr($titreComplet, 7, -6);
+            // strpos();
+            ?>
+            <div class="carte">
+              <h3>
+
+              </h3>
+              <h3>
+                <?php echo $sigle ?>
+                <?php echo $titre; ?>
+                <?php echo $duree ?>
+              </h3>
+              <p>
+                <?php echo wp_trim_words(get_the_content(), 30); ?>
+              </p>
+            </div>
+          <?php endwhile; ?>
+        <?php endif; ?>
       </div>
-      <button>Plusieurs oeuvres sont disponibles ici</button>
     </section>
     <div class="vague">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
