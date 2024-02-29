@@ -1,29 +1,39 @@
-# Exercice 1
+# Laboratoire 3
 
-## Ma Github Page
+## Ma Github Page Minji Ardanuy-Jetté
 
 - https://minjiardanuy-jette.github.io/4w4-2024/
 
-## Continuer la version du Laboratoire #2
+## Continuer la version de l'exercice 1
 
-## Amélioration du dossier Sass
+## Création d'un site WP.
 
-## Ajout dans style.scss des nouveaux fichiers .scss
+- Adaptation du thème de exercice #1
+- Création du modèle index.php
+- Création de la branche labo3
+- minimum 3 commits
+- Un Readme.md
+  qui contiendra:
+- Le nom de l'auteur
+- L'objectif du labo3
+- Les réalisations
+- Un lien vers la github-page
+- Décomposé le titre de chaque cours:
+  sigle du cours ex: 582-4W4
+  le titre du cours ex: Conception d'interface et développement Web
+  la durée du cours : 90h
 
-### Utilisations de différentes techniques pour élaborer une palette de couleur
+- Garder les 30 premiers mots de la description du cours.
 
-- monochrome (une seule teinte et on fait varier la saturation et la luminosité
-- complémentaire (deux teintes à 180deg )
-- triade (trois teintes =/- 120%)
+## La section galerie affichera la liste des cours du TIM en 4 colonnes.
 
-## Utilisation de la règle 60-30-10
+- La liste devra s'adapter aux différentes largeurs de fenêtre.
 
-## Améliorer l'entête en ajoutant une image en background qui s'enligne horizontalement avec les titres de l'entête
+- Chacune des cartes de cours sera formatés en en utilisant les flex box
 
-## Création d'un bouton utilisant les variables, la propriété background-image, linear-gradient. le bouton réagit aux événements :hover et :active
+## Barème de correction
 
-## Création de liens réagissant aux événements :hover : visited :focus
+-Organnisation du code, 3 commits minimum (1 point)
 
-## Amélioration générale de la pagination
-
-## Ajout de nouveaux éléments HTML
+- Résultatsous forme de Github Page (.5 point)
+- Design globale de la page (.5 point)
