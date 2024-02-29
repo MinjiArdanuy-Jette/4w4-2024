@@ -105,6 +105,8 @@
             $duree = substr($titreComplet, -6);
             /*Variable du titre sans le sigle*/
             $titre = substr($titreComplet, 7, -6);
+            /*Variable de la description des cours*/
+            $description = wp_trim_words(get_the_content(), 30);
             // strpos();
             ?>
             <div class="carte">
@@ -117,7 +119,7 @@
                 <?php echo $duree ?>
               </h3>
               <p>
-                <?php echo wp_trim_words(get_the_content(), 30); ?>
+                <?php echo $description ?>
               </p>
             </div>
           <?php endwhile; ?>

@@ -33,7 +33,7 @@
 
 ## Barème de correction
 
--Organnisation du code, 3 commits minimum (1 point)
+- Organnisation du code, 3 commits minimum (1 point)
 
-- Résultatsous forme de Github Page (.5 point)
+- Résultat sous forme de Github Page (.5 point)
 - Design globale de la page (.5 point)
