@@ -28,12 +28,15 @@
 .menu {
   //ul
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
 .menu-item {
   //li
-  flex: 1 0 50px;
+  display: flex;
+  flex: 1 1 auto;
+  text-align: center;
 }
 .menu-item a {
   // li a

@@ -387,6 +387,7 @@ button:active {
 
 .carte h4 {
   color: yellow;
+  font-size: clamp(1rem, 0.75rem + 0.8vw, 1.25rem);
 }
 
 .carte p {
@@ -425,11 +426,14 @@ button:active {
 
 .menu {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 
 .menu-item {
-  flex: 1 0 50px;
+  display: flex;
+  flex: 1 1 auto;
+  text-align: center;
 }
 
 .menu-item a {
