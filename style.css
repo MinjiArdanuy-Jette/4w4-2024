@@ -78,7 +78,6 @@ body {
 }
 
 .global {
-  min-height: 40vh;
   display: flex;
   justify-content: center;
 }
@@ -90,8 +89,11 @@ body {
   padding: var(--centre-hauteur) var(--centre-largeur);
 }
 
-.global > header {
-  flex-direction: 0 1 1000;
+#menu {
+  background-color: hsl(283, 86%, 55%);
+}
+
+.global > .hero {
   flex: 1;
 }
 
@@ -159,7 +161,7 @@ body {
   min-height: 10vh;
 }
 
-.entete_header {
+.hero {
   background-image: url("images/react.png");
   background-repeat: no-repeat;
   background-position: 100% 40%;
@@ -170,7 +172,7 @@ body {
   #entete {
     min-height: 50vh;
   }
-  .entete_header {
+  .hero {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -315,6 +317,7 @@ button:active {
   transform: translateY(-10px);
 }
 
+/*////Effets ///*/
 .vague {
   position: absolute;
   bottom: 0;
@@ -349,6 +352,7 @@ button:active {
   transform: skewY(-5deg);
 }
 
+/*///// Composants /////*/
 .cours {
   display: flex;
   flex-wrap: wrap;
@@ -386,4 +390,42 @@ button:active {
   font-size: 0.9rem;
   line-height: 2rem;
   padding: 2px;
+}
+
+/*<nav> class="menu-principal-container">
+          <ul id="menu-principal" class="menu">
+            <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-37">
+              <a href="http://localhost/4w4_wp/index.php/2020/10/07/582-6n3-stage-285h/">Stage</a>
+            </li>
+            <li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-38">
+              <a href="http://localhost/4w4_wp/index.php/2020/10/07/582-5w5-projet-web-en-equipe-105h/">Projet Web en équipe</a>
+            </li>
+            <li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-39">
+              <a href="http://localhost/4w4_wp/index.php/2020/10/07/582-3c1-design-dinteractivite-75h/">Design d’interactivité</a>
+            </li>
+            <li id="menu-item-40" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40">
+              <a href="#accueil">Acueil</a>
+            </li>
+            <li id="menu-item-41" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41">
+              <a href="#footer">Pied de page</a>
+            </li>
+          </ul>
+        </nav>*/
+/*
+        Feuilles de style du menu principal*/
+.menu-principal-container {
+  list-style-type: none;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu-item {
+  flex: 1 0 50px;
+}
+
+.menu-item a {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

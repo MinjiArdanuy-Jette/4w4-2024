@@ -19,6 +19,11 @@
 </head>
 
 <body>
+  <div id="menu" class="global">
+    <header class="menu_header">
+      <?php wp_nav_menu(array("container" => "nav")) ?>
+    </header>
+  </div>
   <div id="entete" class="global">
     <div class="social">
       <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000" width="32" height="32" />
@@ -39,14 +44,14 @@
       </svg>
     </div>
     <section>
-      <header class="entete_header">
+      <section class="hero">
         <h1>Thème du groupe #1</h1>
         <h2 class="premier-h2">
           4w4-Conception d'interface <span>et développement Web</span>
         </h2>
         <h3>TIM-Collège de Maisonneuve</h3>
         <button>Événements</button>
-      </header>
+      </section>
     </section>
   </div>
 

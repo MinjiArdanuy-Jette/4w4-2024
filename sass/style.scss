@@ -24,7 +24,10 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 @import "base/lien";
 @import "base/bouton";
 
+/*////Effets ///*/
 @import "effets/vague";
 @import "effets/diagonale";
 
+/*///// Composants /////*/
 @import "composant/cours";
+@import "composant/menu";

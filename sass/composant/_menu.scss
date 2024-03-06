@@ -1,0 +1,41 @@
+/*<nav> class="menu-principal-container">
+          <ul id="menu-principal" class="menu">
+            <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-37">
+              <a href="http://localhost/4w4_wp/index.php/2020/10/07/582-6n3-stage-285h/">Stage</a>
+            </li>
+            <li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-38">
+              <a href="http://localhost/4w4_wp/index.php/2020/10/07/582-5w5-projet-web-en-equipe-105h/">Projet Web en équipe</a>
+            </li>
+            <li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-39">
+              <a href="http://localhost/4w4_wp/index.php/2020/10/07/582-3c1-design-dinteractivite-75h/">Design d’interactivité</a>
+            </li>
+            <li id="menu-item-40" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40">
+              <a href="#accueil">Acueil</a>
+            </li>
+            <li id="menu-item-41" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41">
+              <a href="#footer">Pied de page</a>
+            </li>
+          </ul>
+        </nav>*/
+
+/*
+        Feuilles de style du menu principal*/
+.menu-principal-container {
+  //nav
+  list-style-type: none;
+}
+
+.menu {
+  //ul
+  display: flex;
+  list-style-type: none;
+}
+
+.menu-item {
+  //li
+  flex: 1 0 50px;
+}
+.menu-item a {
+  // li a
+  color: #fff;
+}

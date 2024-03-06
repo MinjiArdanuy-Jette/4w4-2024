@@ -9,7 +9,6 @@ body {
 }
 
 .global {
-  min-height: 40vh;
   display: flex;
   justify-content: center;
 }
@@ -22,8 +21,11 @@ body {
   padding: var(--centre-hauteur) var(--centre-largeur);
 }
 
-.global > header {
-  flex-direction: 0 1 1000;
+#menu {
+  background-color: hsl(283, 86%, 55%);
+}
+
+.global > .hero {
   flex: 1;
 }
 

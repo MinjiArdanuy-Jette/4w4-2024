@@ -1,4 +1,4 @@
-.entete_header {
+.hero {
   background-image: url("images/react.png");
   background-repeat: no-repeat;
   background-position: 100% 40%;
@@ -9,7 +9,7 @@
   #entete {
     min-height: 50vh;
   }
-  .entete_header {
+  .hero {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
