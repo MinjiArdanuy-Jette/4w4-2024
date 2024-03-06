@@ -37,5 +37,9 @@
 }
 .menu-item a {
   // li a
-  color: #fff;
+  color: var(--couleur-lien);
+  text-decoration: none;
+}
+.menu-item a:hover {
+  color: var(--couleur-lien-hover);
 }

@@ -48,8 +48,8 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --couleur-arriere-galerie: var(--couleur-arriere-accueil);
   --couleur-arriere-diagonale: hsl(var(--u2) 100%, 20%);
   /*Couleur de l'ombre*/
-  --couleur-ombre-h1: 20px 12px hsl(250deg 97.63% 61.67%);
-  --couleur-ombre-h2: 5px 5px hsl(250deg 97.63% 61.67%);
+  --couleur-ombre-h1: 20px 12px hsl(var(--u1), 97.63% 61.67%);
+  --couleur-ombre-h2: 5px 5px hsl(var(--u1), 97.63% 61.67%);
   /*Couleur de bouton*/
   --deg-gradient: 150deg;
   --couleur-gradient-1: hsl(273, 78%, 55%);
@@ -60,6 +60,12 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --couleur-lien-visited: hsl(var(--j1), 40%, 70%);
   /*Couleur d'arrière-plan blockquote*/
   --couleur-arriere-blockquote: hsl(var(--u1), 100%, 15%);
+}
+
+#menu {
+  --couleur-arriere-menu: hsl(var(--u1), 74%, 57%);
+  --couleur-lien-hover: hsl(var(--j1), 100%, 70%);
+  --couleur-lien: hsl(var(--u1), 62%, 89%);
 }
 
 .carte {
@@ -90,7 +96,7 @@ body {
 }
 
 #menu {
-  background-color: hsl(283, 86%, 55%);
+  background-color: var(--couleur-arriere-menu);
 }
 
 .global > .hero {
@@ -427,5 +433,10 @@ button:active {
 }
 
 .menu-item a {
-  color: #fff;
+  color: var(--couleur-lien);
+  text-decoration: none;
+}
+
+.menu-item a:hover {
+  color: var(--couleur-lien-hover);
 }/*# sourceMappingURL=style.css.map */

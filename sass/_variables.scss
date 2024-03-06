@@ -46,8 +46,8 @@
   --couleur-arriere-diagonale: hsl(var(--u2) 100%, 20%);
 
   /*Couleur de l'ombre*/
-  --couleur-ombre-h1: 20px 12px hsl(250deg 97.63% 61.67%);
-  --couleur-ombre-h2: 5px 5px hsl(250deg 97.63% 61.67%);
+  --couleur-ombre-h1: 20px 12px hsl(var(--u1), 97.63% 61.67%);
+  --couleur-ombre-h2: 5px 5px hsl(var(--u1), 97.63% 61.67%);
 
   /*Couleur de bouton*/
   --deg-gradient: 150deg;
@@ -61,6 +61,12 @@
 
   /*Couleur d'arrière-plan blockquote*/
   --couleur-arriere-blockquote: hsl(var(--u1), 100%, 15%);
+}
+
+#menu {
+  --couleur-arriere-menu: hsl(var(--u1), 74%, 57%);
+  --couleur-lien-hover: hsl(var(--j1), 100%, 70%);
+  --couleur-lien: hsl(var(--u1), 62%, 89%);
 }
 
 .carte {
