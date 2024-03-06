@@ -62,6 +62,10 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --couleur-arriere-blockquote: hsl(var(--u1), 100%, 15%);
 }
 
+.carte {
+  --_couleur-arriere: hsl(var(--u1), 100%, 15%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -356,10 +360,13 @@ button:active {
 .carte {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex: 0 1 30%;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 225px;
   border: 2px solid #65008e;
   min-height: 100%;
+  background-color: var(--_couleur-arriere);
+  padding: 1rem;
 }
 
 .carte h3 {
@@ -368,23 +375,15 @@ button:active {
   font-size: clamp(1rem, 0.583rem + 1.333vw, 1.5rem);
 }
 
+.carte h4 {
+  color: yellow;
+}
+
 .carte p {
   background-color: var(--couleur-arriere-blockquote);
   color: white;
+  text-align: center;
   font-size: 0.9rem;
   line-height: 2rem;
   padding: 2px;
-}
-
-@media screen and (max-width: 750px) {
-  .cours {
-    flex-direction: column;
-    min-width: 100%;
-    justify-content: center;
-  }
-  .carte {
-    flex-wrap: wrap;
-    justify-content: center;
-    flex: 0 1 50%;
-  }
 }/*# sourceMappingURL=style.css.map */

@@ -98,29 +98,32 @@
 
             /*Variables*/
             /*Variable du titre complet du cours*/
-            $titreComplet = get_the_title();
+            $titre = get_the_title();
             /*Variable du sigle du cours ex: 582-1M1*/
-            $sigle = substr($titreComplet, 0, 7);
+            $sigle = substr($titre, 0, 7);
             /*Variable de la durée du cours ex: (75h)*/
-            $duree = substr($titreComplet, -6);
-            /*Variable du titre sans le sigle*/
-            $titre = substr($titreComplet, 7, -6);
+            /*Trouver la position de la position*/
+            $position_parenthese = strpos($titre, "(");
+            $duree = substr($titre, $position_parenthese + 1, -1);
+            /*Variable du titre sans le sigle et la durée en partant du sigle*/
+            $titre = substr($titre, 7, $position_parenthese - 7);
             /*Variable de la description des cours*/
-            $description = wp_trim_words(get_the_content(), 30);
-            // strpos();
+            $description = wp_trim_words(get_the_content(), 10);
             ?>
             <div class="carte">
+              <h4>
+                <?= $sigle ?>
+              </h4>
               <h3>
-
-              </h3>
-              <h3>
-                <?php echo $sigle ?>
-                <?php echo $titre; ?>
-                <?php echo $duree ?>
+                <?= $titre; ?>
               </h3>
               <p>
-                <?php echo $description ?>
+                <?= $description ?>
               </p>
+              <h4>
+                Durée
+                <?= $duree ?>
+              </h4>
             </div>
           <?php endwhile; ?>
         <?php endif; ?>
