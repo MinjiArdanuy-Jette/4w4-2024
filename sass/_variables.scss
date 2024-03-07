@@ -72,11 +72,3 @@
 .carte {
   --_couleur-arriere: hsl(var(--u1), 100%, 15%);
 }
-
-#accueil {
-  --_couleur-arriere-vague: --couleur-arriere-accueil;
-}
-
-#galerie {
-  --_couleur-arriere-vague: --couleur-avant-footer;
-}

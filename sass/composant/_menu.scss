@@ -30,12 +30,15 @@
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  // transform: translateX(300%);
-  transition: transform 4s ease-in-out;
+  transform: translateX(-150%);
+  transition: transform 0.5s ease-in-out;
+  align-items: center;
+  line-height: 2rem;
   @media (min-width: 700px) {
     position: static;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    line-height: 0rem;
     flex-direction: row;
     transform: translateX(0);
   }
@@ -62,15 +65,21 @@
   position: absolute;
   top: 0;
   left: 0;
+  transform: rotate(0);
+  transition: transform 0.5s ease-in-out;
   @media (min-width: 700px) {
     display: none;
   }
 }
 
 #chk_burger {
-  // display: none;
+  display: none;
 }
-
-#chk_burger:checked ~ .menu {
-  transform: translateX(0);
+/*La rotation du menu burger */
+#chk_burger:checked ~ #burger {
+  transform: rotate(1turn);
+}
+/*Apparition du menu */
+#chk_burger:checked ~ .menu_header .menu {
+  transform: translateX(0%);
 }
