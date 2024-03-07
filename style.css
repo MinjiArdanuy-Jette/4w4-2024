@@ -72,6 +72,14 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --_couleur-arriere: hsl(var(--u1), 100%, 15%);
 }
 
+#entete {
+  --_couleur-arriere-vague: --couleur-arriere-accueil;
+}
+
+#galerie {
+  --_couleur-arriere-vague: --couleur-arriere-footer;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -339,7 +347,7 @@ button:active {
   height: 74px;
 }
 
-.vague .shape-fill {
+.vague .remplissage {
   fill: var(--couleur-arriere-accueil);
 }
 
