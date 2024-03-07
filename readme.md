@@ -26,7 +26,7 @@
 
 - Créer un template-part qui permettra d'afficher les vagues.
 
-## La section galerie affichera la liste des cours du TIM en 4 colonnes.
+## Le site est responsive
 
 - La liste devra s'adapter aux différentes largeurs de fenêtre.
 
