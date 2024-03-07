@@ -21,7 +21,8 @@ body {
   padding: var(--centre-hauteur) var(--centre-largeur);
 }
 
-#menu {
+#menu_entete {
+  position: relative;
   background-color: var(--couleur-arriere-menu);
 }
 

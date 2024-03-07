@@ -62,7 +62,7 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
   --couleur-arriere-blockquote: hsl(var(--u1), 100%, 15%);
 }
 
-#menu {
+#menu_entete {
   --couleur-arriere-menu: hsl(var(--u1), 74%, 57%);
   --couleur-lien-hover: hsl(var(--j1), 100%, 70%);
   --couleur-lien: hsl(var(--u1), 62%, 89%);
@@ -70,6 +70,14 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 
 .carte {
   --_couleur-arriere: hsl(var(--u1), 100%, 15%);
+}
+
+#accueil {
+  --_couleur-arriere-vague: --couleur-arriere-accueil;
+}
+
+#galerie {
+  --_couleur-arriere-vague: --couleur-avant-footer;
 }
 
 * {
@@ -95,7 +103,8 @@ body {
   padding: var(--centre-hauteur) var(--centre-largeur);
 }
 
-#menu {
+#menu_entete {
+  position: relative;
   background-color: var(--couleur-arriere-menu);
 }
 
@@ -341,8 +350,8 @@ button:active {
   height: 74px;
 }
 
-.vague .shape-fill {
-  fill: var(--couleur-arriere-accueil);
+.vague .remplissage {
+  fill: var(--_couleur-arriere-vague);
 }
 
 .diagonale {
@@ -426,8 +435,18 @@ button:active {
 
 .menu {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   list-style-type: none;
+  transition: transform 4s ease-in-out;
+}
+@media (min-width: 700px) {
+  .menu {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    transform: translateX(0);
+  }
 }
 
 .menu-item {
@@ -443,4 +462,21 @@ button:active {
 
 .menu-item a:hover {
   color: var(--couleur-lien-hover);
+}
+
+/*Gestion label #burger l'image svg est dans le label*/
+#burger {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (min-width: 700px) {
+  #burger {
+    display: none;
+  }
+}
+
+#chk_burger:checked ~ .menu {
+  transform: translateX(0);
 }/*# sourceMappingURL=style.css.map */

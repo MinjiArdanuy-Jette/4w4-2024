@@ -63,7 +63,7 @@
   --couleur-arriere-blockquote: hsl(var(--u1), 100%, 15%);
 }
 
-#menu {
+#menu_entete {
   --couleur-arriere-menu: hsl(var(--u1), 74%, 57%);
   --couleur-lien-hover: hsl(var(--j1), 100%, 70%);
   --couleur-lien: hsl(var(--u1), 62%, 89%);
@@ -71,4 +71,12 @@
 
 .carte {
   --_couleur-arriere: hsl(var(--u1), 100%, 15%);
+}
+
+#accueil {
+  --_couleur-arriere-vague: --couleur-arriere-accueil;
+}
+
+#galerie {
+  --_couleur-arriere-vague: --couleur-avant-footer;
 }

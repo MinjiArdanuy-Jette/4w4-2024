@@ -28,8 +28,17 @@
 .menu {
   //ul
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   list-style-type: none;
+  // transform: translateX(300%);
+  transition: transform 4s ease-in-out;
+  @media (min-width: 700px) {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    transform: translateX(0);
+  }
 }
 
 .menu-item {
@@ -45,4 +54,23 @@
 }
 .menu-item a:hover {
   color: var(--couleur-lien-hover);
+}
+
+/*Gestion label #burger l'image svg est dans le label*/
+#burger {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  @media (min-width: 700px) {
+    display: none;
+  }
+}
+
+#chk_burger {
+  // display: none;
+}
+
+#chk_burger:checked ~ .menu {
+  transform: translateX(0);
 }

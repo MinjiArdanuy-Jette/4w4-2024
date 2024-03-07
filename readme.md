@@ -28,7 +28,7 @@
 
 ## Le site est responsive
 
-- La liste devra s'adapter aux différentes largeurs de fenêtre.
+- La liste des cours devra s'adapter aux différentes largeurs de fenêtre.
 
 - Utilisation des flexbox dans les cartes des cours
 
