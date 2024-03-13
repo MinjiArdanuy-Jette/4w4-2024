@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<h1>index.php</h1>
+<h1>front_page.php</h1>
 <div id="entete" class="global">
   <div class="social">
     <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000" width="32" height="32" />
@@ -74,19 +74,12 @@
           $description = get_the_content();
           ?>
           <div class="carte">
-            <h4>
-              <?= $sigle ?>
-            </h4>
             <h3>
               <?= $titre; ?>
             </h3>
             <p>
               <?= $description ?>
             </p>
-            <h4>
-              Durée
-              <?= $duree ?>
-            </h4>
           </div>
         <?php endwhile; ?>
       <?php endif; ?>
