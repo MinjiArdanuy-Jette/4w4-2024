@@ -1,3 +1,4 @@
+<!-- Récupérer le header -->
 <?php get_header(); ?>
 <h1>front_page.php</h1>
 <div id="entete" class="global">
@@ -10,9 +11,11 @@
   <?php get_template_part("gabarits/vague1") ?>
   <section>
     <section class="hero">
-      <h1>Thème du groupe #1</h1>
+      <h1>
+        <?= get_bloginfo("name") ?>
+      </h1>
       <h2 class="premier-h2">
-        4w4-Conception d'interface <span>et développement Web</span>
+        <?= get_bloginfo("description") ?>
       </h2>
       <h3>TIM-Collège de Maisonneuve</h3>
       <button>Événements</button>
@@ -53,15 +56,6 @@
     <h2>Galerie</h2>
     <div class="cours">
       <?php
-      /*if (have_posts()) {
-        while (have_posts()) {
-          the_post();
-          the_title("<h3>", "</h3>");
-          echo wp_trim_words(get_the_content(), 30);
-        }
-      }
-       ?>
-      */
       if (have_posts()):
         while (have_posts()):
           the_post();
@@ -75,11 +69,13 @@
           ?>
           <div class="carte">
             <h3>
-              <?= $titre; ?>
+              <?php the_title(); ?>
             </h3>
             <p>
-              <?= $description ?>
+              <?php the_content(); ?>
             </p>
+            <!-- Ajout d'un hyperlien -->
+            <a href="<?php the_permalink(); ?>"> Suite</a>
           </div>
         <?php endwhile; ?>
       <?php endif; ?>
@@ -87,18 +83,5 @@
     <!-- Vague2 -->
     <?php get_template_part("gabarits/vague2") ?>
   </section>
-
-  <div id="footer" class="global">
-    <footer>
-      <h2>Footer</h2>
-      <h6>
-        Lorem ipsum dolor sit amet consectetur
-        <a href="#">adipisicing elit</a>. Minima itaque a voluptates corporis
-        placeat labore fugiat necessitatibus porro corrupti? Nulla tempora
-        architecto libero veritatis possimus, ratione cum eligendi neque sit!.
-      </h6>
-    </footer>
-  </div>
-  </body>
-
-  </html>
+  <!-- Récupérer le footer -->
+  <?php get_footer(); ?>
