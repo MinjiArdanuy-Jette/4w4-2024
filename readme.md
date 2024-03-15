@@ -46,3 +46,5 @@
    - search.php
    - header.php
    - footer.php
+
+4. Une mise en page entièrement adaptative
