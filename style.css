@@ -444,7 +444,6 @@ button:active {
     position: static;
     display: flex;
     align-items: center;
-    line-height: 0rem;
     flex-direction: row;
     transform: translateX(0);
   }
