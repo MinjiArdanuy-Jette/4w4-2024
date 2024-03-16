@@ -20,7 +20,10 @@ celui de l'entête (le :first-of-type ne marche pas)*/
 h2:not(.premier-h2)::first-letter {
   font-size: 5rem;
 }
-
+/* Spécification du h2dans la page single.php*/
+#galerie .cours .carte h2 {
+  color: hsl(60, 96%, 67%);
+}
 h3 {
   font-size: clamp(1rem, 0.583rem + 1.333vw, 1.5rem);
   font-weight: 400;

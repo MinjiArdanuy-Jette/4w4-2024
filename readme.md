@@ -4,7 +4,7 @@
 
 - https://minjiardanuy-jette.github.io/4w4-2024/
 
-##Réalisation d'un site Wordpress pour un club de voyage
+## Réalisation d'un site Wordpress pour un club de voyage
 
 ## Afficher les catégories de voyages
 

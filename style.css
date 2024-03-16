@@ -266,6 +266,11 @@ h2:not(.premier-h2)::first-letter {
   font-size: 5rem;
 }
 
+/* Spécification du h2dans la page single.php*/
+#galerie .cours .carte h2 {
+  color: hsl(60, 96%, 67%);
+}
+
 h3 {
   font-size: clamp(1rem, 0.583rem + 1.333vw, 1.5rem);
   font-weight: 400;
@@ -329,7 +334,7 @@ button:active {
   transform: translateY(-10px);
 }
 
-/*////Effets ///*/
+/*////les différents effets de la page ///*/
 .vague {
   position: absolute;
   bottom: 0;
@@ -364,7 +369,7 @@ button:active {
   transform: skewY(-5deg);
 }
 
-/*///// Composants /////*/
+/*///// Les différents composants du site/////*/
 .cours {
   display: flex;
   flex-wrap: wrap;
