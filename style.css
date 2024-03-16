@@ -211,12 +211,12 @@ body {
   margin-top: 20px;
 }
 
-img {
+.expo img {
   width: 50%;
   filter: hue-rotate(265deg);
 }
 
-img:hover {
+.expo img:hover {
   animation: illuminer-image 3s ease-in-out alternate-reverse infinite, agrandir-image 3s ease-in-out alternate-reverse infinite;
 }
 
