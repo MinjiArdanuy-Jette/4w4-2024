@@ -441,12 +441,33 @@ button:active {
   list-style-type: none;
 }
 
+#menu_entete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  position: fixed;
+  list-style-type: none;
+  transform: translateX(-150%);
+  transition: transform 0.5s ease-in-out;
+  width: 50%;
+  height: 50%;
+}
+@media (min-width: 700px) {
+  #menu_entete {
+    position: static;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    transform: translateX(0);
+    width: 100%;
+  }
+}
+
 .menu {
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  transform: translateX(-150%);
-  transition: transform 0.5s ease-in-out;
   align-items: center;
   line-height: 2rem;
 }
@@ -469,6 +490,7 @@ button:active {
 .menu-item a {
   color: var(--couleur-lien);
   text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .menu-item a:hover {
@@ -477,6 +499,7 @@ button:active {
 
 /*Gestion label #burger l'image svg est dans le label*/
 #burger {
+  z-index: 2;
   display: block;
   position: absolute;
   top: 0;
@@ -500,6 +523,6 @@ button:active {
 }
 
 /*Apparition du menu */
-#chk_burger:checked ~ .menu_header .menu {
+#chk_burger:checked ~ #menu_entete {
   transform: translateX(0%);
 }/*# sourceMappingURL=style.css.map */
