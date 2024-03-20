@@ -74,19 +74,12 @@
           $description = get_the_content();
           ?>
           <div class="carte">
-            <h4>
-              <?= $sigle ?>
-            </h4>
             <h3>
               <?= $titre; ?>
             </h3>
             <p>
               <?= $description ?>
             </p>
-            <h4>
-              Durée
-              <?= $duree ?>
-            </h4>
           </div>
         <?php endwhile; ?>
       <?php endif; ?>

@@ -370,7 +370,7 @@ button:active {
 }
 
 /*///// Les différents composants du site/////*/
-.cours {
+.destination {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -408,6 +408,12 @@ button:active {
   font-size: 0.9rem;
   line-height: 2rem;
   padding: 2px;
+}
+
+.post-categories {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
 }
 
 /*<nav> class="menu-principal-container">

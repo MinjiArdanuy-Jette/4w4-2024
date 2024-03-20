@@ -1,27 +1,5 @@
 <!-- Récupérer le header -->
 <?php get_header(); ?>
-<h1>front_page.php</h1>
-<div id="entete" class="global">
-  <div class="social">
-    <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000" width="32" height="32" />
-    <img src="https://s2.svgbox.net/social.svg?ic=instagram&color=000" width="32" height="32" />
-    <img src="https://s2.svgbox.net/social.svg?ic=youtube&color=000" width="32" height="32" />
-  </div>
-  <!-- Vague1 -->
-  <?php get_template_part("gabarits/vague1") ?>
-  <section>
-    <section class="hero">
-      <h1>
-        <?= get_bloginfo("name") ?>
-      </h1>
-      <h2 class="premier-h2">
-        <?= get_bloginfo("description") ?>
-      </h2>
-      <h3>TIM-Collège de Maisonneuve</h3>
-      <button>Événements</button>
-    </section>
-  </section>
-</div>
 
 <div id="accueil" class="global">
   <section>
@@ -39,21 +17,9 @@
     <button>Plusieurs oeuvres sont disponibles ici</button>
   </section>
 </div>
-<div id="evenement" class="global diagonale">
-  <section>
-    <h2>Événement</h2>
-    <h4>Lorem ipsum dolor sit.</h4>
-    <blockquote>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum
-      deleniti, quidem recusandae nobis sunt quis dolore est optio. Est ex
-      fuga molestiae tenetur soluta ducimus ea autem, ad enim error.
-      <span><a href="#">Lorem, ipsum dolor.</a></span>
-    </blockquote>
-  </section>
-</div>
 <div id="galerie" class="global">
   <section>
-    <h2>Galerie</h2>
+    <h2>Destination de voyage</h2>
     <div class="destination">
       <?php
       if (have_posts()):
