@@ -16,7 +16,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 */
 
-@import "variables";
+/*Initialisation des variables sass et css*/
+@import "utile/couleurs";
+/*Création de classes de couleurs*/
+@import "utile/couleurs-class";
 @import "layout";
 @import "entete";
 @import "galerie";

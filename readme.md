@@ -1,8 +1,24 @@
-# TP1 - Club de voyage
+# TP1 - Club de voyage : Vivre la vie, vive les voyages !
 
 ## Ma Github Page Minji Ardanuy-Jetté
 
 - https://minjiardanuy-jette.github.io/4w4-2024/
+
+## Exercice 2 (5 points)
+
+1. Compléter l'utilisation du mapping de couleur avec boucle et minin
+2. Changer le titre et la description général du site
+3. Seulement les destinations populires sont visibles dans la galerie (accueil pour le prof)
+4. Changer description des catégories associées - Améliorer l'apparence de la liste des catégories - méliorer l'apparence des cartes
+5. Ajouter des liens dans footer
+6. Afficher les cartes de catégories pour l'ensemble (sauf non classé)
+
+   - Titre de la catégorie - 10 premiers mot de la description
+   - Un lien qui permet d'accéder à la liste des destination de cette catégorie - le nombre d'arrêter
+
+7. Créer une githu page : index.html (front-page.php)
+8. Ajouter l'adresse de la github-page dans votre readme.md
+9. Courte description du TP1
 
 ## Réalisation d'un site Wordpress pour un club de voyage
 

@@ -27,7 +27,7 @@
         d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
         clip-rule="evenodd"></path>
     </svg></label>
-  <div id="menu_entete" class="global">
+  <div id="menu_entete" class="global clr-agencement-primaire">
     <?php echo get_custom_logo(); ?>
     <!-- Tempate part possible pour le bouton -->
     <header class="menu_header">
