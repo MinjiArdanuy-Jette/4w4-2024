@@ -49,6 +49,11 @@
       fuga molestiae tenetur soluta ducimus ea autem, ad enim error.
       <span><a href="#">Lorem, ipsum dolor.</a></span>
     </blockquote>
+    <div class="categorie-destination">
+      <?php
+      $categories = get_categories()
+        ?>
+    </div>
   </section>
 </div>
 <div id="galerie" class="global">

@@ -6,10 +6,14 @@
 
 ## Exercice 2 (5 points)
 
-1. Compléter l'utilisation du mapping de couleur avec boucle et minin
+1. Compléter l'utilisation du mapping de couleur avec boucle et mixin
 2. Changer le titre et la description général du site
-3. Seulement les destinations populires sont visibles dans la galerie (accueil pour le prof)
-4. Changer description des catégories associées - Améliorer l'apparence de la liste des catégories - méliorer l'apparence des cartes
+3. Seulement les destinations populaires sont visibles dans la galerie (accueil pour le prof)
+4. Changer la description des catégories associées
+
+   - Améliorer l'apparence de la liste des catégories
+   - Améliorer l'apparence des cartes
+
 5. Ajouter des liens dans footer
 6. Afficher les cartes de catégories pour l'ensemble (sauf non classé)
 

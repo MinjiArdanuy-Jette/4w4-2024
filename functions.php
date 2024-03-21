@@ -1,4 +1,14 @@
-<?php add_theme_support('menus');
+<?php
+function wp_custom_menus()
+{
+    register_nav_menus(
+        array(
+            'footer-menu' => __('Menu du pied de page'),
+        )
+    );
+}
+add_action('init', 'wp_custom_menus');
+add_theme_support('menus');
 add_theme_support('custom-logo');
 /*
 array(
