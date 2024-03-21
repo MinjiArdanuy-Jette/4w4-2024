@@ -4,17 +4,11 @@
 <div id="accueil" class="global">
   <section>
     <h2>Accueil</h2>
-    <p>
-      Lorem ipsum dolor sit amet. <a href="#">Sans souci</a>Lorem ipsum
-      dolor sit amet consectetur adipisicing elit. Autem eveniet libero nemo
-      hic tempora
-    </p>
-    <div class="expo">
-      <img src="images/github.png" alt="github" />
-      <img src="images/github.png" alt="github" />
-      <img src="images/github.png" alt="github" />
+    <div class="description-categorie">
+      <h2>
+        <?php echo category_description(); ?>
+      </h2>
     </div>
-    <button>Plusieurs oeuvres sont disponibles ici</button>
   </section>
 </div>
 <div id="galerie" class="global">
