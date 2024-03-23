@@ -51,10 +51,30 @@
     </blockquote>
     <div class="categorie-destination">
       <?php
-      $categories = get_categories()
-        ?>
+      // Récupérer toutes les catégories
+      $categories = get_categories();
+
+      // Parcourir les catégories
+      foreach ($categories as $uneCategorie) {
+        // Récupérer le nombre d'articles de la catégorie actuelle
+        $uneCategorie_count = $uneCategorie->count;
+        // Récupérer la description de la catégorie actuelle
+        $uneCategorie_description = wp_trim_words($uneCategorie->description, 10, "...");
+
+        // Afficher le titre, la description et le nombre d'articles de la catégorie actuelle
+        echo '<div class="carte">';
+        echo '<h3>' . $uneCategorie->name . '</h3>';
+        echo '<p>' . $uneCategorie_description . '</p>';
+        echo '<p>Nombre d\'articles : ' . $uneCategorie_count . '</p>';
+        // Afficher un lien vers tous les articles de la catégorie actuelle
+        echo '<a href="' . get_category_link($uneCategorie->term_id) . '">Voir tous les articles</a>';
+
+        echo '</div>'; // Fermer la div category
+      }
+      ?>
     </div>
-  </section>
+</div>
+</section>
 </div>
 <div id="galerie" class="global">
   <section>

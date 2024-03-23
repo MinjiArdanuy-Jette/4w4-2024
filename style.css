@@ -528,7 +528,8 @@ button:active {
 }
 
 /*///// Les différents composants du site/////*/
-.destination {
+.destination,
+.categorie-destination {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
