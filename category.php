@@ -36,11 +36,10 @@
               <?php the_title(); ?>
             </h3>
             <p>
-              <?php the_content(); ?>
+              <?php echo wp_trim_words(get_the_content(), 10, "..."); ?>
             </p>
             <?php the_category(); ?>
-            <!-- Ajout d'un hyperlien -->
-            <a href="<?php the_permalink(); ?>"> Suite</a>
+            <a href="<?php the_permalink(); ?>"> Lire la suite</a>
           </div>
         <?php endwhile; ?>
       <?php endif; ?>
