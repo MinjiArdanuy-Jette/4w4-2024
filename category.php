@@ -3,7 +3,9 @@
 
 <div id="accueil" class="global">
   <section>
-    <h2>Accueil</h2>
+    <h2>
+      <?php single_cat_title(); ?>
+    </h2>
     <div class="description-categorie">
       <h2>
         <?php echo category_description(); ?>
