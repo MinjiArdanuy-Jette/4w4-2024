@@ -5,9 +5,4 @@ a {
   &:hover {
     color: var(--couleur-lien-hover);
   }
-
-  &:visited,
-  &:focus {
-    color: var(--couleur-lien-visited);
-  }
 }

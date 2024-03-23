@@ -469,9 +469,6 @@ a {
 a:hover {
   color: var(--couleur-lien-hover);
 }
-a:visited, a:focus {
-  color: var(--couleur-lien-visited);
-}
 
 button {
   font-size: 1.2rem;
@@ -573,6 +570,15 @@ button:active {
   display: flex;
   gap: 1rem;
   list-style-type: none;
+}
+
+.post-categories li {
+  background-color: #65008e;
+  padding: 0.3rem;
+}
+
+.post-categories li a {
+  text-decoration: none;
 }
 
 /*<nav> class="menu-principal-container">
