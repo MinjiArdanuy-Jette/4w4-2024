@@ -17,8 +17,8 @@
 5. Ajouter des liens dans footer
 6. Afficher les cartes de catégories pour l'ensemble (sauf non classé)
 
-   - Titre de la catégorie - 10 premiers mot de la description
-   - Un lien qui permet d'accéder à la liste des destination de cette catégorie - le nombre d'arrêter
+   - Titre de la catégorie - 10 premiers mots de la description
+   - Un lien qui permet d'accéder à la liste des destination de cette catégorie - le nombre d'articles
 
 7. Créer une githu page : index.html (front-page.php)
 8. Ajouter l'adresse de la github-page dans votre readme.md

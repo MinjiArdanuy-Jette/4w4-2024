@@ -1,6 +1,5 @@
 <!-- Récupérer le header -->
 <?php get_header(); ?>
-<h1>front_page.php</h1>
 <div id="entete" class="global">
   <div class="social">
     <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000" width="32" height="32" />

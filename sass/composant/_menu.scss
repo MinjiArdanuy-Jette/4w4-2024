@@ -103,3 +103,31 @@
 #chk_burger:checked ~ #menu_entete {
   transform: translateX(0%);
 }
+
+/*/////MENU FOOTER ///////////*/
+#footer h2 {
+  text-align: center;
+}
+.menu-footer-container {
+  text-align: center; /* Centrer le contenu */
+  @media (min-width: 700px) {
+    text-align: center;
+  }
+}
+.footer-menu {
+  column-count: 2;
+  column-gap: 15rem;
+  padding: 0px 0px 0px 30px;
+  @media (min-width: 700px) {
+    column-count: 3;
+  }
+}
+
+.footer-menu li {
+  margin-bottom: 10px; /* Espacement entre les éléments de menu */
+  margin-top: 10px; /* Ajout de marge en haut */
+}
+
+.footer-menu li:nth-child(3n + 1) {
+  margin-top: 0; /* Supprimer la marge en haut pour chaque troisième élément (premier élément de chaque colonne) */
+}
