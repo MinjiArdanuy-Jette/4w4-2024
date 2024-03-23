@@ -15,7 +15,9 @@
 </div>
 <div id="galerie" class="global">
   <section>
-    <h2>Destination de voyage</h2>
+    <h2>Destinations de voyage
+      <?php single_cat_title(); ?>
+    </h2>
     <div class="destination">
       <?php
       if (have_posts()):
