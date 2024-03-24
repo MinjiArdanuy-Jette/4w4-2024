@@ -41,13 +41,6 @@
 <div id="evenement" class="global diagonale">
   <section>
     <h2>Événement</h2>
-    <h4>Lorem ipsum dolor sit.</h4>
-    <blockquote>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum
-      deleniti, quidem recusandae nobis sunt quis dolore est optio. Est ex
-      fuga molestiae tenetur soluta ducimus ea autem, ad enim error.
-      <span><a href="#">Lorem, ipsum dolor.</a></span>
-    </blockquote>
     <div class="categorie-destination">
       <?php
       // Récupérer toutes les catégories
@@ -100,7 +93,7 @@
             </p>
             <?php the_category(); ?>
             <!-- Ajout d'un hyperlien -->
-            <a href="<?php the_permalink(); ?>"> Suite</a>
+            <a href="<?php the_permalink(); ?>"> Plus d'infos</a>
           </div>
         <?php endwhile; ?>
       <?php endif; ?>
