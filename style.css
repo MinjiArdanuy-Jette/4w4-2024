@@ -277,9 +277,6 @@ body {
 
 #entete {
   background-image: url("images/voyage-avion.png");
-  width: 60%;
-  height: auto;
-  background-position: center;
   background-size: cover;
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
@@ -340,7 +337,6 @@ body {
 }
 
 .hero {
-  background-image: url("images/react.png");
   background-repeat: no-repeat;
   background-position: 100% 40%;
   background-size: 25%;
