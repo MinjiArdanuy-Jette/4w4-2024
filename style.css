@@ -276,6 +276,11 @@ body {
 }
 
 #entete {
+  background-image: url("images/voyage-avion.png");
+  width: 60%;
+  height: auto;
+  background-position: center;
+  background-size: cover;
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
   position: relative;
