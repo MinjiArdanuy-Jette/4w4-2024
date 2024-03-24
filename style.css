@@ -625,31 +625,37 @@ button:active {
     opacity: 1;
   }
   .menu-item:nth-child(2):hover ~ span {
-    left: 145px;
+    left: 110px;
     width: 190px;
     opacity: 1;
   }
   .menu-item:nth-child(3):hover ~ span {
-    left: 360px;
+    left: 310px;
     width: 150px;
     opacity: 1;
   }
   .menu-item:nth-child(4):hover ~ span {
-    left: 540px;
+    left: 460px;
     width: 140px;
     opacity: 1;
   }
   .menu-item:nth-child(5):hover ~ span {
-    left: 705px;
+    left: 605px;
     width: 140px;
     opacity: 1;
   }
   .menu-item:nth-child(6):hover ~ span {
-    left: 860px;
+    left: 740px;
     opacity: 1;
   }
   .menu-item:nth-child(7):hover ~ span {
-    left: 980px;
+    left: 850px;
+    width: 100px;
+    opacity: 1;
+  }
+  .menu-item:nth-child(8):hover ~ span {
+    left: 950px;
+    width: 140px;
     opacity: 1;
   }
 }
