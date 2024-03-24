@@ -43,36 +43,36 @@
     opacity: 1;
   }
   .menu-item:nth-child(2):hover ~ span {
-    left: 110px;
+    left: calc((110px / 100vw) * 100);
     width: 190px;
     opacity: 1;
   }
   .menu-item:nth-child(3):hover ~ span {
-    left: 310px;
+    left: calc((310px / 100vw) * 100);
     width: 150px;
     opacity: 1;
   }
   .menu-item:nth-child(4):hover ~ span {
-    left: 460px;
+    left: calc((460px / 100vw) * 100);
     width: 140px;
     opacity: 1;
   }
   .menu-item:nth-child(5):hover ~ span {
-    left: 605px;
+    left: calc((605px / 100vw) * 100);
     width: 140px;
     opacity: 1;
   }
   .menu-item:nth-child(6):hover ~ span {
-    left: 740px;
+    left: calc((740px / 100vw) * 100);
     opacity: 1;
   }
   .menu-item:nth-child(7):hover ~ span {
-    left: 850px;
+    left: calc((850px / 100vw) * 100);
     width: 100px;
     opacity: 1;
   }
   .menu-item:nth-child(8):hover ~ span {
-    left: 950px;
+    left: calc((950px / 100vw) * 100);
     width: 140px;
     opacity: 1;
   }
@@ -137,7 +137,7 @@
 #burger {
   z-index: 2;
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   transform: rotate(0);
