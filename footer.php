@@ -13,6 +13,8 @@
         array(
           'theme_location' => 'footer-menu',
           'menu_class' => 'footer-menu',
+          'container' => 'nav',
+          'container_class' => 'footer-menu-container',
         )
       );
       ?>

@@ -3,11 +3,28 @@ function wp_custom_menus()
 {
     register_nav_menus(
         array(
-            'footer-menu' => __('Menu du pied de page'),
+            'principal' => __('Menu principal'),
+            'footer' => __('Menu du pied de page'),
         )
     );
 }
 add_action('init', 'wp_custom_menus');
+
+function ajouter_html_a_la_fin_du_menu($items, $args)
+{
+    // Vérifie si c'est le bon menu principal
+    if ($args->theme_location == 'principal') {
+        // Trouve la position de la dernière balise "</ul>"
+        $last_ul_pos = strrpos($items, '</ul>');
+
+        // Ajoute la balise <span> après la dernière balise "</ul>" et avant la fin du <nav>
+        if ($last_ul_pos !== false) {
+            $items = substr($items, 0, $last_ul_pos) . '<span></span>' . substr($items, $last_ul_pos);
+        }
+    }
+    return $items;
+}
+add_filter('wp_nav_menu', 'ajouter_html_a_la_fin_du_menu', 10, 2);
 add_theme_support('menus');
 add_theme_support('custom-logo');
 /*

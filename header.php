@@ -31,6 +31,7 @@
     <?php echo get_custom_logo(); ?>
     <!-- Tempate part possible pour le bouton -->
     <header class="menu_header">
-      <?php wp_nav_menu(array("container" => "nav")); ?>
+      <?php wp_nav_menu(array("container" => "nav", "container_class" => "menu-principal-container", "theme_location" => "principal")); ?>
+
     </header>
   </div>

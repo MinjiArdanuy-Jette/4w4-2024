@@ -604,8 +604,55 @@ button:active {
         Feuilles de style du menu principal*/
 .menu-principal-container {
   list-style-type: none;
+  position: relative;
 }
 
+@media (min-width: 700px) {
+  .menu-principal-container span {
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 120px;
+    height: 100%;
+    opacity: 0;
+    background: linear-gradient(45deg, blue, purple);
+    border-radius: 8px;
+    z-index: -1;
+    transition: opacity 0.3s, left 0.3s;
+  }
+  .menu-item:nth-child(1):hover ~ span {
+    left: 0;
+    opacity: 1;
+  }
+  .menu-item:nth-child(2):hover ~ span {
+    left: 145px;
+    width: 190px;
+    opacity: 1;
+  }
+  .menu-item:nth-child(3):hover ~ span {
+    left: 360px;
+    width: 150px;
+    opacity: 1;
+  }
+  .menu-item:nth-child(4):hover ~ span {
+    left: 540px;
+    width: 140px;
+    opacity: 1;
+  }
+  .menu-item:nth-child(5):hover ~ span {
+    left: 705px;
+    width: 140px;
+    opacity: 1;
+  }
+  .menu-item:nth-child(6):hover ~ span {
+    left: 860px;
+    opacity: 1;
+  }
+  .menu-item:nth-child(7):hover ~ span {
+    left: 980px;
+    opacity: 1;
+  }
+}
 #menu_entete {
   display: flex;
   flex-direction: column;
@@ -630,6 +677,7 @@ button:active {
 }
 
 .menu {
+  position: relative;
   display: flex;
   flex-direction: column;
   list-style-type: none;
@@ -638,7 +686,7 @@ button:active {
 }
 @media (min-width: 700px) {
   .menu {
-    position: static;
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -648,6 +696,7 @@ button:active {
 
 .menu-item {
   display: flex;
+  justify-content: center;
   flex: 1 1 auto;
   text-align: center;
 }
