@@ -659,6 +659,11 @@ button:active {
   }
 }
 
+#menu_entete img {
+  width: 70%;
+  height: auto;
+}
+
 .menu {
   position: relative;
   display: flex;
