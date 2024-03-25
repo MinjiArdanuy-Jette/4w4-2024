@@ -48,9 +48,8 @@
 }
 
 #menu_entete {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(column, center);
+
   z-index: 1;
   position: fixed;
   list-style-type: none;
@@ -60,9 +59,7 @@
   height: 80%;
   @media (min-width: 700px) {
     position: static;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+    @include flex(row, center);
     transform: translateX(0);
     width: 100%;
   }
@@ -75,6 +72,7 @@
   @media (min-width: 700px) {
     width: 70%;
     height: auto;
+    padding-top: 0px;
   }
 }
 #menu_entete .custom-logo-link {
@@ -100,8 +98,7 @@
 
 .menu-item {
   //li
-  display: flex;
-  justify-content: center;
+  @include flex(center);
   flex: 1 1 auto;
   text-align: center;
 }

@@ -1,19 +1,21 @@
 /*Variables saas*/
-/*Palette de couleur*/
+/*Palette de couleur générale*/
 $--clr-mauve-pale: hsl(250, 100%, 70%);
 $--clr-mauve-leger: hsl(250, 100%, 75%);
 $--clr-mauve-moyen: hsl(250, 100%, 30%);
 $--clr-mauve-fonce: hsl(250, 100%, 15%);
 
-$--clr-orange-pale: hsl(40, 100%, 85%);
-$--clr-orange-leger: hsl(40, 100%, 50%);
-$--clr-orange-moyen: hsl(40, 100%, 30%);
-$--clr-orange-fonce: hsl(40, 100%, 15%);
+$clr-noire-texte: black;
+$clr-blanche-texte: white;
+// $--clr-orange-pale: hsl(40, 100%, 85%);
+// $--clr-orange-leger: hsl(40, 100%, 50%);
+// $--clr-orange-moyen: hsl(40, 100%, 30%);
+// $--clr-orange-fonce: hsl(40, 100%, 15%);
 
-$--clr-rouge-pale: hsl(10, 100%, 85%);
-$--clr-rouge-leger: hsl(10, 100%, 50%);
-$--clr-rouge-moyen: hsl(10, 100%, 30%);
-$--clr-rouge-fonce: hsl(10, 100%, 15%);
+// $--clr-rouge-pale: hsl(10, 100%, 85%);
+// $--clr-rouge-leger: hsl(10, 100%, 50%);
+// $--clr-rouge-moyen: hsl(10, 100%, 30%);
+// $--clr-rouge-fonce: hsl(10, 100%, 15%);
 
 $--clr-jaune-pale: hsl(60, 100%, 85%);
 $--clr-jaune-leger: hsl(60, 100%, 50%);
@@ -31,24 +33,25 @@ $defaut: (
     300: $--clr-mauve-moyen,
     400: $--clr-mauve-fonce,
   ),
-  secondaire: (
-    100: $--clr-orange-pale,
-    200: $--clr-orange-leger,
-    300: $--clr-orange-moyen,
-    400: $--clr-orange-fonce,
-  ),
-  ternaire: (
-    100: $--clr-rouge-pale,
-    200: $--clr-rouge-leger,
-    300: $--clr-rouge-moyen,
-    400: $--clr-rouge-fonce,
-  ),
-  jaune: (
-    100: $--clr-jaune-pale,
-    200: $--clr-jaune-leger,
-    300: $--clr-jaune-moyen,
-    400: $--clr-jaune-fonce,
-  ),
+  // secondaire: (
+  //   100: $--clr-orange-pale,
+  //   200: $--clr-orange-leger,
+  //   300: $--clr-orange-moyen,
+  //   400: $--clr-orange-fonce,
+  // ),
+  // ternaire: (
+  //   100: $--clr-rouge-pale,
+  //   200: $--clr-rouge-leger,
+  //   300: $--clr-rouge-moyen,
+  //   400: $--clr-rouge-fonce,
+  // ),
+  jaune:
+    (
+      100: $--clr-jaune-pale,
+      200: $--clr-jaune-leger,
+      300: $--clr-jaune-moyen,
+      400: $--clr-jaune-fonce,
+    ),
 );
 
 /*Agencement de couleur*/
@@ -57,18 +60,19 @@ $agencement-couleur: (
     $--clr-mauve-pale,
     ($--clr-mauve-moyen, $--clr-mauve-leger),
   ),
-  secondaire: (
-    $--clr-orange-fonce,
-    $--clr-orange-pale,
-  ),
-  ternaire: (
-    $--clr-rouge-fonce,
-    $--clr-rouge-pale,
-  ),
-  jaune: (
-    $--clr-jaune-fonce,
-    $--clr-jaune-pale,
-  ),
+  // secondaire: (
+  //   $--clr-orange-fonce,
+  //   $--clr-orange-pale,
+  // ),
+  // ternaire: (
+  //   $--clr-rouge-fonce,
+  //   $--clr-rouge-pale,
+  // ),
+  jaune:
+    (
+      $--clr-jaune-fonce,
+      $--clr-jaune-pale,
+    ),
 );
 
 :root {

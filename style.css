@@ -17,7 +17,7 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 */
 /*Initialisation des variables sass et css*/
 /*Variables saas*/
-/*Palette de couleur*/
+/*Palette de couleur générale*/
 /*À partir de variables de couleurs de la palette choisie 
 on créé un mapping en catégorisant les différentes couleurs
 Ce map contient un map principal et plusieurs sous-map*/
@@ -123,70 +123,6 @@ Ce map contient un map principal et plusieurs sous-map*/
   background-color: hsl(250, 100%, 15%);
 }
 
-.clr-secondaire-100 {
-  color: hsl(40, 100%, 85%);
-}
-
-.bck-secondaire-100 {
-  background-color: hsl(40, 100%, 85%);
-}
-
-.clr-secondaire-200 {
-  color: hsl(40, 100%, 50%);
-}
-
-.bck-secondaire-200 {
-  background-color: hsl(40, 100%, 50%);
-}
-
-.clr-secondaire-300 {
-  color: hsl(40, 100%, 30%);
-}
-
-.bck-secondaire-300 {
-  background-color: hsl(40, 100%, 30%);
-}
-
-.clr-secondaire-400 {
-  color: hsl(40, 100%, 15%);
-}
-
-.bck-secondaire-400 {
-  background-color: hsl(40, 100%, 15%);
-}
-
-.clr-ternaire-100 {
-  color: hsl(10, 100%, 85%);
-}
-
-.bck-ternaire-100 {
-  background-color: hsl(10, 100%, 85%);
-}
-
-.clr-ternaire-200 {
-  color: hsl(10, 100%, 50%);
-}
-
-.bck-ternaire-200 {
-  background-color: hsl(10, 100%, 50%);
-}
-
-.clr-ternaire-300 {
-  color: hsl(10, 100%, 30%);
-}
-
-.bck-ternaire-300 {
-  background-color: hsl(10, 100%, 30%);
-}
-
-.clr-ternaire-400 {
-  color: hsl(10, 100%, 15%);
-}
-
-.bck-ternaire-400 {
-  background-color: hsl(10, 100%, 15%);
-}
-
 .clr-jaune-100 {
   color: hsl(60, 100%, 85%);
 }
@@ -225,21 +161,12 @@ Ce map contient un map principal et plusieurs sous-map*/
   background-image: linear-gradient(90deg, hsl(250, 100%, 30%), hsl(250, 100%, 75%));
 }
 
-.clr-agencement-secondaire {
-  color: hsl(40, 100%, 15%);
-  background-color: hsl(40, 100%, 85%);
-}
-
-.clr-agencement-ternaire {
-  color: hsl(10, 100%, 15%);
-  background-color: hsl(10, 100%, 85%);
-}
-
 .clr-agencement-jaune {
   color: hsl(60, 100%, 15%);
   background-color: hsl(60, 100%, 85%);
 }
 
+/*Mixin pour le display flex*/
 * {
   margin: 0;
   padding: 0;
@@ -654,6 +581,7 @@ button:active {
 #menu_entete {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   z-index: 1;
   position: fixed;
@@ -667,8 +595,9 @@ button:active {
   #menu_entete {
     position: static;
     display: flex;
-    align-items: center;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     transform: translateX(0);
     width: 100%;
   }
@@ -683,6 +612,7 @@ button:active {
   #menu_entete img {
     width: 70%;
     height: auto;
+    padding-top: 0px;
   }
 }
 
@@ -710,7 +640,9 @@ button:active {
 
 .menu-item {
   display: flex;
+  flex-direction: center;
   justify-content: center;
+  align-items: center;
   flex: 1 1 auto;
   text-align: center;
 }
