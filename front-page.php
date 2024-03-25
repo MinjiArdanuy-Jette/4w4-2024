@@ -89,11 +89,11 @@
               <?php the_title(); ?>
             </h3>
             <p>
-              <?php the_content(); ?>
+              <?php echo wp_trim_words($description, 20, "..."); ?>
             </p>
-            <?php the_category(); ?>
             <!-- Ajout d'un hyperlien -->
             <a href="<?php the_permalink(); ?>"> Plus d'infos</a>
+            <?php the_category(); ?>
           </div>
         <?php endwhile; ?>
       <?php endif; ?>
