@@ -40,7 +40,7 @@
 </div>
 <div id="evenement" class="global diagonale">
   <section>
-    <h2>Événement</h2>
+    <h2>Événements</h2>
     <div class="categorie-destination">
       <?php
       // Récupérer toutes les catégories
@@ -60,8 +60,8 @@
         echo '<p>Nombre d\'articles : ' . $uneCategorie_count . '</p>';
         // Afficher un lien vers tous les articles de la catégorie actuelle
         echo '<a href="' . get_category_link($uneCategorie->term_id) . '">Voir tous les articles</a>';
-
-        echo '</div>'; // Fermer la div category
+        echo '<img src="images/logo-avion.png" alt="avion" class= "avion">';
+        echo '</div>'; // Fermer la div categorie-destination
       }
       ?>
     </div>

@@ -16,6 +16,8 @@
   min-height: 100%;
   background-color: var(--_couleur-arriere);
   padding: 1rem;
+  overflow: hidden;
+  position: relative;
 }
 
 .carte h3 {
@@ -56,4 +58,17 @@
 
 .post-categories li a {
   text-decoration: none;
+}
+
+.avion {
+  position: absolute;
+  bottom: -100px;
+  transform: translateX(-100%) scale(0.2) rotate(40deg);
+  // transition: transform 0.5s ease; /* Transition fluide */
+}
+
+.carte:hover .avion {
+  transform: translateX(200%);
+  transition: transform 2s ease;
+  transform: translateY(-200%) translateX(100%); /* Déplacement en haut */
 }
