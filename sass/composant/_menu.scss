@@ -57,7 +57,7 @@
   transform: translateX(-150%);
   transition: transform 0.5s ease-in-out;
   width: 50%;
-  height: 50%;
+  height: 80%;
   @media (min-width: 700px) {
     position: static;
     display: flex;
@@ -69,8 +69,16 @@
 }
 
 #menu_entete img {
-  width: 70%;
+  width: 50%;
   height: auto;
+  padding-top: 50px;
+  @media (min-width: 700px) {
+    width: 70%;
+    height: auto;
+  }
+}
+#menu_entete .custom-logo-link {
+  text-align: center;
 }
 
 .menu {
@@ -144,7 +152,7 @@
   }
 }
 .footer-menu {
-  column-count: 2;
+  column-count: 1;
   column-gap: 15rem;
   padding: 0px 0px 0px 30px;
   @media (min-width: 700px) {

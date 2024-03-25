@@ -78,6 +78,7 @@ Ce map contient un map principal et plusieurs sous-map*/
 
 .carte {
   --_couleur-arriere: hsl(var(--u1), 100%, 15%);
+  --_couleur-bouton-categorie: hsl(283, 100%, 28%);
 }
 
 #entete {
@@ -660,7 +661,7 @@ button:active {
   transform: translateX(-150%);
   transition: transform 0.5s ease-in-out;
   width: 50%;
-  height: 50%;
+  height: 80%;
 }
 @media (min-width: 700px) {
   #menu_entete {
@@ -674,8 +675,19 @@ button:active {
 }
 
 #menu_entete img {
-  width: 70%;
+  width: 50%;
   height: auto;
+  padding-top: 50px;
+}
+@media (min-width: 700px) {
+  #menu_entete img {
+    width: 70%;
+    height: auto;
+  }
+}
+
+#menu_entete .custom-logo-link {
+  text-align: center;
 }
 
 .menu {
@@ -758,7 +770,7 @@ button:active {
 }
 
 .footer-menu {
-  column-count: 2;
+  column-count: 1;
   column-gap: 15rem;
   padding: 0px 0px 0px 30px;
 }
