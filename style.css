@@ -528,6 +528,14 @@ button:active {
   transform: translateY(-200%) translateX(100%); /* Déplacement en haut */
 }
 
+.description-categorie {
+  background-color: #875af8;
+  transform: scale(0.7);
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+
 /*<nav> class="menu-principal-container">
           <ul id="menu-principal" class="menu">
             <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-37">

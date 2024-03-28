@@ -11,6 +11,9 @@
         <?php echo category_description(); ?>
       </h2>
     </div>
+    <div class="cadre">
+
+    </div>
   </section>
 </div>
 <div id="galerie" class="global">
