@@ -11,8 +11,11 @@
         <?php echo category_description(); ?>
       </h2>
     </div>
-    <div class="cadre">
-
+    <div class="sticker-conteneur">
+      <aside class="sticker jaune">
+        <p>La grande aventure commence !</p>
+        <span class="pli"></span>
+      </aside>
     </div>
   </section>
 </div>
