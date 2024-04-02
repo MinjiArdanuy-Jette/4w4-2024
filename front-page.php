@@ -17,7 +17,7 @@
         <?= get_bloginfo("description") ?>
       </h2>
       <h3>TIM-Collège de Maisonneuve</h3>
-      <button>Événements</button>
+      <button>Le voyage de vos rêves</button>
     </section>
   </section>
 </div>
@@ -40,7 +40,7 @@
 </div>
 <div id="evenement" class="global diagonale">
   <section>
-    <h2>Événements</h2>
+    <h2>Le choix d'un voyage est à votre portée !</h2>
     <div class="categorie-destination">
       <?php
       // Récupérer toutes les catégories
