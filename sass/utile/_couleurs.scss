@@ -75,6 +75,43 @@ $agencement-couleur: (
     ),
 );
 
+// Définition des variables pour les teintes, la saturation, la luminosité, etc.
+$u1: 250;
+$u2: $u1 - 180;
+$u3: $u2 - 30;
+$u4: $u2 + 30;
+
+$s-arriere: 85%;
+$s-avant: 84%;
+$l-arriere: 40%;
+$l-avant: 54%;
+$j1: 60;
+
+// Définition des couleurs
+$couleur-arriere-entete: hsl($u1, 100%, 70%);
+$couleur-arriere-accueil: hsl($u1, 100%, 75%);
+$couleur-arriere-footer: hsl($u1, 100%, 70%);
+$couleur-arriere-evenement: $couleur-arriere-accueil;
+$couleur-arriere-galerie: $couleur-arriere-accueil;
+$couleur-arriere-diagonale: hsl($u2, 100%, 20%);
+$couleur-ombre-h1: 20px 12px hsl($u1, 97.63%, 61.67%);
+$couleur-ombre-h2: 5px 5px hsl($u1, 97.63%, 61.67%);
+$couleur-gradient-1: hsl(273, 78%, 55%);
+$couleur-gradient-2: hsl(284, 95%, 22%);
+$couleur-lien: hsl($j1, 100%, 70%);
+$couleur-lien-hover: hsla(273, 100%, 81%, 0.949);
+$couleur-lien-visited: hsl($j1, 40%, 70%);
+$couleur-arriere-blockquote: hsl($u1, 100%, 15%);
+
+// Définition des variables locales
+$menu-entete-couleur-arriere-menu: hsl($u1, 74%, 57%);
+$menu-entete-couleur-lien-hover: hsl($j1, 100%, 70%);
+$menu-entete-couleur-lien: hsl($u1, 62%, 89%);
+$carte-couleur-arriere: hsl($u1, 100%, 15%);
+$carte-couleur-bouton-categorie: hsl(283, 100%, 28%);
+$entete-couleur-arriere-vague: $couleur-arriere-accueil;
+$galerie-couleur-arriere-vague: $couleur-arriere-footer;
+
 :root {
   /*
 
