@@ -25,6 +25,7 @@
 <div id="accueil" class="global">
   <section>
     <h2>Accueil</h2>
+    <?php get_template_part('search'); ?>
     <p>
       Lorem ipsum dolor sit amet. <a href="#">Sans souci</a>Lorem ipsum
       dolor sit amet consectetur adipisicing elit. Autem eveniet libero nemo
