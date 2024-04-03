@@ -58,7 +58,7 @@
         echo '<div class="carte">';
         echo '<h3>' . $uneCategorie->name . '</h3>';
         echo '<p>' . $uneCategorie_description . '</p>';
-        echo '<p>Nombre d\'articles : ' . $uneCategorie_count . '</p>';
+        echo '<p>' . $uneCategorie_count . ' articles</p>';
         // Afficher un lien vers tous les articles de la catégorie actuelle
         echo '<a href="' . get_category_link($uneCategorie->term_id) . '">Voir tous les articles</a>';
         echo '<img src="images/logo-avion.png" alt="avion" class= "avion">';
