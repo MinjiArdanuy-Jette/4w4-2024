@@ -6,6 +6,42 @@
     <h2>
       <?php single_cat_title(); ?>
     </h2>
+    <div class="image-categorie">
+      <?php
+      // Récupérer la catégorie actuelle
+      $category = get_queried_object();
+
+      // Vérifier si la catégorie existe
+      if ($category) {
+        // Récupérer l'image personnalisée pour cette catégorie
+        $category_image = '';
+
+        // Définir l'image en fonction de la catégorie
+        if ($category->slug == 'sport') {
+          $category_image = get_template_directory_uri() . '/images/voyage-avion.png';
+        } elseif ($category->slug == 'pleine-nature') {
+          $category_image = get_template_directory_uri() . '/images/voyage-avion.png';
+        } elseif ($category->slug == 'aventure') {
+          $category_image = get_template_directory_uri() . '/images/voyage-avion.png';
+        } elseif ($category->slug == 'croisiere') {
+          $category_image = get_template_directory_uri() . '/images/voyage-avion.png';
+        } elseif ($category->slug == 'culturel') {
+          $category_image = get_template_directory_uri() . '/images/voyage-avion.png';
+        } elseif ($category->slug == 'repos') {
+          $category_image = get_template_directory_uri() . '/images/voyage-avion.png';
+        } elseif ($category->slug == 'zen') {
+          $category_image = get_template_directory_uri() . '/images/voyage-avion.png';
+        } elseif ($category->slug == 'populaire') {
+          $category_image = get_template_directory_uri() . '/images/voyage-avion.png';
+        }
+
+        // Afficher l'image
+        if ($category_image) {
+          echo '<img src="' . ($category_image) . '" alt="' . esc_attr($category->name) . '">';
+        }
+      }
+      ?>
+    </div>
     <div class="description-categorie">
       <h2>
         <?php echo category_description(); ?>

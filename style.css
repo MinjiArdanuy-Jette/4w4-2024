@@ -167,6 +167,7 @@ Ce map contient un map principal et plusieurs sous-map*/
 }
 
 /*Mixin pour le display flex*/
+/*Les différentes pages/styles globales*/
 * {
   margin: 0;
   padding: 0;
@@ -329,6 +330,68 @@ body {
     transform: scale(1);
   }
 }
+.description-categorie {
+  position: relative;
+}
+
+.cadre {
+  z-index: 1;
+  position: absolute;
+  bottom: 10rem;
+  right: 15rem;
+  width: 10%;
+  height: 10%;
+  background-color: #875af8;
+}
+
+.sticker-conteneur {
+  font-size: 1em;
+}
+
+.sticker {
+  position: relative;
+  display: table;
+  width: 10em;
+  height: 10em;
+  padding: 1em;
+  border-radius: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sticker p {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: black;
+}
+
+.sticker .pli {
+  content: "";
+  display: block;
+  width: 10em;
+  height: 10em;
+  position: absolute;
+  right: -6em;
+  top: -6em;
+  border-radius: 100%;
+  background: linear-gradient(-135deg, transparent 11.3em, #feeba7 10em, #feeba7 10em, #feeba7 85%);
+}
+
+.sticker.jaune {
+  background: rgb(255, 215, 7);
+  background: linear-gradient(-135deg, transparent 2.82em, rgb(255, 215, 7) 0, rgb(255, 215, 7));
+}
+
+.image-categorie {
+  text-align: center; /*PLacer l'image au centre*/
+}
+
+.image-categorie > img {
+  width: 50%;
+  height: auto;
+}
+
 h1 {
   font-size: clamp(1.5rem, -2.656rem + 12.5vw, 4.375rem);
   font-weight: 600;
@@ -526,59 +589,6 @@ button:active {
   transform: translateX(200%);
   transition: transform 2s ease;
   transform: translateY(-200%) translateX(100%); /* Déplacement en haut */
-}
-
-.description-categorie {
-  position: relative;
-}
-
-.cadre {
-  z-index: 1;
-  position: absolute;
-  bottom: 10rem;
-  right: 15rem;
-  width: 10%;
-  height: 10%;
-  background-color: #875af8;
-}
-
-.sticker-conteneur {
-  font-size: 1em;
-}
-
-.sticker {
-  position: relative;
-  display: table;
-  width: 10em;
-  height: 10em;
-  padding: 1em;
-  border-radius: 100%;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.sticker p {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  color: black;
-}
-
-.sticker .pli {
-  content: "";
-  display: block;
-  width: 10em;
-  height: 10em;
-  position: absolute;
-  right: -6em;
-  top: -6em;
-  border-radius: 100%;
-  background: linear-gradient(-135deg, transparent 11.3em, #feeba7 10em, #feeba7 10em, #feeba7 85%);
-}
-
-.sticker.jaune {
-  background: rgb(255, 215, 7);
-  background: -webkit-linear-gradient(-135deg, transparent 2.82em, rgb(255, 215, 7) 0, rgb(255, 215, 7));
 }
 
 /*<nav> class="menu-principal-container">

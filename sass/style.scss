@@ -20,9 +20,11 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 @import "utile/couleurs";
 /*Création de classes de couleurs*/
 @import "utile/couleurs-class";
+/*Les différentes pages/styles globales*/
 @import "layout";
 @import "entete";
 @import "galerie";
+@import "category";
 @import "base/h";
 @import "base/lien";
 @import "base/bouton";
