@@ -165,3 +165,15 @@
 .footer-menu li:nth-child(3n + 1) {
   margin-top: 0; /* Supprimer la marge en haut pour chaque troisième élément (premier élément de chaque colonne) */
 }
+
+/*icône de loupe de recherche*/
+.icon-search::before {
+  content: "\f002"; /* Code unicode de l'icône de loupe */
+  font-family: FontAwesome; /* Assurez-vous que la police d'icônes est chargée (ex: Font Awesome) */
+  margin-right: 5px; /* Espacement entre l'icône et le texte */
+}
+
+/* Style de l'icône de recherche dans le menu */
+.menu .menu-item .icon-search {
+  color: #333; /* Couleur de l'icône */
+}
