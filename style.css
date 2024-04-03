@@ -353,8 +353,8 @@ h2:not(.premier-h2)::first-letter {
   font-size: 5rem;
 }
 
-/* Spécification du h2dans la page single.php*/
-#galerie .cours .carte h2 {
+/* Spécification du h2 dans la page single.php*/
+.article-voyage .carte h2 {
   color: hsl(60, 96%, 67%);
 }
 

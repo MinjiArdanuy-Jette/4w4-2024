@@ -3,14 +3,16 @@
 
 <div id="accueil" class="global">
   <section>
-    <h2>Accueil</h2>
-
+    <h1>
+      <?php the_title(); ?>
+    </h1>
+  </section>
 </div>
 
 <div id="galerie" class="global">
   <section>
     <h2>Galerie</h2>
-    <div class="cours">
+    <div class="article-voyage">
       <?php
       if (have_posts()):
         the_post();
