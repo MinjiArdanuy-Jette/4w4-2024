@@ -75,11 +75,9 @@ $agencement-couleur: (
     ),
 );
 
-// Définition des variables pour les teintes, la saturation, la luminosité, etc.
+// Définition des variables pour les teintes, la saturation, la luminosité
 $u1: 250;
 $u2: $u1 - 180;
-$u3: $u2 - 30;
-$u4: $u2 + 30;
 
 $s-arriere: 85%;
 $s-avant: 84%;

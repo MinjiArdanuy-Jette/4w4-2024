@@ -38,5 +38,3 @@ get_header();
     <?php endif; ?>
   </section>
 </main>
-<?php
-get_footer();
