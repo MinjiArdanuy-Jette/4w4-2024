@@ -17,7 +17,6 @@
       )
     );
     ?>
-    <?php get_template_part('search'); ?>
   </footer>
 </div>
 </body>

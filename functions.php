@@ -51,6 +51,7 @@ function ajouter_span_a_la_fin_de_la_balise_a($items, $args)
 add_filter('wp_nav_menu', 'ajouter_span_a_la_fin_de_la_balise_a', 10, 2);
 add_theme_support('menus');
 add_theme_support('custom-logo');
+add_theme_support('post-thumbnails');
 /*
 array(
     'width'                => null,
