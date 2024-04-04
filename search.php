@@ -23,6 +23,9 @@
 <div id="galerie" class="global">
   <section>
     <h2>Résultat de recherche</h2>
+    <div class="recherche">
+      <?php get_search_form() ?>
+    </div>
     <div class="cours">
       <?php
       /*if (have_posts()) {
