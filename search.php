@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<h1>index.php</h1>
 <div id="entete" class="global">
   <div class="social">
     <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000" width="32" height="32" />
@@ -26,15 +25,6 @@
     <?php get_search_form() ?>
     <div class="cours">
       <?php
-      /*if (have_posts()) {
-        while (have_posts()) {
-          the_post();
-          the_title("<h3>", "</h3>");
-          echo wp_trim_words(get_the_content(), 30);
-        }
-      }
-       ?>
-      */
       if (have_posts()):
         while (have_posts()):
           the_post();
