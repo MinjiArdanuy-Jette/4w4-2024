@@ -6,53 +6,60 @@
     <h1>
       <?php single_cat_title(); ?>
     </h1>
-    <div class="image-categorie">
-      <?php
-      // Récupérer la catégorie actuelle
-      $category = get_queried_object();
+    <div class="sticker-container">
+      <div class="image-categorie">
+        <?php
+        // Récupérer la catégorie actuelle
+        $categorie = get_queried_object();
 
-      // Vérifier si la catégorie existe
-      if ($category) {
-        // Récupérer l'image personnalisée pour cette catégorie
-        $category_image = '';
+        // Vérifier si la catégorie existe
+        if ($categorie) {
+          // Récupérer l'image personnalisée pour cette catégorie
+          $categorie_image = '';
 
-        // Définir l'image en fonction de la catégorie
-        if ($category->slug == 'sport') {
-          $category_image = get_template_directory_uri() . '/images/voyage-avion.png';
-        } elseif ($category->slug == 'pleine-nature') {
-          $category_image = get_template_directory_uri() . '/images/voyage-avion.png';
-        } elseif ($category->slug == 'aventure') {
-          $category_image = get_template_directory_uri() . '/images/voyage-avion.png';
-        } elseif ($category->slug == 'croisiere') {
-          $category_image = get_template_directory_uri() . '/images/voyage-avion.png';
-        } elseif ($category->slug == 'culturel') {
-          $category_image = get_template_directory_uri() . '/images/voyage-avion.png';
-        } elseif ($category->slug == 'repos') {
-          $category_image = get_template_directory_uri() . '/images/voyage-avion.png';
-        } elseif ($category->slug == 'zen') {
-          $category_image = get_template_directory_uri() . '/images/voyage-avion.png';
-        } elseif ($category->slug == 'populaire') {
-          $category_image = get_template_directory_uri() . '/images/voyage-avion.png';
+          // Définir l'image en fonction de la catégorie
+          if ($categorie->slug == 'sport') {
+            $categorie_image = get_template_directory_uri() . '/images/voyage-avion.png';
+          } elseif ($categorie->slug == 'pleine-nature') {
+            $categorie_image = get_template_directory_uri() . '/images/voyage-avion.png';
+          } elseif ($categorie->slug == 'aventure') {
+            $categorie_image = get_template_directory_uri() . '/images/voyage-avion.png';
+          } elseif ($categorie->slug == 'croisiere') {
+            $categorie_image = get_template_directory_uri() . '/images/voyage-avion.png';
+          } elseif ($categorie->slug == 'culturel') {
+            $categorie_image = get_template_directory_uri() . '/images/voyage-avion.png';
+          } elseif ($categorie->slug == 'repos') {
+            $categorie_image = get_template_directory_uri() . '/images/voyage-avion.png';
+          } elseif ($categorie->slug == 'zen') {
+            $categorie_image = get_template_directory_uri() . '/images/voyage-avion.png';
+          } elseif ($categorie->slug == 'populaire') {
+            $categorie_image = get_template_directory_uri() . '/images/voyage-avion.png';
+          }
+
+          // Afficher l'image
+          if ($categorie_image) {
+            echo '<img src="' . ($categorie_image) . '" alt="' . esc_attr($categorie->name) . '">';
+          }
         }
-
-        // Afficher l'image
-        if ($category_image) {
-          echo '<img src="' . ($category_image) . '" alt="' . esc_attr($category->name) . '">';
-        }
-      }
-      ?>
-    </div>
-    <div class="description-categorie">
-      <h2>
-        <?php echo category_description(); ?>
-      </h2>
-    </div>
-    <div class="sticker-conteneur">
-      <aside class="sticker jaune">
+        ?>
+      </div>
+      <aside class="sticker jaune gauche">
+        <p>Destination
+          <?php single_cat_title(); ?> n'attend que vous !
+        </p>
+        <span class="pli"></span>
+      </aside>
+      <aside class="sticker jaune droite">
         <p>La grande aventure commence !</p>
         <span class="pli"></span>
       </aside>
     </div>
+    <div class="description-categorie">
+      <h2>
+        <?= category_description(); ?>
+      </h2>
+    </div>
+
   </section>
 </div>
 <div id="galerie" class="global">

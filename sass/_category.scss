@@ -23,31 +23,56 @@
   //   0% 75%
   // );
 }
-.sticker-conteneur {
-  font-size: 1em;
+.sticker-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .sticker {
-  position: relative;
-  display: table;
-  width: 10em;
-  height: 10em;
-  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 9rem;
+  height: 9rem;
+  padding: 1rem;
   border-radius: 100%;
   box-sizing: border-box;
   overflow: hidden;
 }
-.sticker p {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  color: black;
+
+.sticker.gauche {
+  left: 5%;
+  transform: rotate(-50deg);
 }
+
+.sticker.droite {
+  right: 5%;
+  transform: rotate(50deg);
+}
+
+.image-categorie {
+  text-align: center;
+}
+
+.image-categorie > img {
+  width: 50%;
+  height: auto;
+}
+
+.sticker p {
+  text-align: center;
+  color: black;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
 .sticker .pli {
   content: "";
   display: block;
-  width: 10em;
-  height: 10em;
+  width: 10rem;
+  height: 10rem;
   position: absolute;
   right: -6em;
   top: -6em;
@@ -69,12 +94,4 @@
     rgb(255, 215, 7) 0,
     rgb(255, 215, 7)
   );
-}
-
-.image-categorie {
-  text-align: center; /*PLacer l'image au centre*/
-}
-.image-categorie > img {
-  width: 50%;
-  height: auto;
 }
