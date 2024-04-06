@@ -10,6 +10,7 @@
     <?php
     wp_nav_menu(
       array(
+        'menu' => 'footer',
         'theme_location' => 'footer-menu',
         'menu_class' => 'footer-menu',
         'container' => 'nav',

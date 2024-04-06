@@ -3,9 +3,9 @@
 
 <div id="accueil" class="global">
   <section>
-    <h2>
+    <h1>
       <?php single_cat_title(); ?>
-    </h2>
+    </h1>
     <div class="image-categorie">
       <?php
       // Récupérer la catégorie actuelle
