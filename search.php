@@ -10,11 +10,11 @@
   <?php get_template_part("gabarits/vague1") ?>
   <section>
     <section class="hero">
-      <h1>Thème du groupe #1</h1>
+      <h1>Page de recherche</h1>
       <h2 class="premier-h2">
-        4w4-Conception d'interface <span>et développement Web</span>
+        Vous cherchez une destination ?
       </h2>
-      <h3>TIM-Collège de Maisonneuve</h3>
+      <h3>On a toutes les réponses</h3>
       <button>Événements</button>
     </section>
   </section>
@@ -23,9 +23,7 @@
 <div id="galerie" class="global">
   <section>
     <h2>Résultat de recherche</h2>
-    <div class="recherche">
-      <?php get_search_form() ?>
-    </div>
+    <?php get_search_form() ?>
     <div class="cours">
       <?php
       /*if (have_posts()) {
@@ -49,6 +47,7 @@
               <?= wp_trim_words(get_the_content(), 50); ?>
             </p>
             <a href="<?= get_permalink(); ?>">Plus d'infos</a>
+            <?php the_category(); ?>
           </div>
         <?php endwhile; ?>
       <?php endif; ?>
