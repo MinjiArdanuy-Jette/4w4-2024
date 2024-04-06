@@ -23,7 +23,7 @@
   <section>
     <h2>Résultat de recherche</h2>
     <?php get_search_form() ?>
-    <div class="cours">
+    <div class="destination">
       <?php
       if (have_posts()):
         while (have_posts()):
