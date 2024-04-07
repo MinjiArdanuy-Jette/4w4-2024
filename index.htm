@@ -7,8 +7,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thème du groupe #1</title>
-  <link rel="stylesheet" href="http://localhost/4w4_wp2/wp-content/themes/theme-minji/normalize.css" />
-  <link rel="stylesheet" href="http://localhost/4w4_wp2/wp-content/themes/theme-minji/style.css" />
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet" />
@@ -44,6 +44,18 @@
     </header>
   </div><div id="entete" class="global">
   <div class="social">
+    <div class="recherche">
+      <div class="recherche">
+  <input type="checkbox" id="toggle-search">
+  <label for="toggle-search" class="search-icon">
+    <img src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=000" width="32" height="32">
+  </label>
+  <form role="search" method="get" action="http://localhost/4w4_wp2/" class="search-form">
+    <input type="text" placeholder="Recherche" value="" name="s" class="search-input">
+    <button type="submit"><img src="https://s2.svgbox.net/hero-solid.svg?ic=arrow-right&color=000" width="28"
+        height="28"></button>
+  </form>
+</div>    </div>
     <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000" width="32" height="32" />
     <img src="https://s2.svgbox.net/social.svg?ic=instagram&color=000" width="32" height="32" />
     <img src="https://s2.svgbox.net/social.svg?ic=youtube&color=000" width="32" height="32" />
@@ -68,32 +80,57 @@
       <h2 class="premier-h2">
         Du Rêve à la Réalité : Des voyages qui transforment      </h2>
       <h3>TIM-Collège de Maisonneuve</h3>
-      <button>Événements</button>
+      <button>Le voyage de vos rêves</button>
     </section>
   </section>
 </div>
 
 <div id="accueil" class="global">
   <section>
-    <h2>Accueil</h2>
-    <p>
-      Lorem ipsum dolor sit amet. <a href="#">Sans souci</a>Lorem ipsum
-      dolor sit amet consectetur adipisicing elit. Autem eveniet libero nemo
-      hic tempora
-    </p>
-    <div class="expo">
-      <img src="images/github.png" alt="github" />
-      <img src="images/github.png" alt="github" />
-      <img src="images/github.png" alt="github" />
+    <h2>Témoignages</h2>
+    <div class="carte-avis-conteneur">
+      <div class="carte-avis">
+        <div class="contenu">
+          <div class="photo">
+            <img src="images/femme-souriante.jpg" alt="femme-souriante">
+          </div>
+          <h3>Justine</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ea, aspernatur tempora provident
+            perspiciatis tempore eum beatae voluptatum dolores itaque distinctio qui doloremque rem alias! Voluptatibus
+            cumque ut ipsam repellat?</p>
+        </div>
+      </div>
+      <div class="carte-avis">
+        <div class="contenu">
+          <div class="photo">
+            <img src="images/homme-souriant.jpg" alt="homme-souriant" />
+          </div>
+          <h3>Justine</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ea, aspernatur tempora provident
+            perspiciatis tempore eum beatae voluptatum dolores itaque distinctio qui doloremque rem alias! Voluptatibus
+            cumque ut ipsam repellat?</p>
+        </div>
+      </div>
+      <div class="carte-avis">
+        <div class="contenu">
+          <div class="photo">
+            <img src="images//femme-serieuse.jpg" alt="femme-serieuse" />
+          </div>
+          <h3>Justine</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ea, aspernatur tempora provident
+            perspiciatis tempore eum beatae voluptatum dolores itaque distinctio qui doloremque rem alias! Voluptatibus
+            cumque ut ipsam repellat?</p>
+        </div>
+      </div>
     </div>
     <button>Plusieurs oeuvres sont disponibles ici</button>
   </section>
 </div>
 <div id="evenement" class="global diagonale">
   <section>
-    <h2>Événements</h2>
+    <h2>Le choix d'un voyage est à votre portée !</h2>
     <div class="categorie-destination">
-      <div class="carte"><h3>Aventure</h3><p>Explorez des horizons nouveaux dans notre catégorie dédiée aux voyageurs...</p><p>Nombre d'articles : 9</p><a href="http://localhost/4w4_wp2/category/aventure/">Voir tous les articles</a><img src="images/logo-avion.png" alt="avion" class= "avion"></div><div class="carte"><h3>Croisière</h3><p>Plongez au cœur de l'aventure maritime avec nos croisières exclusives,...</p><p>Nombre d'articles : 9</p><a href="http://localhost/4w4_wp2/category/croisiere/">Voir tous les articles</a><img src="images/logo-avion.png" alt="avion" class= "avion"></div><div class="carte"><h3>Culturel</h3><p>Découvrez les voyages culturels, une immersion enrichissante au cœur des...</p><p>Nombre d'articles : 8</p><a href="http://localhost/4w4_wp2/category/culturel/">Voir tous les articles</a><img src="images/logo-avion.png" alt="avion" class= "avion"></div><div class="carte"><h3>Pleine nature</h3><p>Partez à la découverte de la nature dans toute sa...</p><p>Nombre d'articles : 13</p><a href="http://localhost/4w4_wp2/category/pleine-nature/">Voir tous les articles</a><img src="images/logo-avion.png" alt="avion" class= "avion"></div><div class="carte"><h3>Populaire</h3><p>Soyez intrigué par nos destinations de voyage les plus en...</p><p>Nombre d'articles : 7</p><a href="http://localhost/4w4_wp2/category/populaire/">Voir tous les articles</a><img src="images/logo-avion.png" alt="avion" class= "avion"></div><div class="carte"><h3>Repos</h3><p>Offrez-vous une escapade bien méritée et laissez-vous envelopper par la...</p><p>Nombre d'articles : 8</p><a href="http://localhost/4w4_wp2/category/repos/">Voir tous les articles</a><img src="images/logo-avion.png" alt="avion" class= "avion"></div><div class="carte"><h3>Sport</h3><p>Découvrez l'excitation et l'aventure des voyages sportifs ! Des sommets...</p><p>Nombre d'articles : 13</p><a href="http://localhost/4w4_wp2/category/sport/">Voir tous les articles</a><img src="images/logo-avion.png" alt="avion" class= "avion"></div><div class="carte"><h3>Zen</h3><p>Nos voyages Zen vous offrent l'opportunité de vous reconnecter avec...</p><p>Nombre d'articles : 6</p><a href="http://localhost/4w4_wp2/category/zen/">Voir tous les articles</a><img src="images/logo-avion.png" alt="avion" class= "avion"></div>    </div>
+      <div class="carte"><h3>Aventure</h3><p>Explorez des horizons nouveaux dans notre catégorie dédiée aux voyageurs...</p><p>9 articles</p><a href="http://localhost/4w4_wp2/category/aventure/">Voir tous les articles</a><img src="images/logo-avion.png" alt="avion" class= "avion"></div><div class="carte"><h3>Croisière</h3><p>Plongez au cœur de l'aventure maritime avec nos croisières exclusives,...</p><p>9 articles</p><a href="http://localhost/4w4_wp2/category/croisiere/">Voir tous les articles</a><img src="images/logo-avion.png" alt="avion" class= "avion"></div><div class="carte"><h3>Culturel</h3><p>Découvrez les voyages culturels, une immersion enrichissante au cœur des...</p><p>8 articles</p><a href="http://localhost/4w4_wp2/category/culturel/">Voir tous les articles</a><img src="images/logo-avion.png" alt="avion" class= "avion"></div><div class="carte"><h3>Groupe</h3><p>Un voyage organisé pour un groupe d'au moins 10 personnes</p><p>6 articles</p><a href="http://localhost/4w4_wp2/category/groupe/">Voir tous les articles</a><img src="images/logo-avion.png" alt="avion" class= "avion"></div><div class="carte"><h3>Petit comité</h3><p>Un voyage organisé pour un groupe de 5 personnes</p><p>5 articles</p><a href="http://localhost/4w4_wp2/category/petit-comite/">Voir tous les articles</a><img src="images/logo-avion.png" alt="avion" class= "avion"></div><div class="carte"><h3>Pleine nature</h3><p>Partez à la découverte de la nature dans toute sa...</p><p>13 articles</p><a href="http://localhost/4w4_wp2/category/pleine-nature/">Voir tous les articles</a><img src="images/logo-avion.png" alt="avion" class= "avion"></div><div class="carte"><h3>Populaire</h3><p>Soyez intrigué par nos destinations de voyage les plus en...</p><p>7 articles</p><a href="http://localhost/4w4_wp2/category/populaire/">Voir tous les articles</a><img src="images/logo-avion.png" alt="avion" class= "avion"></div><div class="carte"><h3>Repos</h3><p>Offrez-vous une escapade bien méritée et laissez-vous envelopper par la...</p><p>8 articles</p><a href="http://localhost/4w4_wp2/category/repos/">Voir tous les articles</a><img src="images/logo-avion.png" alt="avion" class= "avion"></div><div class="carte"><h3>Solo</h3><p>Un voyage seul, c'est tout à fait acceptable</p><p>5 articles</p><a href="http://localhost/4w4_wp2/category/solo/">Voir tous les articles</a><img src="images/logo-avion.png" alt="avion" class= "avion"></div><div class="carte"><h3>Sport</h3><p>Découvrez l'excitation et l'aventure des voyages sportifs ! Des sommets...</p><p>13 articles</p><a href="http://localhost/4w4_wp2/category/sport/">Voir tous les articles</a><img src="images/logo-avion.png" alt="avion" class= "avion"></div><div class="carte"><h3>Zen</h3><p>Nos voyages Zen vous offrent l'opportunité de vous reconnecter avec...</p><p>6 articles</p><a href="http://localhost/4w4_wp2/category/zen/">Voir tous les articles</a><img src="images/logo-avion.png" alt="avion" class= "avion"></div>    </div>
 </div>
 </section>
 </div>
@@ -144,6 +181,7 @@
             <a href="http://localhost/4w4_wp2/paris-france/"> Plus d'infos</a>
             <ul class="post-categories">
 	<li><a href="http://localhost/4w4_wp2/category/culturel/" rel="category tag">Culturel</a></li>
+	<li><a href="http://localhost/4w4_wp2/category/petit-comite/" rel="category tag">Petit comité</a></li>
 	<li><a href="http://localhost/4w4_wp2/category/populaire/" rel="category tag">Populaire</a></li></ul>          </div>
                   <div class="carte">
             <h3>
@@ -177,6 +215,7 @@
             <a href="http://localhost/4w4_wp2/ubud-bali/"> Plus d'infos</a>
             <ul class="post-categories">
 	<li><a href="http://localhost/4w4_wp2/category/populaire/" rel="category tag">Populaire</a></li>
+	<li><a href="http://localhost/4w4_wp2/category/solo/" rel="category tag">Solo</a></li>
 	<li><a href="http://localhost/4w4_wp2/category/zen/" rel="category tag">Zen</a></li></ul>          </div>
                   </div>
     <!-- Vague2 -->
@@ -193,8 +232,7 @@
 <div id="footer" class="global">
   <footer>
     <h2>Footer</h2>
-    <h6>
-      <nav class="footer-menu-container"><ul id="menu-footer" class="footer-menu"><li id="menu-item-105" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-105"><a href="http://localhost/4w4_wp2/category/sport/">Sport</a></li>
+    <nav class="footer-menu-container"><ul id="menu-footer" class="footer-menu"><li id="menu-item-105" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-105"><a href="http://localhost/4w4_wp2/category/sport/">Sport</a></li>
 <li id="menu-item-106" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-106"><a href="http://localhost/4w4_wp2/category/pleine-nature/">Pleine nature</a></li>
 <li id="menu-item-107" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-107"><a href="http://localhost/4w4_wp2/category/aventure/">Aventure</a></li>
 <li id="menu-item-108" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-108"><a href="http://localhost/4w4_wp2/category/croisiere/">Croisière</a></li>
@@ -202,8 +240,9 @@
 <li id="menu-item-110" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-110"><a href="http://localhost/4w4_wp2/category/repos/">Repos</a></li>
 <li id="menu-item-111" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-111"><a href="http://localhost/4w4_wp2/category/populaire/">Populaire</a></li>
 <li id="menu-item-112" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-112"><a href="http://localhost/4w4_wp2/category/zen/">Zen</a></li>
-</ul></nav>    </h6>
-  </footer>
+<li id="menu-item-122" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-122"><a href="https://www.airtransat.com/">Air Transat</a></li>
+<li id="menu-item-123" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-123"><a href="https://fr.airbnb.ca/">Airbnb</a></li>
+</ul></nav>  </footer>
 </div>
 </body>
 

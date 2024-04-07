@@ -32,7 +32,7 @@
       <div class="carte-avis">
         <div class="contenu">
           <div class="photo">
-            <img src="images/github.png" alt="github" />
+            <img src="images/femme-souriante.jpg" alt="femme-souriante">
           </div>
           <h3>Justine</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ea, aspernatur tempora provident
@@ -43,7 +43,7 @@
       <div class="carte-avis">
         <div class="contenu">
           <div class="photo">
-            <img src="images/github.png" alt="github" />
+            <img src="images/homme-souriant.jpg" alt="homme-souriant" />
           </div>
           <h3>Justine</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ea, aspernatur tempora provident
@@ -54,7 +54,7 @@
       <div class="carte-avis">
         <div class="contenu">
           <div class="photo">
-            <img src="images/github.png" alt="github" />
+            <img src="images//femme-serieuse.jpg" alt="femme-serieuse" />
           </div>
           <h3>Justine</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ea, aspernatur tempora provident

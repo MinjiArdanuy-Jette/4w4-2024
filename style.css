@@ -335,13 +335,6 @@ body {
   #evenement blockquote {
     width: 85%;
   }
-  #accueil .expo {
-    flex-direction: column;
-    align-items: center;
-  }
-  .expo img {
-    width: 30%;
-  }
 }
 .expo {
   display: flex;
@@ -674,8 +667,8 @@ button:active {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
   border-radius: 15px;
-  border-top: 1px solid rgb(125, 125, 125);
-  border-left: 1px solid rgb(125, 125, 125);
+  border-top: 1px solid rgb(255, 255, 255);
+  border-left: 1px solid rgb(255, 255, 255);
 }
 
 .carte-avis .contenu {
@@ -688,10 +681,11 @@ button:active {
 }
 
 .carte-avis .contenu .photo {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: auto;
   margin: 0 auto;
   position: relative;
+  clip-path: circle(39% at 50% 50%);
 }
 
 .carte-avis .contenu .photo::before {

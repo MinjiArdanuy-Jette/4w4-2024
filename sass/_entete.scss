@@ -1,5 +1,4 @@
 .hero {
-  // background-image: url("images/react.png");
   background-repeat: no-repeat;
   background-position: 100% 40%;
   background-size: 25%;
@@ -19,14 +18,5 @@
 
   #evenement blockquote {
     width: 85%;
-  }
-
-  #accueil .expo {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .expo img {
-    width: 30%;
   }
 }
