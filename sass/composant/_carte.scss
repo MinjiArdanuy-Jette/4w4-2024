@@ -72,3 +72,49 @@
   transition: transform 2s ease;
   transform: translateY(-200%) translateX(100%); /* Déplacement en haut */
 }
+
+.carte-avis-conteneur {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  @media (min-width: 700px) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.carte-avis {
+  width: 400px;
+  height: 600px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  border-top: 1px solid rgb(125, 125, 125);
+  border-left: 1px solid rgb(125, 125, 125);
+}
+
+.carte-avis .contenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.carte-avis .contenu .photo {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carte-avis .contenu .photo::before {
+  position: absolute;
+}
+
+.carte-avis .contenu .photo img {
+  width: 100%;
+  height: 100%;
+}

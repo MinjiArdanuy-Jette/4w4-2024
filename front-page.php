@@ -27,16 +27,41 @@
 
 <div id="accueil" class="global">
   <section>
-    <h2>Accueil</h2>
-    <p>
-      Lorem ipsum dolor sit amet. <a href="#">Sans souci</a>Lorem ipsum
-      dolor sit amet consectetur adipisicing elit. Autem eveniet libero nemo
-      hic tempora
-    </p>
-    <div class="expo">
-      <img src="images/github.png" alt="github" />
-      <img src="images/github.png" alt="github" />
-      <img src="images/github.png" alt="github" />
+    <h2>Témoignages</h2>
+    <div class="carte-avis-conteneur">
+      <div class="carte-avis">
+        <div class="contenu">
+          <div class="photo">
+            <img src="images/github.png" alt="github" />
+          </div>
+          <h3>Justine</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ea, aspernatur tempora provident
+            perspiciatis tempore eum beatae voluptatum dolores itaque distinctio qui doloremque rem alias! Voluptatibus
+            cumque ut ipsam repellat?</p>
+        </div>
+      </div>
+      <div class="carte-avis">
+        <div class="contenu">
+          <div class="photo">
+            <img src="images/github.png" alt="github" />
+          </div>
+          <h3>Justine</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ea, aspernatur tempora provident
+            perspiciatis tempore eum beatae voluptatum dolores itaque distinctio qui doloremque rem alias! Voluptatibus
+            cumque ut ipsam repellat?</p>
+        </div>
+      </div>
+      <div class="carte-avis">
+        <div class="contenu">
+          <div class="photo">
+            <img src="images/github.png" alt="github" />
+          </div>
+          <h3>Justine</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ea, aspernatur tempora provident
+            perspiciatis tempore eum beatae voluptatum dolores itaque distinctio qui doloremque rem alias! Voluptatibus
+            cumque ut ipsam repellat?</p>
+        </div>
+      </div>
     </div>
     <button>Plusieurs oeuvres sont disponibles ici</button>
   </section>
