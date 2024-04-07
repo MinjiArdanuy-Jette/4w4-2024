@@ -652,18 +652,18 @@ button:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 @media (min-width: 700px) {
   .carte-avis-conteneur {
     flex-direction: row;
-    align-items: center;
   }
 }
 
 .carte-avis {
-  width: 400px;
-  height: 600px;
+  max-width: 400px;
+  height: 550px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
   border-radius: 15px;

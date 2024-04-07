@@ -35,9 +35,9 @@
             <img src="images/femme-souriante.jpg" alt="femme-souriante">
           </div>
           <h3>Justine</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ea, aspernatur tempora provident
-            perspiciatis tempore eum beatae voluptatum dolores itaque distinctio qui doloremque rem alias! Voluptatibus
-            cumque ut ipsam repellat?</p>
+          <p>Mon voyage à travers l'Asie a été une expérience transcendante, des rizières de Bali aux plages de Phuket.
+            Rencontres chaleureuses, saveurs exotiques et moments partagés ont enrichi mon périple. Une source
+            d'inspiration et de découvertes gravée dans mon cœur.</p>
         </div>
       </div>
       <div class="carte-avis">
@@ -45,10 +45,10 @@
           <div class="photo">
             <img src="images/homme-souriant.jpg" alt="homme-souriant" />
           </div>
-          <h3>Justine</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ea, aspernatur tempora provident
-            perspiciatis tempore eum beatae voluptatum dolores itaque distinctio qui doloremque rem alias! Voluptatibus
-            cumque ut ipsam repellat?</p>
+          <h3>Romain</h3>
+          <p>À Kyoto, l'immersion dans la beauté intemporelle du Japon m'a transporté dans un autre temps. Entre
+            Kinkaku-ji et Fushimi Inari-taisha, traditions et rituels m'ont éveillé à l'harmonie. Rencontres
+            chaleureuses et échanges culturels ont enrichi ce voyage unique.</p>
         </div>
       </div>
       <div class="carte-avis">
@@ -56,10 +56,10 @@
           <div class="photo">
             <img src="images//femme-serieuse.jpg" alt="femme-serieuse" />
           </div>
-          <h3>Justine</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ea, aspernatur tempora provident
-            perspiciatis tempore eum beatae voluptatum dolores itaque distinctio qui doloremque rem alias! Voluptatibus
-            cumque ut ipsam repellat?</p>
+          <h3>Emanuelle</h3>
+          <p>À Paris, entre le Marais et les Champs-Élysées, l'énergie unique m'a enchantée. Gastronomie, balades
+            romantiques, musées, rencontres enrichissantes... Une expérience inoubliable qui a gravé en moi le charme
+            intemporel de la ville, éveillant une passion pour l'exploration urbaine et culturelle.</p>
         </div>
       </div>
     </div>
