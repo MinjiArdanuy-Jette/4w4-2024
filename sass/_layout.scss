@@ -103,7 +103,10 @@ body {
 }
 
 #accueil {
-  background-color: var(--couleur-arriere-accueil);
+  background: linear-gradient(
+    hsl(250, 100%, 64.77%),
+    var(--couleur-arriere-accueil)
+  );
   color: var(--couleur-accueil);
 }
 #evenement {
