@@ -54,7 +54,7 @@
       <div class="carte-avis">
         <div class="contenu">
           <div class="photo">
-            <img src="images//femme-serieuse.jpg" alt="femme-serieuse" />
+            <img src="images/femme-serieuse.jpg" alt="femme-serieuse" />
           </div>
           <h3>Emanuelle</h3>
           <p>À Paris, entre le Marais et les Champs-Élysées, l'énergie unique m'a enchantée. Gastronomie, balades
@@ -63,7 +63,6 @@
         </div>
       </div>
     </div>
-    <button>Plusieurs oeuvres sont disponibles ici</button>
   </section>
 </div>
 <div id="evenement" class="global diagonale">
@@ -89,7 +88,7 @@
         // Afficher un lien vers tous les articles de la catégorie actuelle
         echo '<a href="' . get_category_link($uneCategorie->term_id) . '">Voir tous les articles</a>';
         echo '<img src="images/logo-avion.png" alt="avion" class= "avion">';
-        echo '</div>'; // Fermer la div categorie-destination
+        echo '</div>';
       }
       ?>
     </div>
@@ -98,18 +97,14 @@
 </div>
 <div id="galerie" class="global">
   <section>
-    <h2>Galerie</h2>
+    <h2>Les destinations en vogue ces derniers temps</h2>
     <div class="destination">
       <?php
       if (have_posts()):
         while (have_posts()):
           the_post();
 
-          /*Variables*/
-          /*Variable du titre complet du cours*/
-          $titre = get_the_title();
-
-          /*Variable de la description des cours*/
+          /*Variable de la description des catégories*/
           $description = get_the_content();
           ?>
           <div class="carte">
