@@ -6,7 +6,7 @@
 
 <div id="footer" class="global">
   <footer>
-    <h2>Footer</h2>
+    <h2>Liens à visiter</h2>
     <?php
     wp_nav_menu(
       array(

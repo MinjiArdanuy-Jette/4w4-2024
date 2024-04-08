@@ -421,7 +421,7 @@ body {
 }
 @media (min-width: 700px) {
   .sticker.droite {
-    transform: rotate(-50deg) scale(1);
+    transform: rotate(50deg) scale(1);
   }
 }
 
