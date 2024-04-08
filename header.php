@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thème du groupe #1</title>
+  <link rel="shortcut icon" href="<?php echo esc_url(get_site_icon_url()); ?>" type="image/x-icon" />
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/normalize.css" />
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />

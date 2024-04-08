@@ -78,3 +78,42 @@ function _4w4_modifie_requete_principal($query)
     }
 }
 add_action('pre_get_posts', '_4w4_modifie_requete_principal');
+
+function customizer_favicon_section($wp_customize)
+{
+    // Créez une section pour le favicon
+    $wp_customize->add_section(
+        'favicon_section',
+        array(
+            'title' => __('Favicon', 'Theme Minji (indispensable)'),
+            'priority' => 30,
+        )
+    );
+
+    // Ajoutez un réglage pour stocker l'URL du favicon
+    $wp_customize->add_setting('favicon_url');
+
+    // Ajoutez un contrôle pour téléverser le favicon
+    $wp_customize->add_control(
+        new WP_Customize_Image_Control(
+            $wp_customize,
+            'favicon_url',
+            array(
+                'label' => __('Upload Favicon', 'Theme Minji (indispensable)'),
+                'section' => 'favicon_section',
+                'settings' => 'favicon_url',
+            )
+        )
+    );
+}
+add_action('customize_register', 'customizer_favicon_section');
+
+// Affichez le favicon dans la balise <head>
+function display_customizer_favicon()
+{
+    $favicon_url = get_theme_mod('favicon_url');
+    if ($favicon_url) {
+        echo '<link rel="icon" href="' . esc_url($favicon_url) . '" type="image/x-icon" />';
+    }
+}
+add_action('wp_head', 'display_customizer_favicon');
