@@ -43,12 +43,18 @@
 
 .sticker.gauche {
   left: 5%;
-  transform: rotate(-50deg);
+  transform: rotate(-50deg) scale(0.8);
+  @media (min-width: 700px) {
+    transform: rotate(-50deg) scale(1);
+  }
 }
 
 .sticker.droite {
   right: 5%;
-  transform: rotate(50deg);
+  transform: rotate(50deg) scale(0.8);
+  @media (min-width: 700px) {
+    transform: rotate(-50deg) scale(1);
+  }
 }
 
 .image-categorie {
@@ -87,7 +93,6 @@
 }
 
 .sticker.jaune {
-  background: rgb(255, 215, 7);
   background: linear-gradient(
     -135deg,
     transparent 2.82em,
