@@ -286,17 +286,6 @@ body {
   padding-top: 3rem;
 }
 
-#accueil blockquote,
-#evenement blockquote {
-  width: 70%;
-  height: 250px;
-  padding: 1.2rem;
-  background-color: var(--couleur-arriere-blockquote);
-  color: white;
-  font-size: clamp(1rem, 0.583rem + 1.333vw, 1.5rem);
-  border-radius: 7% 10%;
-}
-
 #evenement span {
   margin-top: 50px;
 }

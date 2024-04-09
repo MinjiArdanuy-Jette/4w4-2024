@@ -11,22 +11,12 @@
 
 <div id="galerie" class="global">
   <section>
-    <h2>Galerie</h2>
     <div class="article-voyage">
       <?php
       if (have_posts()):
         the_post();
-        /*Variables*/
-        /*Variable du titre complet du cours*/
-        $titre = get_the_title();
-
-        /*Variable de la description des cours*/
-        $description = get_the_content();
         ?>
         <div class="carte">
-          <h2>
-            <?php the_title(); ?>
-          </h2>
           <p>
             <?php the_content(); ?>
           </p>
