@@ -193,7 +193,7 @@ body {
 
 #erreur_404 {
   min-height: 100vh;
-  background-color: var(--couleur-arriere-accueil);
+  background: linear-gradient(hsl(250, 100%, 64.77%), var(--couleur-arriere-accueil));
 }
 
 #menu_entete {
@@ -548,9 +548,8 @@ button:active {
   gap: 10rem;
 }
 
-.erreur404-conteneur img {
-  width: 150px;
-  height: 150px;
+.erreur404-conteneur .image-erreur404 {
+  display: none;
 }
 
 .texte-contenu {
@@ -564,6 +563,20 @@ button:active {
   text-decoration: none;
 }
 
+.afficher_categorie-erreur404 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 700px) {
+  .erreur404-conteneur .image-erreur404 {
+    display: block;
+    width: 450px;
+    height: 450px;
+  }
+}
 /*////les différents effets de la page ///*/
 .vague {
   position: absolute;

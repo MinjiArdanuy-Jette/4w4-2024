@@ -4,9 +4,8 @@
   gap: 10rem;
 }
 
-.erreur404-conteneur img {
-  width: 150px;
-  height: 150px;
+.erreur404-conteneur .image-erreur404 {
+  display: none;
 }
 
 .texte-contenu {
@@ -18,4 +17,19 @@
 
 .texte-contenu button a {
   text-decoration: none;
+}
+
+.afficher_categorie-erreur404 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 700px) {
+  .erreur404-conteneur .image-erreur404 {
+    display: block;
+    width: 450px;
+    height: 450px;
+  }
 }

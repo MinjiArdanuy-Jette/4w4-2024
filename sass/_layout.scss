@@ -23,7 +23,10 @@ body {
 
 #erreur_404 {
   min-height: 100vh;
-  background-color: var(--couleur-arriere-accueil);
+  background: linear-gradient(
+    hsl(250, 100%, 64.77%),
+    var(--couleur-arriere-accueil)
+  );
 }
 
 #menu_entete {
