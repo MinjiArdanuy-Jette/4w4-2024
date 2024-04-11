@@ -567,7 +567,7 @@ button:active {
 .afficher_categorie-erreur404 {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 2rem;
 }
 
