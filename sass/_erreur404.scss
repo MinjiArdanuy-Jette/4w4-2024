@@ -1,10 +1,21 @@
 .erreur404-conteneur {
   display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+
+.erreur404-conteneur img {
+  width: 150px;
+  height: 150px;
+}
+
+.texte-contenu {
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3rem;
 }
 
-.erreur404-conteneur button a {
+.texte-contenu button a {
   text-decoration: none;
 }
