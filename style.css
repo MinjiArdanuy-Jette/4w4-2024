@@ -557,6 +557,7 @@ button:active {
   flex-direction: column;
   align-items: center;
   gap: 3rem;
+  text-align: center;
 }
 
 .texte-contenu button a {
@@ -568,6 +569,12 @@ button:active {
   flex-wrap: wrap;
   gap: 2rem;
   margin-top: 2rem;
+}
+
+.afficher_categorie-erreur404 a {
+  background-color: #65008e;
+  text-decoration: none;
+  padding: 0.3rem;
 }
 
 @media (min-width: 700px) {
