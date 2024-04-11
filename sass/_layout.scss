@@ -21,6 +21,11 @@ body {
   padding: var(--centre-hauteur) var(--centre-largeur);
 }
 
+#erreur_404 {
+  min-height: 100vh;
+  background-color: var(--couleur-arriere-accueil);
+}
+
 #menu_entete {
   position: relative;
   // background-color: var(--couleur-arriere-menu);

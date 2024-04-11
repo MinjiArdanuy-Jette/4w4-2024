@@ -191,6 +191,11 @@ body {
   padding: var(--centre-hauteur) var(--centre-largeur);
 }
 
+#erreur_404 {
+  min-height: 100vh;
+  background-color: var(--couleur-arriere-accueil);
+}
+
 #menu_entete {
   position: relative;
 }
@@ -534,6 +539,14 @@ button:active {
   pointer-events: pointer;
   color: hsl(250, 92%, 52%);
   transform: translateY(-10px);
+}
+
+/*/////// Styles Erreur 404 ////////*/
+.erreur404-conteneur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
 }
 
 /*////les différents effets de la page ///*/

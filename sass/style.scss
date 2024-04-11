@@ -29,6 +29,9 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 @import "base/lien";
 @import "base/bouton";
 
+/*/////// Styles Erreur 404 ////////*/
+@import "erreur404";
+
 /*////les différents effets de la page ///*/
 @import "effets/vague";
 @import "effets/diagonale";
