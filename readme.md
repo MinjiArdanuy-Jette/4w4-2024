@@ -1,48 +1,24 @@
-# TP1 - Club de voyage : Vivre la vie, vive les voyages !
+# Examen intra - Club de voyage : Vivre la vie, vive les voyages !
 
 ## Ma Github Page Minji Ardanuy-Jetté
 
 - https://minjiardanuy-jette.github.io/4w4-2024/
 
-## Réalisation d'un site Wordpress pour un club de voyage
+## Lien vers l'hébergeur WHC : https://gftnth00.mywhc.ca/tim06/
 
-## Afficher les catégories de voyages
+## Examen intra : Reproduction de la page model Erreur 404
 
-- Le club offre à ses membres des voyages vers des destinations originales partout dans le monde.
-- Chaque destination est catégorisée pour permettre aux membres de se renseigner de façon spécifique selon leur gout.
-- Le design général permettra de mettre en valeur les offres de voyages réservées à ses membres.
-- Déployer votre projet sur le serveur Web hosting Canada.
+## Apparition d'une image selon la largeur de l'écran
 
-### Nombre de participants au différents voyages
+- L'image provient de la médiathèque du site de wordpress
+- L'image doit disparaitre lorsque nous sommes sur un écran mobile
 
-- Voyage en groupe
-- Voyage en petit comité
-- Voyage en solo
+## Avoir un formulaire de recherche dans la page Erreur 404 fonctionnel
 
-### Types de voyage
+- Le même formulaire que la maquette
 
-- Aventure
-- Culturel
-- Repos
-- Zen
-- Sportif
-- Économique
-- Pleine nature
-  -Populaire
+## Avoir un bouton qui ramène vers la page d'accueil
 
-## Intégration des éléments suivants :
+## Avoir le contenu de texte centré sur la page en version mobile (Titre, sous-titre)
 
-1. Un pied de page
-
-2. Un design de thème amélioré avec Sass et PHP
-
-3. Amélioration de l'affichage produit par les modèles:
-
-   - front-page.php
-   - single.php
-   - category.php
-   - search.php
-   - header.php
-   - footer.php
-
-4. Une mise en page entièrement adaptative
+## Afficher les liens des catégories sur la page au même endroit que sur la maquette
