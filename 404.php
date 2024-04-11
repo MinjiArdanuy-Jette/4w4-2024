@@ -29,7 +29,7 @@
       <?php
       $categories = get_categories();
       foreach ($categories as $uneCategorie) {
-        echo '<a>' . $uneCategorie->name . '</a>';
+        echo '<a href ="' . get_category_link($uneCategorie->term_id) . '">' . $uneCategorie->name . '</a>';
       }
       ?>
     </div>
