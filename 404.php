@@ -5,9 +5,11 @@
     <div class="erreur404-conteneur">
       <h1>Erreur 404 </h1>
       <p>Vous essayez d'accéder à une page qui n'existe pas</p>
-      <a href=" <?= get_bloginfo("url"); ?>">
-        <?= get_bloginfo("name"); ?>
-      </a>
+      <p>Pour revenir dans un monde merveilleux qui fait voyager, Cliquer sur le bouton ci-dessous</p>
+      <button>
+        <a href=" <?= get_bloginfo("url"); ?>">
+          <?= get_bloginfo("name"); ?>
+        </a></button>
       <!-- Mettre le formulaire de recherche manuellement car de base il est trop différent du modèle de base -->
       <form class="recherche_erreur" role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
         <label>
