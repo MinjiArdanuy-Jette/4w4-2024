@@ -17,6 +17,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&family=Protest+Revolution&family=Protest+Riot&display=swap"
     rel="stylesheet" />
+  <?php wp_head(); ?>
 </head>
 
 <body>
