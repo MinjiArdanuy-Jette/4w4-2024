@@ -136,6 +136,16 @@ body {
   padding-top: 3rem;
 }
 
+#boite-recherche {
+  position: relative;
+  background: linear-gradient(
+    hsl(250, 100%, 64.77%),
+    var(--couleur-arriere-accueil)
+  );
+  min-height: 110vh;
+  padding-top: 3rem;
+}
+
 #footer {
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-footer);

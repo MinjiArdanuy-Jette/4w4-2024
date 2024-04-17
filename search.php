@@ -19,7 +19,7 @@
   </section>
 </div>
 
-<div id="galerie" class="global">
+<div id="boite-recherche" class="global">
   <section>
     <h2>Résultat de recherche</h2>
     <?php get_search_form() ?>
