@@ -6,15 +6,15 @@
       <div class="texte-contenu">
         <h1>Erreur 404 </h1>
         <p>Vous essayez d'accéder à une page qui n'existe pas</p>
-        <p>Pour revenir dans un monde merveilleux qui vous fait voyager, Cliquer sur le bouton ci-dessous</p>
+        <p>Pour revenir dans un monde merveilleux qui vous fait voyager ! Cliquez sur le bouton ci-dessous !</p>
         <button>
           <a href=" <?= get_bloginfo("url"); ?>">
             <?= get_bloginfo("name"); ?>
           </a></button>
-        <!-- Mettre le formulaire de recherche manuellement car de base il est trop différent du modèle de base -->
+        <!-- Mettre le formulaire de recherche manuellement car il est trop différent du modèle de base -->
         <form class="recherche_erreur" role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
           <label>
-            <input class="recherche__input" type="search" class="search-field" placeholder="Search..."
+            <input class="recherche__input" type="search" class="search-field" placeholder="Recherche..."
               value="<?php echo get_search_query(); ?>" name="s" />
           </label>
           <button class="recherche__bouton" type="submit" class="search-submit">
