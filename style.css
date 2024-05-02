@@ -939,6 +939,11 @@ footer {
   align-items: center;
 }
 
+.pied2page {
+  display: flex;
+  column-gap: 10rem;
+}
+
 #footer {
   position: relative; /*Afin de positionner la barre de recherche du footer*/
 }
@@ -963,7 +968,7 @@ footer {
 }
 @media (min-width: 700px) {
   .footer-menu {
-    column-count: 3;
+    column-count: 1;
   }
 }
 

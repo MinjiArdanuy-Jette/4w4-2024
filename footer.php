@@ -6,18 +6,50 @@
 
 <div id="footer" class="global">
   <footer>
-    <h2>Liens à visiter</h2>
-    <?php
-    wp_nav_menu(
-      array(
-        'menu' => 'footer',
-        'theme_location' => 'footer-menu',
-        'menu_class' => 'footer-menu',
-        'container' => 'nav',
-        'container_class' => 'footer-menu-container',
-      )
-    );
-    ?>
+    <section class="pied2page">
+      <div class="liens">
+        <h2>Liens à visiter</h2>
+        <?php
+        wp_nav_menu(
+          array(
+            'menu' => 'footer',
+            'theme_location' => 'footer-menu',
+            'menu_class' => 'footer-menu',
+            'container' => 'nav',
+            'container_class' => 'footer-menu-container',
+          )
+        );
+        ?>
+      </div>
+      <div class="liens">
+        <h2>Adresse</h2>
+        <?php
+        wp_nav_menu(
+          array(
+            'menu' => 'footer1',
+            'theme_location' => 'footer-menu',
+            'menu_class' => 'footer-menu',
+            'container' => 'nav',
+            'container_class' => 'footer-menu-container',
+          )
+        );
+        ?>
+      </div>
+    </section>
+    <div class="description">
+      <h3>Minji Ardanuy-Jetté</h3>
+      <?php
+      wp_nav_menu(
+        array(
+          'menu' => 'footer2',
+          'theme_location' => 'footer-menu',
+          'menu_class' => 'footer-menu',
+          'container' => 'nav',
+          'container_class' => 'footer-menu-container',
+        )
+      );
+      ?>
+    </div>
     <!-- Mettre le formulaire de recherche manuellement car il est trop différent du modèle de base -->
     <div class="recherche-footer">
       <input type="checkbox" id="toggle-search-footer">

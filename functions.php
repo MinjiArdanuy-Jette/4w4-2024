@@ -5,6 +5,8 @@ function wp_custom_menus()
         array(
             'principal' => __('Menu principal'),
             'footer' => __('Menu du pied de page'),
+            'footer1' => __('Menu du pied de page1'),
+            'footer2' => __('Menu du pied de page2'),
         )
     );
 }
