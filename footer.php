@@ -1,7 +1,7 @@
 <?php
 
 //  Template footer.php 
-// Ce gabarit est appelé à ls fin de chaque  modèle de thème
+// Ce gabarit est appelé à la fin de chaque  modèle de thème
 ?>
 
 <div id="footer" class="global">
@@ -19,8 +19,9 @@
     );
     ?>
   </footer>
+  <?php get_search_form() ?>
+  <?php wp_footer() ?>
 </div>
-<?php wp_footer(); ?>
 </body>
 
 </html>

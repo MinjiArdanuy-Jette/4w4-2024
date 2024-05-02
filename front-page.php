@@ -2,13 +2,11 @@
 <?php get_header(); ?>
 <div id="entete" class="global">
   <div class="social">
-    <div class="recherche">
-      <?php get_search_form() ?>
-    </div>
     <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000" width="32" height="32" />
     <img src="https://s2.svgbox.net/social.svg?ic=instagram&color=000" width="32" height="32" />
     <img src="https://s2.svgbox.net/social.svg?ic=youtube&color=000" width="32" height="32" />
   </div>
+  <?php get_search_form() ?>
   <!-- Vague1 -->
   <?php get_template_part("gabarits/vague1") ?>
   <section>

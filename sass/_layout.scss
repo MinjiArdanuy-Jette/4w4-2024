@@ -62,11 +62,11 @@ body {
   margin-right: 15px;
 }
 /* Aligner les éléments horizontalement */
-.recherche {
+.recherche-entete {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 15px;
+  top: 25px;
   right: 0;
   margin-top: 15px;
 }
@@ -74,7 +74,6 @@ body {
 /* Positionner l'icône de la loupe à gauche */
 .search-icon {
   order: 1; /* Change l'ordre d'affichage */
-  margin-right: 10px; /* Ajoute un espace entre l'icône et le formulaire */
 }
 
 .search-icon img {
@@ -99,15 +98,27 @@ body {
   left: 6px;
 }
 
-#toggle-search {
+#toggle-search-entete,
+#toggle-search-footer {
   display: none;
 }
 
 /* Afficher le formulaire de recherche lorsque la case est cochée */
-#toggle-search:checked + label + .search-form {
+#toggle-search-entete:checked + label + .search-form,
+#toggle-search-footer:checked + label + .search-form {
   display: flex;
   align-items: center;
   margin-right: 10px;
+}
+
+/*Formulaire de recherche pour le footer*/
+.recherche-footer {
+  display: flex;
+  align-items: center;
+  // position: absolute;
+  top: 25px;
+  right: 0;
+  margin-top: 15px;
 }
 
 #accueil {

@@ -230,11 +230,11 @@ body {
 }
 
 /* Aligner les éléments horizontalement */
-.recherche {
+.recherche-entete {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 15px;
+  top: 25px;
   right: 0;
   margin-top: 15px;
 }
@@ -242,7 +242,6 @@ body {
 /* Positionner l'icône de la loupe à gauche */
 .search-icon {
   order: 1; /* Change l'ordre d'affichage */
-  margin-right: 10px; /* Ajoute un espace entre l'icône et le formulaire */
 }
 
 .search-icon img {
@@ -268,15 +267,26 @@ body {
   left: 6px;
 }
 
-#toggle-search {
+#toggle-search-entete,
+#toggle-search-footer {
   display: none;
 }
 
 /* Afficher le formulaire de recherche lorsque la case est cochée */
-#toggle-search:checked + label + .search-form {
+#toggle-search-entete:checked + label + .search-form,
+#toggle-search-footer:checked + label + .search-form {
   display: flex;
   align-items: center;
   margin-right: 10px;
+}
+
+/*Formulaire de recherche pour le footer*/
+.recherche-footer {
+  display: flex;
+  align-items: center;
+  top: 25px;
+  right: 0;
+  margin-top: 15px;
 }
 
 #accueil {
@@ -947,16 +957,4 @@ footer {
 
 .footer-menu li:nth-child(3n+1) {
   margin-top: 0; /* Supprimer la marge en haut pour chaque troisième élément (premier élément de chaque colonne) */
-}
-
-/*icône de loupe de recherche*/
-.icon-search::before {
-  content: "\f002"; /* Code unicode de l'icône de loupe */
-  font-family: FontAwesome; /* Assurez-vous que la police d'icônes est chargée (ex: Font Awesome) */
-  margin-right: 5px; /* Espacement entre l'icône et le texte */
-}
-
-/* Style de l'icône de recherche dans le menu */
-.menu .menu-item .icon-search {
-  color: #333; /* Couleur de l'icône */
 }/*# sourceMappingURL=style.css.map */
