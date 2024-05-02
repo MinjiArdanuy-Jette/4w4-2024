@@ -144,6 +144,11 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+
+#footer {
+  position: relative; /*Afin de positionner la barre de recherche du footer*/
+}
+
 #footer h2 {
   text-align: center;
 }
