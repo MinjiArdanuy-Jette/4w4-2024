@@ -17,7 +17,7 @@
         <?= get_bloginfo("description") ?>
       </h2>
       <h3>TIM-Collège de Maisonneuve</h3>
-      <button>Le voyage de vos rêves</button>
+      <button><a href="#galerie">Le voyage de vos rêves</a></button>
     </section>
   </section>
 </div>

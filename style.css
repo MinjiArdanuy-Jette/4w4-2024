@@ -557,6 +557,10 @@ button:active {
   transform: translateY(-10px);
 }
 
+button a {
+  text-decoration: none;
+}
+
 /*/////// Styles Erreur 404 ////////*/
 .erreur404-conteneur {
   display: flex;

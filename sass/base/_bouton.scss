@@ -22,3 +22,7 @@ button:active {
   color: hsl(250, 92%, 52%);
   transform: translateY(-10px);
 }
+
+button a {
+  text-decoration: none;
+}
