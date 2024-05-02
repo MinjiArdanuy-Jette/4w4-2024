@@ -34,6 +34,6 @@
     <!-- Tempate part possible pour le bouton -->
     <header class="menu_header">
       <?php wp_nav_menu(array("menu" => "principal", "container" => "nav", "container_class" => "menu-principal-container", "theme_location" => "principal")); ?>
-
+      <?php get_search_form() ?>
     </header>
   </div>

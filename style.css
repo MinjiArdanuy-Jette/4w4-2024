@@ -232,10 +232,8 @@ body {
 /* Aligner les éléments horizontalement */
 .recherche-entete {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  position: absolute;
-  top: 25px;
-  right: 0;
   margin-top: 15px;
 }
 
@@ -836,13 +834,13 @@ button:active {
   }
 }
 
-#menu_entete img {
+#menu_entete .custom-logo {
   width: 50%;
   height: auto;
   padding-top: 50px;
 }
 @media (min-width: 700px) {
-  #menu_entete img {
+  #menu_entete .custom-logo {
     width: 70%;
     height: auto;
     padding-top: 0px;
