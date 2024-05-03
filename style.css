@@ -393,6 +393,28 @@ body {
     transform: scale(1);
   }
 }
+/* Style polaroid pour les images de la galerie WordPress */
+.wp-block-image {
+  border: 8px solid #fff; /* Bordure blanche */
+  border-bottom-width: 49px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre */
+  position: relative;
+}
+
+.wp-block-gallery.has-nested-images figure.wp-block-image figcaption.wp-element-caption {
+  all: unset; /* Réinitialise tous les styles par défaut de wordpress de cet élément*/
+  padding-bottom: 20px;
+  position: absolute; /* Position absolue par rapport à l'image parente */
+  left: 0; /* Aligner la légende à gauche */
+  bottom: -40px; /* Positionner la légende dans la bordure inférieure */
+  width: 100%; /* Largeur de la légende égale à celle de l'image */
+  padding: 8px; /* Espacement intérieur de la légende */
+  text-align: center; /* Alignement du texte au centre */
+  font-size: 14px; /* Taille de police */
+  color: #000000; /* Couleur du texte */
+  box-sizing: border-box; /* Inclure les bordures et les rembourrages dans la largeur et la hauteur */
+}
+
 .description-categorie {
   position: relative;
 }
