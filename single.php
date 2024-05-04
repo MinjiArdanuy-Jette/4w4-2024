@@ -2,10 +2,20 @@
 <?php get_header(); ?>
 
 <div id="accueil" class="global">
-  <section>
+  <section class="alignement-meteo">
     <h1>
       <?php the_title(); ?>
     </h1>
+    <div class="meteo">
+      <!-- Température actuelle  -->
+      <h4><?php echo round(get_field("temperature_actuelle"), 1) ?>°C</h4>
+      <!-- Température minium  -->
+      <p><?php echo round(get_field("temperature_minimum"), 1); ?>°C</p>
+      <!-- Température maximum  -->
+      <p><?php echo round(get_field("temperature_maximum"), 1); ?>°C</p>
+      <!-- Ville avoisinante -->
+      <p> <?php the_field("ville_avoisinante") ?></p>
+    </div>
   </section>
 </div>
 
@@ -21,12 +31,6 @@
             <?php the_content(); ?>
           </p>
           <?php the_category(); ?>
-          <div class="prevision-meteo">
-            <p>Température minimum <?php echo round(get_field("temperature_minimum"), 1); ?>°C</p>
-            <p>Température maximum <?php echo round(get_field("temperature_maximum"), 1); ?>°C</p>
-            <p>Température actuelle <?php echo get_field("temperature_actuelle") ?>°C</p>
-            <p>Ville avoisinante <?php the_field("ville_avoisinante") ?></p>
-          </div>
         </div>
       <?php endif; ?>
     </div>
