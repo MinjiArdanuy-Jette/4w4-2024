@@ -21,9 +21,12 @@
             <?php the_content(); ?>
           </p>
           <?php the_category(); ?>
-          <p>Température minimum <?php the_field("temperature_minimum") ?></p>
-          <p>Température maximum <?php the_field("temperature_maximum") ?></p>
-          <p>Ville avoisinante <?php the_field("ville_avoisinante") ?></p>
+          <div class="prevision-meteo">
+            <p>Température minimum <?php echo round(get_field("temperature_minimum"), 1); ?>°C</p>
+            <p>Température maximum <?php echo round(get_field("temperature_maximum"), 1); ?>°C</p>
+            <p>Température actuelle <?php echo get_field("temperature_actuelle") ?>°C</p>
+            <p>Ville avoisinante <?php the_field("ville_avoisinante") ?></p>
+          </div>
         </div>
       <?php endif; ?>
     </div>
