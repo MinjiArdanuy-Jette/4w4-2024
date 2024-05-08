@@ -31,12 +31,23 @@
             <?php the_content(); ?>
           </p>
           <?php the_category(); ?>
+        <?php endif; ?>
+        <div class="etoile">
+          <?php
+          // Récupérer la valeur d'appréciation pour l'article en cours
+          $appreciation = get_field('appreciation');
+
+          // Afficher les étoiles en fonction de la valeur d'appréciation
+          for ($i = 1; $i <= $appreciation; $i++) {
+            echo '<img src="' . get_template_directory_uri() . '/images/etoile.png" alt="etoile">';
+          }
+          ?>
         </div>
-      <?php endif; ?>
+      </div>
     </div>
     <!-- Vague2 -->
     <?php get_template_part("gabarits/vague2") ?>
   </section>
-
-  <!-- Récupérer le footer -->
-  <?php get_footer(); ?>
+</div>
+<!-- Récupérer le footer -->
+<?php get_footer(); ?>

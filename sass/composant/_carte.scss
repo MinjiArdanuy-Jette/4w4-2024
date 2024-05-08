@@ -119,3 +119,15 @@
   width: 100%;
   height: 100%;
 }
+
+/*Afficher l'appréciation de la destinations par des étoiles*/
+.etoile {
+  @include flex($justify: space-between, $align: center);
+  width: 500px;
+  height: auto;
+}
+
+.etoile img {
+  width: 50px; //Diminuer la dimension de l'image de l'étoile
+  height: auto;
+}

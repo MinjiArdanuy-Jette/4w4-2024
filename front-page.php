@@ -62,6 +62,13 @@
     </div>
   </section>
 </div>
+<section>
+  <h1>Plugin Voyage</h1>
+  <?php
+  // Appel du shortcode directement dans le fichier front-page.php
+  echo do_shortcode('[em_destination]');
+  ?>
+</section>
 <div id="evenement" class="global diagonale">
   <section>
     <h2>Le choix d'un voyage est à votre portée !</h2>

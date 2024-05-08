@@ -816,6 +816,21 @@ button a {
   height: 100%;
 }
 
+/*Afficher l'appréciation de la destinations par des étoiles*/
+.etoile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  height: auto;
+}
+
+.etoile img {
+  width: 50px;
+  height: auto;
+}
+
 /*<nav> class="menu-principal-container">
           <ul id="menu-principal" class="menu">
             <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-37">
