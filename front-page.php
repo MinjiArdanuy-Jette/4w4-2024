@@ -29,7 +29,7 @@
       <div class="carte-avis">
         <div class="contenu">
           <div class="photo">
-            <img src="images/femme-souriante.jpg" alt="femme-souriante">
+            <?php echo '<img src="' . get_template_directory_uri() . '/images/femme-souriante.jpg" alt="femme-souriante">'; ?>
           </div>
           <h3>Justine</h3>
           <p>Mon voyage à travers l'Asie a été une expérience transcendante, des rizières de Bali aux plages de Phuket.
@@ -40,7 +40,7 @@
       <div class="carte-avis">
         <div class="contenu">
           <div class="photo">
-            <img src="images/homme-souriant.jpg" alt="homme-souriant" />
+            <?php echo '<img src="' . get_template_directory_uri() . '/images/homme-souriant.jpg" alt="homme-souriant">'; ?>
           </div>
           <h3>Romain</h3>
           <p>À Kyoto, l'immersion dans la beauté intemporelle du Japon m'a transporté dans un autre temps. Entre
@@ -51,7 +51,7 @@
       <div class="carte-avis">
         <div class="contenu">
           <div class="photo">
-            <img src="images/femme-serieuse.jpg" alt="femme-serieuse" />
+            <?php echo '<img src="' . get_template_directory_uri() . '/images/femme-serieuse.jpg" alt="femme-serieuse">'; ?>
           </div>
           <h3>Emanuelle</h3>
           <p>À Paris, entre le Marais et les Champs-Élysées, l'énergie unique m'a enchantée. Gastronomie, balades
@@ -91,7 +91,7 @@
         echo '<p>' . $uneCategorie_count . ' articles</p>';
         // Afficher un lien vers tous les articles de la catégorie actuelle
         echo '<a href="' . get_category_link($uneCategorie->term_id) . '">Voir tous les articles</a>';
-        echo '<img src="images/logo-avion.png" alt="avion" class= "avion">';
+        echo '<img src="' . get_template_directory_uri() . 'images/logo-avion.png" alt="avion" class= "avion">';
         echo '</div>';
       }
       ?>
