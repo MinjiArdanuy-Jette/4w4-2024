@@ -138,6 +138,14 @@ body {
   color: var(--couleur-accueil);
   position: relative; //Placer le box météo du single.php
 }
+#filtre {
+  min-height: 50rem;
+  background: linear-gradient(
+    hsl(var(--u1), 100%, 75%),
+    hsl(var(--u1), 100%, 64.77%),
+    hsl(var(--u1), 100%, 75%)
+  );
+}
 #evenement {
   background-color: var(--couleur-arriere-evenement);
   color: var(--couleur-evenement);

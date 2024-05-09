@@ -62,7 +62,7 @@
     </div>
   </section>
 </div>
-<section>
+<section id="filtre">
   <h1>Plugin Voyage</h1>
   <?php
   // Appel du shortcode directement dans le fichier front-page.php
