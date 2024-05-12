@@ -6,6 +6,7 @@
 
 <div id="footer" class="global">
   <footer>
+    <?php echo get_custom_logo() ?>
     <section class="pied2page">
       <div class="liens">
         <h2>Liens à visiter</h2>

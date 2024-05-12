@@ -144,6 +144,12 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+
+footer img {
+  width: 5rem;
+  height: auto;
+}
+
 .pied2page {
   display: flex;
   column-gap: 10rem;
