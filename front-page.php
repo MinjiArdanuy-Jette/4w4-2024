@@ -111,18 +111,13 @@
           /*Variable de la description des catégories*/
           $description = get_the_content();
           ?>
-          <div class="carte">
-            <?php the_post_thumbnail('thumbnail'); ?>
-            <h3>
-              <?php the_title(); ?>
-            </h3>
-            <p>
-              <?php echo wp_trim_words($description, 20, "..."); ?>
-            </p>
-            <!-- Ajout d'un hyperlien -->
-            <a href="<?php the_permalink(); ?>"> Plus d'infos</a>
-            <?php the_category(); ?>
-          </div>
+          <?php
+          $ma_carte = "carte";
+          if (in_category('galerie')) {
+            $ma_carte = "galerie";
+          }
+
+          get_template_part("gabarits/categorie", $ma_carte); ?>
         <?php endwhile; ?>
       <?php endif; ?>
     </div>
