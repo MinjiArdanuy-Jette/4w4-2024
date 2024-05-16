@@ -114,11 +114,6 @@
             $ma_carte = "galerie";
           }
 
-          if ($ma_carte == "galerie") {
-            order:
-            1;
-          }
-
           get_template_part("gabarits/categorie", $ma_carte); ?>
         <?php endwhile; ?>
       <?php endif; ?>
