@@ -2,7 +2,10 @@
 /**
  * Gabarits pour créer les cartes de destinations
  */
+/*Variable de la description des catégories*/
+$description = get_the_content();
 ?>
+
 <div class="carte">
   <?php the_post_thumbnail('thumbnail'); ?>
   <h3>

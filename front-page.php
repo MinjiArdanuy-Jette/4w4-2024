@@ -107,14 +107,16 @@
       if (have_posts()):
         while (have_posts()):
           the_post();
-
-          /*Variable de la description des catégories*/
-          $description = get_the_content();
           ?>
           <?php
           $ma_carte = "carte";
           if (in_category('galerie')) {
             $ma_carte = "galerie";
+          }
+
+          if ($ma_carte == "galerie") {
+            order:
+            1;
           }
 
           get_template_part("gabarits/categorie", $ma_carte); ?>
