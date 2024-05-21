@@ -21,9 +21,9 @@
       <p> <?php the_field("ville_avoisinante") ?></p>
     </div>
   </section>
+  <?php get_template_part("gabarits/vague1") ?>
 </div>
-
-<div id="galerie" class="global">
+<div id="page-destination" class="global">
   <section>
     <div class="article-voyage">
       <?php

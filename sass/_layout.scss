@@ -163,6 +163,21 @@ body {
   position: relative;
   min-height: 110vh;
   padding-top: 3rem;
+  background: linear-gradient(
+    hsl(250, 100%, 64.77%),
+    var(--couleur-arriere-accueil)
+  );
+}
+
+#page-destination {
+  color: var(--couleur-galerie);
+  position: relative;
+  min-height: 110vh;
+  padding-top: 3rem;
+  background: linear-gradient(
+    hsl(250, 100%, 64.77%),
+    var(--couleur-arriere-accueil)
+  );
 }
 
 #boite-recherche {
@@ -204,5 +219,8 @@ body {
 
 .alignement-meteo {
   /*Alignement du titre et de la boite météo en display flex*/
-  @include flex($justify: space-between, $align: center);
+  @include flex($direction: column, $justify: space-between, $align: center);
+  @media (min-width: 700px) {
+    @include flex($direction: row, $justify: space-between, $align: center);
+  }
 }
