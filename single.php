@@ -9,10 +9,14 @@
     <div class="meteo">
       <!-- Température actuelle  -->
       <h4><?php echo round(get_field("temperature_actuelle"), 1) ?>°C</h4>
-      <!-- Température minium  -->
-      <p><?php echo round(get_field("temperature_minimum"), 1); ?>°C</p>
-      <!-- Température maximum  -->
-      <p><?php echo round(get_field("temperature_maximum"), 1); ?>°C</p>
+      <div class="temp-min-max">
+        <!-- Température minium  -->
+        <img src="https://s2.svgbox.net/octicons.svg?ic=arrow-down&color=000" width="20" height="20">
+        <h3><?php echo round(get_field("temperature_minimum"), 1); ?>°C</h3>
+        <!-- Température maximum  -->
+        <img src="https://s2.svgbox.net/octicons.svg?ic=arrow-up&color=000" width="20" height="20">
+        <h3><?php echo round(get_field("temperature_maximum"), 1); ?>°C</h3>
+      </div>
       <!-- Ville avoisinante -->
       <p> <?php the_field("ville_avoisinante") ?></p>
     </div>

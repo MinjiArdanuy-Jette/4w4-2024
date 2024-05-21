@@ -194,6 +194,12 @@ body {
   border-radius: 15px;
   border-top: 1px solid rgb(255, 255, 255);
   border-left: 1px solid rgb(255, 255, 255);
+  line-height: 3.5rem;
+}
+
+.temp-min-max {
+  /*Alignement du titre et de la boite météo en display flex*/
+  @include flex($justify: center, $align: center);
 }
 
 .alignement-meteo {
