@@ -17,7 +17,7 @@
         <?= get_bloginfo("description") ?>
       </h2>
       <h3>TIM-Collège de Maisonneuve</h3>
-      <button><a href="#galerie">Le voyage de vos rêves</a></button>
+      <button><a href="http://localhost/4w4_wp2/conference/">Conférence</a></button>
     </section>
   </section>
 </div>
