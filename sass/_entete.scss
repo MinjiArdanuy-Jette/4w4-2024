@@ -1,0 +1,22 @@
+.hero {
+  background-repeat: no-repeat;
+  background-position: 100% 40%;
+  background-size: 25%;
+}
+
+@media screen and (max-width: 750px) {
+  #entete {
+    min-height: 50vh;
+  }
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-position: 50% 50%;
+  }
+
+  #evenement blockquote {
+    width: 85%;
+  }
+}

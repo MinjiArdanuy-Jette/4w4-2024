@@ -1,28 +1,24 @@
-# Labo #2
+# Examen intra - Club de voyage : Vivre la vie, vive les voyages !
 
-## Github Page
+## Ma Github Page Minji Ardanuy-Jetté
 
 - https://minjiardanuy-jette.github.io/4w4-2024/
 
-## Utilisation de la fonction hsl()
+## Lien vers l'hébergeur WHC : https://gftnth00.mywhc.ca/tim06/
 
-## Intégration d'effet vague et diagonale
+## Examen intra : Reproduction de la page model Erreur 404
 
-### Références utiles
+## Apparition d'une image selon la largeur de l'écran
 
-- référence hsl
+- L'image provient de la médiathèque du site de wordpress
+- L'image doit disparaitre lorsque nous sommes sur un écran mobile
 
-- https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl
-- https://css-tricks.com/creating-color-themes-with-custom-properties-hsl-and-a-little-calc/
-- https://css-tricks.com/hsl-hsla-is-great-for-programmatic-color-control/
+## Avoir un formulaire de recherche dans la page Erreur 404 fonctionnel
 
-- Ajout de vagues
-- https://www.shapedivider.app/
+- Le même formulaire que la maquette
 
-## Ce que vous devez faire
+## Avoir un bouton qui ramène vers la page d'accueil
 
-### Utiliser la fonction hsl
+## Avoir le contenu de texte centré sur la page en version mobile (Titre, sous-titre)
 
-### Intégrer les vagues
-
-### Intégrer une diagonale
+## Afficher les liens des catégories sur la page au même endroit que sur la maquette

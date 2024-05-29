@@ -1,0 +1,28 @@
+button {
+  // font-size: clamp(1.125rem, 0.5rem + 2vw, 1.875rem);
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  // background-image: linear-gradient(120deg,var(--bouton-couleur1), var(--bouton-couleur2));
+  background-image: linear-gradient(
+    var(--deg-gradient),
+    var(--couleur-gradient-1),
+    var(--couleur-gradient-2)
+  );
+  margin-top: 35px;
+  color: white;
+  border: 2.5px solid black;
+  transition: transform 0.2s;
+  transform: translateY(0) scale(0.8);
+}
+
+button:hover,
+button:active {
+  background-image: linear-gradient(200deg, #f8f8f8, #eeff00);
+  pointer-events: pointer;
+  color: hsl(250, 92%, 52%);
+  transform: translateY(-10px);
+}
+
+button a {
+  text-decoration: none;
+}

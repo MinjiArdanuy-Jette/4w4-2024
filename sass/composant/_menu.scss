@@ -1,0 +1,187 @@
+/*<nav> class="menu-principal-container">
+          <ul id="menu-principal" class="menu">
+            <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-37">
+              <a href="http://localhost/4w4_wp/index.php/2020/10/07/582-6n3-stage-285h/">Stage</a>
+            </li>
+            <li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-38">
+              <a href="http://localhost/4w4_wp/index.php/2020/10/07/582-5w5-projet-web-en-equipe-105h/">Projet Web en équipe</a>
+            </li>
+            <li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-39">
+              <a href="http://localhost/4w4_wp/index.php/2020/10/07/582-3c1-design-dinteractivite-75h/">Design d’interactivité</a>
+            </li>
+            <li id="menu-item-40" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40">
+              <a href="#accueil">Acueil</a>
+            </li>
+            <li id="menu-item-41" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41">
+              <a href="#footer">Pied de page</a>
+            </li>
+          </ul>
+        </nav>*/
+
+/*
+        Feuilles de style du menu principal*/
+.menu-principal-container {
+  //nav
+  list-style-type: none;
+  position: relative;
+}
+.menu-principal-container a {
+  position: relative;
+  padding: 0.4rem;
+}
+.menu-principal-container a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-bottom: 5px solid var(--couleur-lien-hover);
+  border-radius: 15px;
+  transform: scale(0) translateY(50px);
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+}
+.menu-principal-container a:hover span {
+  transform: scale(1) translateY(0px);
+  opacity: 1;
+}
+
+#menu_entete {
+  @include flex(column, center);
+
+  z-index: 1;
+  position: fixed;
+  list-style-type: none;
+  transform: translateX(-150%);
+  transition: transform 0.5s ease-in-out;
+  width: 50%;
+  height: 80%;
+  @media (min-width: 700px) {
+    position: static;
+    @include flex(row, center);
+    transform: translateX(0);
+    width: 100%;
+  }
+}
+
+#menu_entete .custom-logo {
+  width: 50%;
+  height: auto;
+  padding-top: 50px;
+  @media (min-width: 700px) {
+    width: 70%;
+    height: auto;
+    padding-top: 0px;
+  }
+}
+#menu_entete .custom-logo-link {
+  text-align: center;
+}
+
+.menu {
+  //ul
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  align-items: center;
+  line-height: 2rem;
+  @media (min-width: 700px) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    transform: translateX(0);
+  }
+}
+
+.menu-item {
+  //li
+  @include flex(center);
+  flex: 1 1 auto;
+  text-align: center;
+}
+.menu-item a {
+  // li a
+  color: var(--couleur-lien);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.menu-item a:hover {
+  color: var(--couleur-lien-hover);
+}
+
+/*Gestion label #burger l'image svg est dans le label*/
+#burger {
+  z-index: 2;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: rotate(0);
+  transition: transform 0.5s ease-in-out;
+  @media (min-width: 700px) {
+    display: none;
+  }
+}
+
+#chk_burger {
+  display: none;
+}
+/*La rotation du menu burger */
+#chk_burger:checked ~ #burger {
+  transform: rotate(1turn);
+}
+/*Apparition du menu */
+#chk_burger:checked ~ #menu_entete {
+  transform: translateX(0%);
+}
+
+/*/////MENU FOOTER ///////////*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer img {
+  width: 5rem;
+  height: auto;
+}
+
+.pied2page {
+  display: flex;
+  column-gap: 10rem;
+}
+
+#footer {
+  position: relative; /*Afin de positionner la barre de recherche du footer*/
+}
+
+#footer h2 {
+  text-align: center;
+}
+.menu-footer-container {
+  text-align: center; /* Centrer le contenu */
+  @media (min-width: 700px) {
+    text-align: center;
+  }
+}
+.footer-menu {
+  column-count: 1;
+  column-gap: 15rem;
+  padding: 0px 0px 0px 30px;
+  @media (min-width: 700px) {
+    column-count: 1;
+  }
+}
+
+.footer-menu li {
+  margin-bottom: 10px; /* Espacement entre les éléments de menu */
+  margin-top: 10px; /* Ajout de marge en haut */
+}
+
+.footer-menu li:nth-child(3n + 1) {
+  margin-top: 0; /* Supprimer la marge en haut pour chaque troisième élément (premier élément de chaque colonne) */
+}

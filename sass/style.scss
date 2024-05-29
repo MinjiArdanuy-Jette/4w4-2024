@@ -1,13 +1,13 @@
 /* Directives
-Theme Name: Theme Minji (indispensable)
+Theme Name: Theme Minji TP2
 
 Author: Minji Ardanuy-Jetté
 Author URI: https://wordpress.org/
-Description:  Thème de base ddeveloppé dans le cours 4w4
+Description:  Thème de base developpé dans le cours 4w4
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: theme-minji (indispensable)
+Text Domain: theme-minji tp2
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
@@ -16,9 +16,26 @@ Use it to make something cool, have fun, and share what you've learned with othe
 https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 */
 
-@import "variables";
+/*Initialisation des variables sass et css*/
+@import "utile/couleurs";
+/*Création de classes de couleurs*/
+@import "utile/couleurs-class";
+/*Les différentes pages/styles globales*/
 @import "layout";
+@import "entete";
+@import "galerie";
+@import "category";
 @import "base/h";
+@import "base/lien";
+@import "base/bouton";
 
+/*/////// Styles Erreur 404 ////////*/
+@import "erreur404";
+
+/*////les différents effets de la page ///*/
 @import "effets/vague";
 @import "effets/diagonale";
+
+/*///// Les différents composants du site/////*/
+@import "composant/carte";
+@import "composant/menu";
