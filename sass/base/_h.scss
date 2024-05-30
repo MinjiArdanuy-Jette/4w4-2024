@@ -47,6 +47,9 @@ h6 {
   font-size: clamp(0.5rem, -0.438rem + 3vw, 1.25rem);
   font-weight: 100;
   font-style: normal;
+  color: hsl(60, 96%, 67%);
+  background-color: var(--couleur-gradient-1);
+  padding: 20px;
 }
 
 span {

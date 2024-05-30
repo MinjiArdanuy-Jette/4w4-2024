@@ -18,10 +18,11 @@
       </h2>
       <h3>TIM-Collège de Maisonneuve</h3>
       <button><a href="http://localhost/4w4_wp2/conference/">Conférence</a></button>
+      <h6>La routine du travail devient-elle monotone ? Alors, il est l'heure d'apporter un brin d'aventure dans votre
+        vie
+        ! À la recherche d'une épique chevauchée à travers le globe avec des amis ou à la recherche d'un silence
+        paradisiaque en solo? Sur notre site vous trouverez votre bonheur, petit et grand !</h6>
     </section>
-    <h6>La routine du travail devient-elle monotone ? Alors, il est l'heure d'apporter un brin d'aventure dans votre vie
-      ! À la recherche d'une épique chevauchée à travers le globe avec des amis ou à la recherche d'un silence
-      paradisiaque en solo? Sur notre site vous trouverez votre bonheur, petit et grand !</h6>
   </section>
 </div>
 

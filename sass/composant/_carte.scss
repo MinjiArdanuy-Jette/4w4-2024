@@ -44,6 +44,10 @@
   margin-bottom: 30px;
 }
 
+.carte:hover {
+  transform: scale(1.2);
+}
+
 .post-categories {
   //ul de la liste des catégories
   display: flex;
