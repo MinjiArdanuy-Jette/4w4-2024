@@ -94,7 +94,8 @@
         echo '<p>' . $uneCategorie_count . ' articles</p>';
         // Afficher un lien vers tous les articles de la catégorie actuelle
         echo '<a href="' . get_category_link($uneCategorie->term_id) . '">Voir tous les articles</a>';
-        echo '<img src="' . get_template_directory_uri() . 'images/logo-avion.png" alt="avion" class= "avion">';
+        //Mettre l'adresse local de l'image de l'avion et la remplacer sur le serveur
+        echo '<img src="http://localhost/4w4_wp2/wp-content/uploads/2024/05/logo-avion.png" alt="avion" class= "avion">';
         echo '</div>';
       }
       ?>
