@@ -197,9 +197,7 @@ body {
 }
 
 .meteo {
-  // position: absolute;
-  // top: 30px;
-  // right: 25px;
+  position: relative;
   text-align: center;
   padding: 1rem;
   width: 20rem;
@@ -223,4 +221,10 @@ body {
   @media (min-width: 700px) {
     @include flex($direction: row, $justify: space-between, $align: center);
   }
+}
+
+.soleil {
+  position: absolute;
+  left: 40px;
+  width: 20%;
 }

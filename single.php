@@ -7,6 +7,9 @@
       <?php the_title(); ?>
     </h1>
     <div class="meteo">
+      <?php
+      echo '<img src="' . get_template_directory_uri() . '/images/soleil.png" alt="soleil" class="soleil">';
+      ?>
       <!-- Température actuelle  -->
       <h4><?php echo round(get_field("temperature_actuelle"), 1) ?>°C</h4>
       <div class="temp-min-max">
