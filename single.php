@@ -48,10 +48,10 @@
           ?>
         </div>
       </div>
-    </div>
-    <!-- Vague2 -->
-    <?php get_template_part("gabarits/vague2") ?>
+      <!-- Vague2 -->
+      <?php get_template_part("gabarits/vague2") ?>
   </section>
+</div>
 </div>
 <!-- Récupérer le footer -->
 <?php get_footer(); ?>
