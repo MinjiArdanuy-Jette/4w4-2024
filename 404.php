@@ -22,7 +22,7 @@
           </button>
         </form>
       </div>
-      <img class="image-erreur404" src="http://localhost/4w4_wp2/wp-content/uploads/2024/03/logo-voyage-4w4.png"
+      <img class="image-erreur404" src="http://localhost/4w4_wp2/wp-content/uploads/2024/05/Polaroid.png"
         alt="logo-avion">
     </div>
     <div class="afficher_categorie-erreur404">
