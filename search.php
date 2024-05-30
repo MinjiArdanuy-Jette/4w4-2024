@@ -22,7 +22,19 @@
 <div id="boite-recherche" class="global">
   <section>
     <h2>Résultat de recherche</h2>
-    <?php get_search_form() ?>
+    <!-- Le formulaire de recherche -->
+    <div class="recherche-footer">
+      <input type="checkbox" id="toggle-search-footer">
+      <label for="toggle-search-footer" class="search-icon">
+        <img src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=000" width="32" height="32">
+      </label>
+      <form role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>" class="search-form">
+        <input type="text" placeholder="Recherche" value="<?php echo get_search_query(); ?>" name="s"
+          class="search-input">
+        <button type="submit"><img src="https://s2.svgbox.net/hero-solid.svg?ic=arrow-right&color=000" width="28"
+            height="28"></button>
+      </form>
+    </div>
     <div class="destination">
       <?php
       if (have_posts()):
@@ -46,17 +58,9 @@
     <?php get_template_part("gabarits/vague2") ?>
   </section>
 
-  <div id="footer" class="global">
-    <footer>
-      <h2>Footer</h2>
-      <h6>
-        Lorem ipsum dolor sit amet consectetur
-        <a href="#">adipisicing elit</a>. Minima itaque a voluptates corporis
-        placeat labore fugiat necessitatibus porro corrupti? Nulla tempora
-        architecto libero veritatis possimus, ratione cum eligendi neque sit!.
-      </h6>
-    </footer>
-  </div>
+  <?php
+  get_footer()
+    ?>
   </body>
 
   </html>
