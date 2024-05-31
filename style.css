@@ -229,16 +229,6 @@ body {
   margin-right: 15px;
 }
 
-/*Placement des icônes réseaux sociaux - footer*/
-.social-footer {
-  display: flex;
-  gap: 30px;
-  position: absolute;
-  left: 15px;
-  margin-top: 15px;
-  margin-right: 15px;
-}
-
 /* Aligner les éléments horizontalement */
 .recherche-entete {
   display: flex;
@@ -392,14 +382,6 @@ body {
   position: absolute;
   left: 40px;
   width: 20%;
-}
-
-.a-propos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-top: 2px solid white;
 }
 
 .hero {
@@ -1018,9 +1000,25 @@ footer img {
   height: auto;
 }
 
+/*Placement des icônes réseaux sociaux - footer*/
+.social-footer {
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  left: 15px;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
 .pied2page {
   display: flex;
+  flex-direction: column;
   column-gap: 10rem;
+}
+@media (min-width: 700px) {
+  .pied2page {
+    flex-direction: row;
+  }
 }
 
 #footer {
@@ -1058,4 +1056,12 @@ footer img {
 
 .footer-menu li:nth-child(3n+1) {
   margin-top: 0; /* Supprimer la marge en haut pour chaque troisième élément (premier élément de chaque colonne) */
+}
+
+.a-propos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid white;
 }/*# sourceMappingURL=style.css.map */

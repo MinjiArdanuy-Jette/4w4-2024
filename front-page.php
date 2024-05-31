@@ -67,7 +67,7 @@
   </section>
 </div>
 <section id="filtre">
-  <h1>Plugin Voyage</h1>
+  <h1>Informations importantes du mois</h1>
   <?php
   // Appel du shortcode directement dans le fichier front-page.php
   echo do_shortcode('[em_destination]');

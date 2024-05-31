@@ -150,9 +150,23 @@ footer img {
   height: auto;
 }
 
+/*Placement des icônes réseaux sociaux - footer*/
+.social-footer {
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  left: 15px;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
 .pied2page {
   display: flex;
+  flex-direction: column;
   column-gap: 10rem;
+  @media (min-width: 700px) {
+    flex-direction: row;
+  }
 }
 
 #footer {
@@ -184,4 +198,13 @@ footer img {
 
 .footer-menu li:nth-child(3n + 1) {
   margin-top: 0; /* Supprimer la marge en haut pour chaque troisième élément (premier élément de chaque colonne) */
+}
+
+//footer a propos
+.a-propos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid white;
 }
