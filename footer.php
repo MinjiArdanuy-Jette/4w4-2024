@@ -37,6 +37,7 @@
       <a href="https://github.com/MinjiArdanuy-Jette/4w4-2024/tree/tp2">Dépôt du thème</a>
       <a href="https://github.com/MinjiArdanuy-Jette/carrousel">Dépôt du carrousel</a>
       <a href="https://minjiardanuy-jette.github.io/4w4-2024/">Ma githubPage</a>
+      <a href="https://github.com/MinjiArdanuy-Jette/ef-pays">Dépôt Épreuve finale</a>
 
 
     </div>
