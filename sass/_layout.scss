@@ -228,3 +228,12 @@ body {
   left: 40px;
   width: 20%;
 }
+
+//footer a propos
+.a-propos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid white;
+}

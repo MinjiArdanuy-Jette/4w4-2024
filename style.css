@@ -394,6 +394,14 @@ body {
   width: 20%;
 }
 
+.a-propos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid white;
+}
+
 .hero {
   background-repeat: no-repeat;
   background-position: 100% 40%;
@@ -575,6 +583,7 @@ h6 {
   font-weight: 100;
   font-style: normal;
   color: hsl(60, 96%, 67%);
+  background-color: rgba(155, 81, 224, 0.5);
   padding: 20px;
 }
 

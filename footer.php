@@ -22,34 +22,23 @@
         );
         ?>
       </div>
-      <div class="liens">
-        <h2>Adresse</h2>
-        <?php
-        wp_nav_menu(
-          array(
-            'menu' => 'footer1',
-            'theme_location' => 'footer-menu',
-            'menu_class' => 'footer-menu',
-            'container' => 'nav',
-            'container_class' => 'footer-menu-container',
-          )
-        );
-        ?>
+      <div class="description">
+        <h2>Description</h2>
+        <h3> La routine du travail devient-elle monotone ? Alors, il est l'heure d'apporter un brin d'aventure dans
+          votre
+          vie
+          ! À la recherche d'une épique chevauchée à travers le globe avec des amis ou à la recherche d'un silence
+          paradisiaque en solo? Sur notre site vous trouverez votre bonheur, petit et grand !</h3>
       </div>
     </section>
-    <div class="description">
+    <div class="a-propos">
       <h3>Minji Ardanuy-Jetté</h3>
-      <?php
-      wp_nav_menu(
-        array(
-          'menu' => 'footer2',
-          'theme_location' => 'footer-menu',
-          'menu_class' => 'footer-menu',
-          'container' => 'nav',
-          'container_class' => 'footer-menu-container',
-        )
-      );
-      ?>
+      <h3>3800, rue Sherbrooke Est Montréal (Québec) H1X 2A2 </h3>
+      <a href="https://github.com/MinjiArdanuy-Jette/4w4-2024/tree/tp2">Dépôt du thème</a>
+      <a href="https://github.com/MinjiArdanuy-Jette/carrousel">Dépôt du carrousel</a>
+      <a href="https://minjiardanuy-jette.github.io/4w4-2024/">Ma githubPage</a>
+
+
     </div>
     <!-- Mettre le formulaire de recherche manuellement car il est trop différent du modèle de base -->
     <div class="recherche-footer">
