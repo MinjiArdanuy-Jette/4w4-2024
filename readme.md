@@ -1,4 +1,4 @@
-# Examen intra - Club de voyage : Vivre la vie, vive les voyages !
+# Examen final - Club de voyage : Vivre la vie, vive les voyages !
 
 ## Ma Github Page Minji Ardanuy-Jetté
 
@@ -6,19 +6,16 @@
 
 ## Lien vers l'hébergeur WHC : https://gftnth00.mywhc.ca/tim06/
 
-## Examen intra : Reproduction de la page model Erreur 404
+## Examen final : Reproduction d'un modèle page Les plus beaux pays
 
-## Apparition d'une image selon la largeur de l'écran
+## Ajout d'une choix Pays dans le menu principal
 
-- L'image provient de la médiathèque du site de wordpress
-- L'image doit disparaitre lorsque nous sommes sur un écran mobile
+- Le contenu par défaut est constitué des destinations de la France
+- En cliquant sur un bouton « Pays » les nouvelles destination s’affichent
+- L’image associée à une destination est une image mise en avant à partir de l’éditeur de Wordpress
+- Si la destination ne contient pas d’image mise-en-avant on affiche une image temporaire « placeholder »
 
-## Avoir un formulaire de recherche dans la page Erreur 404 fonctionnel
+## Créer un modèle de page pour présenter les plus beaux pays
 
-- Le même formulaire que la maquette
-
-## Avoir un bouton qui ramène vers la page d'accueil
-
-## Avoir le contenu de texte centré sur la page en version mobile (Titre, sous-titre)
-
-## Afficher les liens des catégories sur la page au même endroit que sur la maquette
+- La même disposition que sur la maquette
+- Titre, introduction, une galerie d'image et deux vagues
