@@ -83,24 +83,28 @@
 
       // Parcourir les catégories
       foreach ($categories as $uneCategorie) {
-        // Récupérer le nombre d'articles de la catégorie actuelle
-        $uneCategorie_count = $uneCategorie->count;
-        // Récupérer la description de la catégorie actuelle
-        $uneCategorie_description = wp_trim_words($uneCategorie->description, 10, "...");
+        // Vérifier si la catégorie actuelle n'est pas "Galerie"
+        if ($uneCategorie->name != 'Galerie') {
+          // Récupérer le nombre d'articles de la catégorie actuelle
+          $uneCategorie_count = $uneCategorie->count;
+          // Récupérer la description de la catégorie actuelle
+          $uneCategorie_description = wp_trim_words($uneCategorie->description, 10, "...");
 
-        // Afficher le titre, la description et le nombre d'articles de la catégorie actuelle
-        echo '<div class="carte">';
-        echo '<h3>' . $uneCategorie->name . '</h3>';
-        echo '<p>' . $uneCategorie_description . '</p>';
-        echo '<p>' . $uneCategorie_count . ' articles</p>';
-        // Afficher un lien vers tous les articles de la catégorie actuelle
-        echo '<a href="' . get_category_link($uneCategorie->term_id) . '">Voir tous les articles</a>';
-        //Mettre l'adresse local de l'image de l'avion et la remplacer sur le serveur
-        echo '<img src="' . get_template_directory_uri() . '/images/logo-avion.png" alt="logo-avion" class = "avion">';
-        echo '</div>';
+          // Afficher le titre, la description et le nombre d'articles de la catégorie actuelle
+          echo '<div class="carte">';
+          echo '<h3>' . $uneCategorie->name . '</h3>';
+          echo '<p>' . $uneCategorie_description . '</p>';
+          echo '<p>' . $uneCategorie_count . ' articles</p>';
+          // Afficher un lien vers tous les articles de la catégorie actuelle
+          echo '<a href="' . get_category_link($uneCategorie->term_id) . '">Voir tous les articles</a>';
+          // Mettre l'adresse locale de l'image de l'avion et la remplacer sur le serveur
+          echo '<img src="' . get_template_directory_uri() . '/images/logo-avion.png" alt="logo-avion" class="avion">';
+          echo '</div>';
+        }
       }
       ?>
     </div>
+
 </div>
 </section>
 </div>
