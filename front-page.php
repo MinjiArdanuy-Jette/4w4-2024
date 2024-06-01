@@ -2,9 +2,12 @@
 <?php get_header(); ?>
 <div id="entete" class="global">
   <div class="social">
-    <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000" width="32" height="32" />
-    <img src="https://s2.svgbox.net/social.svg?ic=instagram&color=000" width="32" height="32" />
-    <img src="https://s2.svgbox.net/social.svg?ic=youtube&color=000" width="32" height="32" />
+    <a href="https://www.facebook.com/groups/170302146254"><img
+        src="https://s2.svgbox.net/social.svg?ic=facebook&color=000" width="32" height="32" /></a>
+    <a href="https://www.instagram.com/maisonneuvetim/"><img
+        src="https://s2.svgbox.net/social.svg?ic=instagram&color=000" width="32" height="32" /></a>
+    <a href="https://www.youtube.com/@TIMaisonneuve"><img src="https://s2.svgbox.net/social.svg?ic=youtube&color=000"
+        width="32" height="32" /></a>
   </div>
   <!-- Vague1 -->
   <?php get_template_part("gabarits/vague1") ?>
