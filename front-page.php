@@ -83,8 +83,8 @@
 
       // Parcourir les catégories
       foreach ($categories as $uneCategorie) {
-        // Vérifier si la catégorie actuelle n'est pas "Galerie"
-        if ($uneCategorie->name != 'Galerie') {
+        // Vérifier si la catégorie actuelle n'est pas "Galerie" et Lieux les plus visités
+        if ($uneCategorie->name != 'Galerie' && $uneCategorie->name != 'Lieux les plus visités') {
           // Récupérer le nombre d'articles de la catégorie actuelle
           $uneCategorie_count = $uneCategorie->count;
           // Récupérer la description de la catégorie actuelle
