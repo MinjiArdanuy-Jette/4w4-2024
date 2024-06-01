@@ -5,6 +5,5 @@
 ?>
 <div class="carte__galerie">
   <?php
-  the_title();
   the_content() ?>
 </div>
