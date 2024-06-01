@@ -1,4 +1,4 @@
-# Examen intra - Club de voyage : Vivre la vie, vive les voyages !
+# TP2 - Club de voyage : Vivre la vie, vive les voyages !
 
 ## Ma Github Page Minji Ardanuy-Jetté
 
@@ -6,19 +6,30 @@
 
 ## Lien vers l'hébergeur WHC : https://gftnth00.mywhc.ca/tim06/
 
-## Examen intra : Reproduction de la page model Erreur 404
+## TP2: Ajout d'un REST API, d'un carrousel d'images pourune seule destination et dans la page d'accueil
 
-## Apparition d'une image selon la largeur de l'écran
+## Afficher tous les éléments nécessaires au devis
 
-- L'image provient de la médiathèque du site de wordpress
-- L'image doit disparaitre lorsque nous sommes sur un écran mobile
+- Section Entête
+- Section Héro
+- Section single-page
+- Section catégorie
+- Section footer
 
-## Avoir un formulaire de recherche dans la page Erreur 404 fonctionnel
+## Créer des champs personnalisés
 
-- Le même formulaire que la maquette
+- Température minium/maximum/actuelle
+- Appréciation (étoiles) pour les destinations populaires
 
-## Avoir un bouton qui ramène vers la page d'accueil
+## Créer des filtres d'extraction
 
-## Avoir le contenu de texte centré sur la page en version mobile (Titre, sous-titre)
+- menu déroulant pour les rabais, la catégorie la plus prisé du mois et les lieux les plus visités
 
-## Afficher les liens des catégories sur la page au même endroit que sur la maquette
+## Améliorer l'interactivité et l'utilisabilité
+
+- Ajouter des animations simples et efficaces
+
+## Créer de nouveaux gabarits
+
+- Gabarit pour les cartes
+- modèle de page
